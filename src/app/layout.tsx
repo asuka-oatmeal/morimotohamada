@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Noto_Sans_JP, Noto_Serif_JP } from "next/font/google";
 import Link from "next/link";
+import { CATEGORIES } from "@/lib/categories";
 import "./globals.css";
 
 const notoSansJP = Noto_Sans_JP({
@@ -14,9 +15,9 @@ const notoSerifJP = Noto_Serif_JP({
   weight: ["400", "700"],
 });
 
-const SITE_NAME = "森本濱田 Legal Column";
+const SITE_NAME = "法律相談ナビ -やさしい解説-";
 const SITE_DESCRIPTION =
-  "暮らしに身近な法律の基礎知識や最新の法改正情報をわかりやすく解説するメディアです。";
+  "離婚・相続・交通事故・労働問題など、暮らしに身近な法律の基礎知識をやさしく解説。法律相談の前に知っておきたい情報をお届けします。";
 
 export const metadata: Metadata = {
   title: {
@@ -31,8 +32,6 @@ export const metadata: Metadata = {
     siteName: SITE_NAME,
   },
 };
-
-import { CATEGORIES } from "@/lib/categories";
 
 export default function RootLayout({
   children,
@@ -52,10 +51,10 @@ export default function RootLayout({
                 className="text-3xl font-bold tracking-wide"
                 style={{ fontFamily: "var(--font-noto-serif-jp)" }}
               >
-                森本濱田
+                法律相談ナビ
               </h1>
-              <p className="mt-1 text-sm tracking-widest text-white/70">
-                LEGAL COLUMN
+              <p className="mt-1 text-sm tracking-widest text-[var(--color-accent)]">
+                -やさしい解説-
               </p>
             </Link>
           </div>
@@ -89,11 +88,16 @@ export default function RootLayout({
                 className="text-lg font-bold text-white/90"
                 style={{ fontFamily: "var(--font-noto-serif-jp)" }}
               >
-                森本濱田
+                法律相談ナビ
               </p>
-              <p className="mt-1 text-xs tracking-widest">LEGAL COLUMN</p>
-              <p className="mt-4 text-xs">
-                &copy; {new Date().getFullYear()} Morimoto Hamada. All rights
+              <p className="mt-1 text-xs tracking-widest text-[var(--color-accent)]">
+                -やさしい解説-
+              </p>
+              <p className="mt-4 text-xs text-white/40">
+                本サイトは法律に関する一般的な情報提供を目的としており、個別の法的助言を行うものではありません。具体的な問題については、弁護士等の専門家にご相談ください。
+              </p>
+              <p className="mt-3 text-xs">
+                &copy; {new Date().getFullYear()} 法律相談ナビ All rights
                 reserved.
               </p>
             </div>
