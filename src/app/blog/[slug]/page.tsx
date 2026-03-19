@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { getArticleBySlug, getAllSlugs } from "@/lib/articles";
+import { getCategoryByLabel } from "@/lib/categories";
 
 type Params = { slug: string };
 
@@ -37,6 +38,7 @@ export default async function ArticlePage({
   const { slug } = await params;
   const article = await getArticleBySlug(slug);
   if (!article) notFound();
+  const categoryInfo = getCategoryByLabel(article.category);
 
   return (
     <article className="mx-auto max-w-3xl">
@@ -46,14 +48,26 @@ export default async function ArticlePage({
           トップ
         </Link>
         <span className="mx-2">/</span>
-        <span className="text-gray-600">{article.category}</span>
+        {categoryInfo ? (
+          <Link
+            href={`/category/${categoryInfo.slug}`}
+            className="text-gray-600 hover:text-gray-900"
+          >
+            {article.category}
+          </Link>
+        ) : (
+          <span className="text-gray-600">{article.category}</span>
+        )}
       </nav>
 
       {/* Meta */}
       <div className="mb-4 flex items-center gap-3">
-        <span className="rounded bg-[var(--color-primary)] px-3 py-1 text-xs font-medium text-white">
+        <Link
+          href={categoryInfo ? `/category/${categoryInfo.slug}` : "/"}
+          className="rounded bg-[var(--color-primary)] px-3 py-1 text-xs font-medium text-white hover:bg-[var(--color-primary-light)]"
+        >
           {article.category}
-        </span>
+        </Link>
         <time className="text-sm text-gray-400">{article.date}</time>
       </div>
 

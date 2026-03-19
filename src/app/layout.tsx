@@ -32,15 +32,7 @@ export const metadata: Metadata = {
   },
 };
 
-const CATEGORIES = [
-  "離婚・家事",
-  "相続・遺言",
-  "交通事故",
-  "労働問題",
-  "債務整理",
-  "不動産・賃貸",
-  "刑事事件",
-];
+import { CATEGORIES } from "@/lib/categories";
 
 export default function RootLayout({
   children,
@@ -72,12 +64,12 @@ export default function RootLayout({
             <div className="mx-auto max-w-5xl overflow-x-auto px-4">
               <ul className="flex items-center justify-center gap-1 py-2 text-sm">
                 {CATEGORIES.map((cat) => (
-                  <li key={cat}>
+                  <li key={cat.slug}>
                     <Link
-                      href={`/?category=${encodeURIComponent(cat)}`}
+                      href={`/category/${cat.slug}`}
                       className="rounded px-3 py-1.5 text-white/80 transition hover:bg-white/10 hover:text-white"
                     >
-                      {cat}
+                      {cat.label}
                     </Link>
                   </li>
                 ))}

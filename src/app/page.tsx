@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { getAllArticles } from "@/lib/articles";
+import { getCategoryByLabel } from "@/lib/categories";
 
 export default function Home() {
   const articles = getAllArticles();
@@ -32,9 +33,12 @@ export default function Home() {
               >
                 {/* Category Bar */}
                 <div className="bg-[var(--color-primary)] px-4 py-2">
-                  <span className="text-xs font-medium text-white/90">
+                  <Link
+                    href={`/category/${getCategoryByLabel(article.category)?.slug || ""}`}
+                    className="text-xs font-medium text-white/90 hover:text-white"
+                  >
                     {article.category}
-                  </span>
+                  </Link>
                 </div>
                 <div className="p-5">
                   <time className="text-xs text-gray-400">{article.date}</time>
