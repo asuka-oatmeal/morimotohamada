@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { getArticleBySlug, getAllSlugs } from "@/lib/articles";
 import { getCategoryByLabel } from "@/lib/categories";
+import MermaidRenderer from "@/app/components/MermaidRenderer";
 
 type Params = { slug: string };
 
@@ -87,6 +88,7 @@ export default async function ArticlePage({
         className="prose prose-gray prose-lg max-w-none prose-headings:text-[var(--color-primary)] prose-a:text-[var(--color-primary-light)]"
         dangerouslySetInnerHTML={{ __html: article.content }}
       />
+      <MermaidRenderer />
 
       {/* Back Link */}
       <div className="mt-12 border-t border-gray-200 pt-6">

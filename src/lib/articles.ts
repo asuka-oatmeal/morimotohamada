@@ -40,13 +40,19 @@ export async function getArticleBySlug(slug: string): Promise<Article | null> {
   const fileContents = fs.readFileSync(fullPath, "utf8");
   const { data, content } = matter(fileContents);
   const processedContent = await remark().use(html).process(content);
+  // Convert alt comments to data-alt attributes on mermaid code blocks
+  let htmlContent = processedContent.toString();
+  htmlContent = htmlContent.replace(
+    /<!--\s*alt:\s*(.+?)\s*-->\s*<pre><code class="language-mermaid">/g,
+    '<pre data-alt="$1"><code class="language-mermaid">'
+  );
   return {
     slug,
     title: data.title || "",
     date: data.date || "",
     description: data.description || "",
     category: data.category || "",
-    content: processedContent.toString(),
+    content: htmlContent,
   };
 }
 
