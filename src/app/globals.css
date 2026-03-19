@@ -4,10 +4,18 @@
 @theme inline {
   --color-background: #ffffff;
   --color-foreground: #171717;
+  --color-primary: #1e3a5f;
+  --color-primary-light: #2a5a8f;
+  --color-accent: #c9a84c;
   --font-sans: var(--font-noto-sans-jp);
 }
 
 body {
   background: var(--color-background);
   color: var(--color-foreground);
+}
+
+.prose h2 {
+  border-bottom: 2px solid var(--color-accent);
+  padding-bottom: 0.5rem;
 }
