@@ -44,29 +44,49 @@ export default function RootLayout({
         className={`${notoSansJP.variable} ${notoSerifJP.variable} font-sans antialiased`}
       >
         {/* Header */}
-        <header className="bg-[var(--color-primary)] text-white">
-          <div className="mx-auto max-w-5xl px-4 py-8 text-center">
-            <Link href="/" className="inline-block">
-              <h1
-                className="text-3xl font-bold tracking-wide"
+        <header className="border-b border-gray-200 bg-white">
+          <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 sm:py-4">
+            <Link href="/" className="inline-flex items-center gap-2">
+              <div
+                className="flex h-9 w-9 items-center justify-center rounded-lg bg-[var(--color-primary)] text-sm font-bold text-white sm:h-10 sm:w-10"
                 style={{ fontFamily: "var(--font-noto-serif-jp)" }}
               >
-                法律相談ナビ
-              </h1>
-              <p className="mt-1 text-sm tracking-widest text-[var(--color-accent)]">
-                -やさしい解説-
-              </p>
+                法
+              </div>
+              <div>
+                <p
+                  className="text-base font-bold text-[var(--color-primary)] sm:text-lg"
+                  style={{ fontFamily: "var(--font-noto-serif-jp)" }}
+                >
+                  法律相談ナビ
+                </p>
+                <p className="text-[10px] tracking-wider text-gray-400 sm:text-xs">
+                  やさしい解説
+                </p>
+              </div>
             </Link>
+            <p className="hidden text-xs text-gray-400 sm:block">
+              暮らしに身近な法律の基礎知識をわかりやすく解説
+            </p>
           </div>
+
           {/* Category Navigation */}
-          <nav className="border-t border-white/10 bg-[var(--color-primary-light)]">
-            <div className="mx-auto max-w-5xl overflow-x-auto px-4">
-              <ul className="flex items-center justify-center gap-1 py-2 text-sm">
+          <nav className="bg-[var(--color-primary)]">
+            <div className="mx-auto max-w-6xl overflow-x-auto px-2 sm:px-4">
+              <ul className="flex items-center gap-0 py-0 text-xs sm:text-sm">
+                <li className="shrink-0">
+                  <Link
+                    href="/"
+                    className="inline-block border-r border-white/10 px-3 py-2.5 text-white/90 transition hover:bg-white/10 hover:text-white sm:px-4 sm:py-3"
+                  >
+                    ホーム
+                  </Link>
+                </li>
                 {CATEGORIES.map((cat) => (
-                  <li key={cat.slug}>
+                  <li key={cat.slug} className="shrink-0">
                     <Link
                       href={`/category/${cat.slug}`}
-                      className="rounded px-3 py-1.5 text-white/80 transition hover:bg-white/10 hover:text-white"
+                      className="inline-block border-r border-white/10 px-3 py-2.5 text-white/90 transition hover:bg-white/10 hover:text-white sm:px-4 sm:py-3"
                     >
                       {cat.label}
                     </Link>
@@ -78,28 +98,58 @@ export default function RootLayout({
         </header>
 
         {/* Main */}
-        <main className="mx-auto max-w-5xl px-4 py-10">{children}</main>
+        <main className="mx-auto max-w-6xl px-3 py-6 sm:px-4 sm:py-8">
+          {children}
+        </main>
 
         {/* Footer */}
-        <footer className="border-t border-gray-200 bg-[var(--color-primary)] text-white/60">
-          <div className="mx-auto max-w-5xl px-4 py-8">
-            <div className="text-center">
-              <p
-                className="text-lg font-bold text-white/90"
-                style={{ fontFamily: "var(--font-noto-serif-jp)" }}
-              >
-                法律相談ナビ
-              </p>
-              <p className="mt-1 text-xs tracking-widest text-[var(--color-accent)]">
-                -やさしい解説-
-              </p>
-              <p className="mt-4 text-xs text-white/40">
-                本サイトは法律に関する一般的な情報提供を目的としており、個別の法的助言を行うものではありません。具体的な問題については、弁護士等の専門家にご相談ください。
-              </p>
-              <p className="mt-3 text-xs">
-                &copy; {new Date().getFullYear()} 法律相談ナビ All rights
-                reserved.
-              </p>
+        <footer className="border-t border-gray-300 bg-[var(--color-primary)] text-white/70">
+          <div className="mx-auto max-w-6xl px-4 py-8 sm:py-10">
+            {/* Footer nav */}
+            <div className="grid grid-cols-2 gap-6 text-xs sm:grid-cols-4 sm:text-sm">
+              <div>
+                <p className="mb-2 font-bold text-white/90">カテゴリ</p>
+                <ul className="space-y-1.5">
+                  {CATEGORIES.slice(0, 4).map((cat) => (
+                    <li key={cat.slug}>
+                      <Link
+                        href={`/category/${cat.slug}`}
+                        className="transition hover:text-white"
+                      >
+                        {cat.label}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div>
+                <p className="mb-2 font-bold text-white/90">&nbsp;</p>
+                <ul className="space-y-1.5">
+                  {CATEGORIES.slice(4).map((cat) => (
+                    <li key={cat.slug}>
+                      <Link
+                        href={`/category/${cat.slug}`}
+                        className="transition hover:text-white"
+                      >
+                        {cat.label}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div className="col-span-2 sm:col-span-2">
+                <p className="mb-2 font-bold text-white/90">
+                  法律相談ナビについて
+                </p>
+                <p className="text-[11px] leading-relaxed text-white/50 sm:text-xs">
+                  本サイトは法律に関する一般的な情報提供を目的としており、個別の法的助言を行うものではありません。具体的な問題については、弁護士等の専門家にご相談ください。
+                </p>
+              </div>
+            </div>
+
+            <div className="mt-6 border-t border-white/10 pt-4 text-center text-[11px] text-white/40 sm:text-xs">
+              &copy; {new Date().getFullYear()} 法律相談ナビ All rights
+              reserved.
             </div>
           </div>
         </footer>

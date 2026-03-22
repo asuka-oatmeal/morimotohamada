@@ -19,13 +19,16 @@ jobs:
           node-version: "20"
 
       - name: Install dependencies
-        run: npm install @google/generative-ai
+        run: npm install @google/generative-ai gray-matter
 
       - name: Generate article
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           ARTICLE_COUNT: "1"
         run: node scripts/generate-article.mjs
+
+      - name: Add internal links
+        run: node scripts/internal-links.mjs
 
       - name: Commit and push
         run: |
