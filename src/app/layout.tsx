@@ -47,11 +47,8 @@ export default function RootLayout({
         <header className="border-b border-gray-200 bg-white">
           <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 sm:py-4">
             <Link href="/" className="inline-flex items-center gap-2">
-              <div
-                className="flex h-9 w-9 items-center justify-center rounded-lg bg-[var(--color-primary)] text-sm font-bold text-white sm:h-10 sm:w-10"
-                style={{ fontFamily: "var(--font-noto-serif-jp)" }}
-              >
-                法
+              <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-[var(--color-primary)] text-lg sm:h-10 sm:w-10 sm:text-xl">
+                <span role="img" aria-label="天秤">&#x2696;&#xFE0F;</span>
               </div>
               <div>
                 <p

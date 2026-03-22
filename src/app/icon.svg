@@ -7,8 +7,23 @@
   </defs>
   <!-- Rounded square background -->
   <rect width="512" height="512" rx="96" ry="96" fill="url(#bg)"/>
-  <!-- Gold accent line at bottom -->
-  <rect x="96" y="420" width="320" height="8" rx="4" fill="#c9a84c"/>
-  <!-- 法 character -->
-  <text x="256" y="340" text-anchor="middle" font-family="serif" font-weight="700" font-size="300" fill="white">法</text>
+  <!-- Scale of justice -->
+  <g transform="translate(256, 256)" stroke="#c9a84c" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Center pillar -->
+    <line x1="0" y1="-120" x2="0" y2="140" stroke-width="14"/>
+    <!-- Base -->
+    <line x1="-70" y1="140" x2="70" y2="140" stroke-width="14"/>
+    <!-- Top beam -->
+    <line x1="-130" y1="-120" x2="130" y2="-120" stroke-width="12"/>
+    <!-- Top diamond -->
+    <polygon points="0,-140 12,-120 0,-100 -12,-120" fill="#c9a84c" stroke="none"/>
+    <!-- Left chain -->
+    <line x1="-130" y1="-120" x2="-130" y2="-20" stroke-width="8"/>
+    <!-- Right chain -->
+    <line x1="130" y1="-120" x2="130" y2="-20" stroke-width="8"/>
+    <!-- Left pan -->
+    <path d="M-180,-20 Q-180,40 -130,40 Q-80,40 -80,-20" stroke-width="8" fill="#c9a84c" fill-opacity="0.2"/>
+    <!-- Right pan -->
+    <path d="M80,-20 Q80,40 130,40 Q180,40 180,-20" stroke-width="8" fill="#c9a84c" fill-opacity="0.2"/>
+  </g>
 </svg>
