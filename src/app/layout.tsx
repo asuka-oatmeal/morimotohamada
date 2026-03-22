@@ -1,19 +1,7 @@
 import type { Metadata } from "next";
-import { Noto_Sans_JP, Noto_Serif_JP } from "next/font/google";
 import Link from "next/link";
 import { CATEGORIES } from "@/lib/categories";
 import "./globals.css";
-
-const notoSansJP = Noto_Sans_JP({
-  variable: "--font-noto-sans-jp",
-  subsets: ["latin"],
-});
-
-const notoSerifJP = Noto_Serif_JP({
-  variable: "--font-noto-serif-jp",
-  subsets: ["latin"],
-  weight: ["400", "700"],
-});
 
 const SITE_NAME = "法律相談ナビ -やさしい解説-";
 const SITE_DESCRIPTION =
@@ -40,9 +28,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ja">
-      <body
-        className={`${notoSansJP.variable} ${notoSerifJP.variable} font-sans antialiased`}
-      >
+      <body className="antialiased">
         {/* Header */}
         <header className="border-b border-gray-200 bg-white">
           <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 sm:py-4">
@@ -68,10 +54,7 @@ export default function RootLayout({
                 </svg>
               </div>
               <div>
-                <p
-                  className="text-base font-bold text-[var(--color-primary)] sm:text-lg"
-                  style={{ fontFamily: "var(--font-noto-serif-jp)" }}
-                >
+                <p className="text-base font-bold text-[var(--color-primary)] sm:text-lg">
                   法律相談ナビ
                 </p>
                 <p className="text-[10px] tracking-wider text-gray-400 sm:text-xs">

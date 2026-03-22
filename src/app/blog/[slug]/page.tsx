@@ -91,7 +91,7 @@ export default async function ArticlePage({
             {/* Title */}
             <h1
               className="mb-4 text-xl font-bold leading-snug text-gray-900 sm:mb-6 sm:text-2xl lg:text-3xl"
-              style={{ fontFamily: "var(--font-noto-serif-jp)" }}
+
             >
               {article.title}
             </h1>
@@ -104,7 +104,7 @@ export default async function ArticlePage({
 
             {/* Content */}
             <div
-              className="prose prose-gray max-w-none prose-headings:text-[var(--color-primary)] prose-a:text-[var(--color-primary-light)] sm:prose-lg"
+              className="prose prose-gray max-w-none prose-a:text-[var(--color-primary-light)] sm:prose-lg"
               dangerouslySetInnerHTML={{ __html: article.content }}
             />
 

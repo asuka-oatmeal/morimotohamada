@@ -3,35 +3,62 @@
 
 @theme inline {
   --color-background: #f8f9fa;
-  --color-foreground: #32373c;
+  --color-foreground: #333;
   --color-primary: #1e3a5f;
   --color-primary-light: #2a5a8f;
   --color-accent: #c9a84c;
+  --color-accent-bg: #d9d1bd;
   --color-cta: #e8740c;
-  --font-sans: var(--font-noto-sans-jp);
+  --font-sans: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN",
+    "Hiragino Sans", Meiryo, sans-serif;
 }
 
 body {
   background: var(--color-background);
   color: var(--color-foreground);
+  font-size: 16px;
+  line-height: 1.5;
 }
 
-/* Article prose styling */
+/* Article prose styling - matching ben54.jp */
 .prose h2 {
-  border-left: 4px solid var(--color-primary);
-  padding-left: 0.75rem;
-  padding-bottom: 0.5rem;
-  border-bottom: 1px solid #e5e7eb;
+  position: relative;
+  margin-top: 2.5rem;
+  margin-bottom: 0.5rem;
+  padding: 0.75rem 1rem;
+  font-size: 1.35rem;
+  font-weight: 700;
+  line-height: 1.4;
+  background-color: var(--color-accent-bg);
+  border-radius: 0.75rem;
+  border-left: none;
+  border-bottom: none;
+  color: var(--color-foreground);
 }
 
 .prose h3 {
-  border-left: 3px solid var(--color-accent);
-  padding-left: 0.6rem;
+  position: relative;
+  margin-top: 2rem;
+  font-size: 1.15rem;
+  font-weight: 700;
+  line-height: 1.4;
+  padding-bottom: 0.4rem;
+  padding-left: 0;
+  border-left: none;
+  border-bottom: 3px solid;
+  border-image-source: linear-gradient(90deg, #938a75 0%, #d9d1bd 100%);
+  border-image-slice: 1;
+  color: var(--color-foreground);
 }
 
 .prose a {
+  color: var(--color-primary-light);
   text-decoration: underline;
   text-underline-offset: 2px;
+}
+
+.prose strong {
+  color: var(--color-foreground);
 }
 
 /* TOC styling */
@@ -82,7 +109,11 @@ body {
 
 /* CTA Banner */
 .cta-banner {
-  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
+  background: linear-gradient(
+    135deg,
+    var(--color-primary) 0%,
+    var(--color-primary-light) 100%
+  );
   border-radius: 0.75rem;
   padding: 1.5rem;
   text-align: center;
@@ -131,17 +162,19 @@ body {
   padding: 0.75rem 1rem;
 }
 
-/* Mobile prose adjustments */
+/* Mobile adjustments */
 @media (max-width: 639px) {
   .prose {
     font-size: 0.9375rem;
     line-height: 1.8;
   }
   .prose h2 {
-    font-size: 1.15rem;
+    font-size: 1.1rem;
+    padding: 0.6rem 0.75rem;
+    border-radius: 0.5rem;
   }
   .prose h3 {
-    font-size: 1.05rem;
+    font-size: 1rem;
   }
   .prose table {
     font-size: 0.8rem;

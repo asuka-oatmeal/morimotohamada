@@ -13,7 +13,7 @@ export default function Home() {
         <section className="mb-8 rounded-lg bg-white p-5 shadow-sm sm:p-8">
           <h2
             className="text-lg font-bold text-[var(--color-primary)] sm:text-2xl"
-            style={{ fontFamily: "var(--font-noto-serif-jp)" }}
+
           >
             暮らしに役立つ法律知識を
             <br className="sm:hidden" />
