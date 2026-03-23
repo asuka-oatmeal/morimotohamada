@@ -2,13 +2,13 @@
 @plugin "@tailwindcss/typography";
 
 @theme inline {
-  --color-background: #f8f9fa;
-  --color-foreground: #333;
-  --color-primary: #1e3a5f;
-  --color-primary-light: #2a5a8f;
-  --color-accent: #c9a84c;
-  --color-accent-bg: #d9d1bd;
-  --color-cta: #e8740c;
+  --color-background: #faf8f5;
+  --color-foreground: #2c2c2c;
+  --color-primary: #2c4f7c;
+  --color-primary-light: #3d6fa3;
+  --color-accent: #c5983a;
+  --color-accent-bg: #f0ead9;
+  --color-cta: #d97b1e;
   --font-sans: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN",
     "Hiragino Sans", Meiryo, sans-serif;
 }
@@ -46,9 +46,17 @@ body {
   padding-left: 0;
   border-left: none;
   border-bottom: 3px solid;
-  border-image-source: linear-gradient(90deg, #938a75 0%, #d9d1bd 100%);
+  border-image-source: linear-gradient(90deg, #b8973a 0%, #ddd0a8 100%);
   border-image-slice: 1;
   color: var(--color-foreground);
+}
+
+.prose img {
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  margin: 1.5rem auto;
+  max-width: 100%;
+  height: auto;
 }
 
 .prose a {
@@ -63,8 +71,8 @@ body {
 
 /* TOC styling */
 .toc {
-  background: #f0f4f8;
-  border: 1px solid #d1dbe6;
+  background: #f5f2eb;
+  border: 1px solid #ddd5c4;
   border-radius: 0.5rem;
   padding: 1.25rem 1.5rem;
 }
@@ -88,7 +96,7 @@ body {
   padding: 0.3rem 0;
   font-size: 0.875rem;
   line-height: 1.5;
-  border-bottom: 1px dotted #cdd6e0;
+  border-bottom: 1px dotted #d5ccb8;
 }
 .toc ol li:last-child {
   border-bottom: none;
@@ -141,7 +149,7 @@ body {
   transition: background 0.2s;
 }
 .cta-button:hover {
-  background: #d46500;
+  background: #c06a10;
 }
 
 /* Sidebar */

@@ -40,7 +40,7 @@ export default function RootLayout({
                     <rect x="-16" y="108" width="32" height="20" rx="4" fill="#c9a84c"/>
                     <rect x="-7" y="-100" width="14" height="210" rx="7" fill="#c9a84c"/>
                     <circle cx="0" cy="-110" r="22" fill="#c9a84c"/>
-                    <circle cx="0" cy="-110" r="12" fill="#1e3a5f"/>
+                    <circle cx="0" cy="-110" r="12" fill="#2c4f7c"/>
                     <rect x="-148" y="-96" width="296" height="10" rx="5" fill="#c9a84c"/>
                     <line x1="-140" y1="-86" x2="-140" y2="10" stroke="#c9a84c" strokeWidth="6"/>
                     <line x1="-105" y1="-86" x2="-105" y2="10" stroke="#c9a84c" strokeWidth="6"/>

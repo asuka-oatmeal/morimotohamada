@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { getAllArticles } from "@/lib/articles";
 import { CATEGORIES, getCategoryByLabel } from "@/lib/categories";
+import ArticleEyecatch from "@/app/components/ArticleEyecatch";
 
 export default function Home() {
   const articles = getAllArticles();
@@ -54,8 +55,12 @@ export default function Home() {
                     className="group overflow-hidden rounded-lg border border-gray-200 bg-white transition hover:shadow-md"
                   >
                     <div className="flex">
-                      {/* Category color bar (vertical) */}
-                      <div className="w-1.5 shrink-0 bg-[var(--color-primary)]" />
+                      {/* Thumbnail */}
+                      <ArticleEyecatch
+                        categorySlug={catInfo?.slug || "divorce"}
+                        categoryLabel={article.category}
+                        size="small"
+                      />
                       <div className="flex-1 p-3 sm:p-5">
                         <div className="mb-1.5 flex items-center gap-2 sm:mb-2">
                           <Link

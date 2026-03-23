@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { getAllArticles } from "@/lib/articles";
 import { CATEGORIES, getCategoryBySlug, getCategoryByLabel } from "@/lib/categories";
+import ArticleEyecatch from "@/app/components/ArticleEyecatch";
 
 type Params = { slug: string };
 
@@ -73,7 +74,11 @@ export default async function CategoryPage({
                   className="group overflow-hidden rounded-lg border border-gray-200 bg-white transition hover:shadow-md"
                 >
                   <div className="flex">
-                    <div className="w-1.5 shrink-0 bg-[var(--color-primary)]" />
+                    <ArticleEyecatch
+                      categorySlug={catInfo?.slug || slug}
+                      categoryLabel={article.category}
+                      size="small"
+                    />
                     <div className="flex-1 p-3 sm:p-5">
                       <div className="mb-1.5 flex items-center gap-2 sm:mb-2">
                         <span className="rounded bg-[var(--color-primary)]/10 px-2 py-0.5 text-[11px] font-medium text-[var(--color-primary)] sm:text-xs">

@@ -4,6 +4,7 @@ import Link from "next/link";
 import { getArticleBySlug, getAllSlugs, getAllArticles } from "@/lib/articles";
 import { CATEGORIES, getCategoryByLabel } from "@/lib/categories";
 import TableOfContents from "@/app/components/TableOfContents";
+import ArticleEyecatch from "@/app/components/ArticleEyecatch";
 
 type Params = { slug: string };
 
@@ -52,6 +53,15 @@ export default async function ArticlePage({
       {/* Main Content */}
       <div className="min-w-0 flex-1">
         <article className="overflow-hidden rounded-lg bg-white shadow-sm">
+          {/* Eyecatch */}
+          {categoryInfo && (
+            <ArticleEyecatch
+              categorySlug={categoryInfo.slug}
+              categoryLabel={article.category}
+              size="large"
+            />
+          )}
+
           {/* Category header bar */}
           <div className="bg-[var(--color-primary)] px-4 py-2.5 sm:px-6 sm:py-3">
             <nav className="text-xs text-white/70 sm:text-sm">

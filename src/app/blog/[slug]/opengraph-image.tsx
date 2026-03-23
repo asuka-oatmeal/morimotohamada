@@ -1,0 +1,162 @@
+import { ImageResponse } from "next/og";
+import { getArticleBySlug, getAllSlugs } from "@/lib/articles";
+import { getCategoryByLabel } from "@/lib/categories";
+
+export const size = { width: 1200, height: 630 };
+export const contentType = "image/png";
+
+export function generateStaticParams() {
+  return getAllSlugs().map((slug) => ({ slug }));
+}
+
+const CATEGORY_COLORS: Record<string, { bg: string; accent: string }> = {
+  divorce: { bg: "#2c4f7c", accent: "#c5983a" },
+  inheritance: { bg: "#3a6b4a", accent: "#c5983a" },
+  "traffic-accident": { bg: "#7c3a2c", accent: "#d4a84a" },
+  labor: { bg: "#4a3a6b", accent: "#c5983a" },
+  debt: { bg: "#2c6b7c", accent: "#c5983a" },
+  "real-estate": { bg: "#5a6b3a", accent: "#c5983a" },
+  criminal: { bg: "#5a3a3a", accent: "#c5983a" },
+};
+
+export default async function OGImage({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
+  const { slug } = await params;
+  const article = await getArticleBySlug(slug);
+  if (!article) {
+    return new ImageResponse(
+      <div style={{ width: "100%", height: "100%", background: "#2c4f7c", display: "flex", alignItems: "center", justifyContent: "center", color: "white", fontSize: 48 }}>
+        法律相談ナビ
+      </div>,
+      { ...size }
+    );
+  }
+
+  const catInfo = getCategoryByLabel(article.category);
+  const colors = CATEGORY_COLORS[catInfo?.slug || "divorce"] || CATEGORY_COLORS.divorce;
+
+  return new ImageResponse(
+    (
+      <div
+        style={{
+          width: "100%",
+          height: "100%",
+          display: "flex",
+          flexDirection: "column",
+          background: `linear-gradient(135deg, ${colors.bg} 0%, ${colors.bg}dd 50%, ${colors.bg}bb 100%)`,
+          position: "relative",
+        }}
+      >
+        {/* Gold accent line at top */}
+        <div
+          style={{
+            width: "100%",
+            height: "6px",
+            background: `linear-gradient(90deg, ${colors.accent}, ${colors.accent}88, ${colors.accent})`,
+            display: "flex",
+          }}
+        />
+
+        {/* Main content area */}
+        <div
+          style={{
+            flex: 1,
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+            padding: "60px 80px",
+          }}
+        >
+          {/* Category badge */}
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              marginBottom: "24px",
+            }}
+          >
+            <div
+              style={{
+                background: colors.accent,
+                color: "#fff",
+                fontSize: "22px",
+                fontWeight: 700,
+                padding: "8px 24px",
+                borderRadius: "6px",
+                display: "flex",
+              }}
+            >
+              {article.category}
+            </div>
+          </div>
+
+          {/* Title */}
+          <div
+            style={{
+              fontSize: article.title.length > 30 ? "44px" : "52px",
+              fontWeight: 700,
+              color: "#ffffff",
+              lineHeight: 1.4,
+              display: "flex",
+              maxWidth: "1000px",
+            }}
+          >
+            {article.title}
+          </div>
+        </div>
+
+        {/* Bottom bar */}
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "space-between",
+            padding: "24px 80px",
+            borderTop: `2px solid ${colors.accent}44`,
+          }}
+        >
+          {/* Site name */}
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              gap: "12px",
+            }}
+          >
+            <div
+              style={{
+                width: "40px",
+                height: "40px",
+                borderRadius: "8px",
+                background: colors.accent,
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                fontSize: "20px",
+                fontWeight: 700,
+                color: "#fff",
+              }}
+            >
+              ⚖
+            </div>
+            <div style={{ color: "#ffffffcc", fontSize: "24px", fontWeight: 700, display: "flex" }}>
+              法律相談ナビ
+            </div>
+            <div style={{ color: "#ffffff66", fontSize: "18px", display: "flex", marginLeft: "4px" }}>
+              やさしい解説
+            </div>
+          </div>
+
+          {/* Date */}
+          <div style={{ color: "#ffffff88", fontSize: "20px", display: "flex" }}>
+            {article.date}
+          </div>
+        </div>
+      </div>
+    ),
+    { ...size }
+  );
+}
