@@ -1,11 +1,11 @@
-const CATEGORY_IMAGES: Record<string, string> = {
-  divorce: "/images/articles/bg-divorce.jpg",
-  inheritance: "/images/articles/bg-inheritance.jpg",
-  "traffic-accident": "/images/articles/bg-traffic.jpg",
-  labor: "/images/articles/bg-labor.jpg",
-  debt: "/images/articles/bg-debt.jpg",
-  "real-estate": "/images/articles/bg-realestate.jpg",
-  criminal: "/images/articles/bg-criminal.jpg",
+const CATEGORY_IMAGES: Record<string, { src: string; position: string }> = {
+  divorce: { src: "/images/articles/bg-divorce.jpg", position: "center 60%" },
+  inheritance: { src: "/images/articles/bg-inheritance.jpg", position: "center 40%" },
+  "traffic-accident": { src: "/images/articles/bg-traffic.jpg", position: "center 70%" },
+  labor: { src: "/images/articles/bg-labor.jpg", position: "center center" },
+  debt: { src: "/images/articles/bg-debt.jpg", position: "center center" },
+  "real-estate": { src: "/images/articles/bg-realestate.jpg", position: "center 30%" },
+  criminal: { src: "/images/articles/bg-criminal.jpg", position: "center center" },
 };
 
 export default function ArticleEyecatch({
@@ -19,16 +19,16 @@ export default function ArticleEyecatch({
   title?: string;
   size?: "large" | "small";
 }) {
-  const bgImage = CATEGORY_IMAGES[categorySlug] || CATEGORY_IMAGES.divorce;
+  const cat = CATEGORY_IMAGES[categorySlug] || CATEGORY_IMAGES.divorce;
 
   if (size === "small") {
     return (
       <div
-        className="relative h-20 w-28 shrink-0 overflow-hidden rounded-l-lg sm:h-24 sm:w-32"
+        className="relative h-28 w-36 shrink-0 overflow-hidden rounded-l-lg sm:h-32 sm:w-44"
         style={{
-          backgroundImage: `url(${bgImage})`,
+          backgroundImage: `url(${cat.src})`,
           backgroundSize: "cover",
-          backgroundPosition: "center",
+          backgroundPosition: cat.position,
         }}
       >
         <div className="absolute inset-0 bg-black/40" />
@@ -45,9 +45,9 @@ export default function ArticleEyecatch({
     <div
       className="relative h-48 overflow-hidden rounded-t-lg sm:h-64"
       style={{
-        backgroundImage: `url(${bgImage})`,
+        backgroundImage: `url(${cat.src})`,
         backgroundSize: "cover",
-        backgroundPosition: "center",
+        backgroundPosition: cat.position,
       }}
     >
       <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-black/20" />
