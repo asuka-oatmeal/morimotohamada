@@ -1,7 +1,14 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { Shippori_Mincho_B1 } from "next/font/google";
 import { CATEGORIES } from "@/lib/categories";
 import "./globals.css";
+
+const logoFont = Shippori_Mincho_B1({
+  weight: "700",
+  subsets: ["latin"],
+  display: "swap",
+});
 
 const SITE_NAME = "法律相談ナビ -やさしい解説-";
 const SITE_DESCRIPTION =
@@ -32,13 +39,17 @@ export default function RootLayout({
         {/* Header */}
         <header className="border-b border-gray-200 bg-white">
           <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 sm:py-4">
-            <Link href="/" className="inline-block">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src="/images/logo.svg"
-                alt="法律相談ナビ やさしい解説"
-                className="h-10 w-auto sm:h-12"
-              />
+            <Link href="/" className="inline-flex items-baseline gap-0.5">
+              <span
+                className={`${logoFont.className} text-[22px] tracking-tight text-[var(--color-primary)] sm:text-[28px]`}
+              >
+                法律相談
+              </span>
+              <span
+                className={`${logoFont.className} text-[22px] tracking-tight text-[var(--color-accent)] sm:text-[28px]`}
+              >
+                ナビ
+              </span>
             </Link>
             <p className="hidden text-xs text-gray-400 sm:block">
               暮らしに身近な法律の基礎知識をわかりやすく解説
