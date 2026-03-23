@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Shippori_Mincho_B1 } from "next/font/google";
+import { Noto_Serif_JP } from "next/font/google";
 import { CATEGORIES } from "@/lib/categories";
 import "./globals.css";
 
-const logoFont = Shippori_Mincho_B1({
-  weight: "700",
+const logoFont = Noto_Serif_JP({
+  weight: "900",
   subsets: ["latin"],
   display: "swap",
 });
