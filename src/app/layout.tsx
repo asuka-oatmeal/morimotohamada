@@ -32,35 +32,13 @@ export default function RootLayout({
         {/* Header */}
         <header className="border-b border-gray-200 bg-white">
           <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 sm:py-4">
-            <Link href="/" className="inline-flex items-center gap-2">
-              <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-[var(--color-primary)] p-1.5 sm:h-10 sm:w-10 sm:p-2">
-                <svg viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg" className="h-full w-full">
-                  <g transform="translate(256,260)">
-                    <rect x="-80" y="120" width="160" height="14" rx="7" fill="#c9a84c"/>
-                    <rect x="-16" y="108" width="32" height="20" rx="4" fill="#c9a84c"/>
-                    <rect x="-7" y="-100" width="14" height="210" rx="7" fill="#c9a84c"/>
-                    <circle cx="0" cy="-110" r="22" fill="#c9a84c"/>
-                    <circle cx="0" cy="-110" r="12" fill="#2c4f7c"/>
-                    <rect x="-148" y="-96" width="296" height="10" rx="5" fill="#c9a84c"/>
-                    <line x1="-140" y1="-86" x2="-140" y2="10" stroke="#c9a84c" strokeWidth="6"/>
-                    <line x1="-105" y1="-86" x2="-105" y2="10" stroke="#c9a84c" strokeWidth="6"/>
-                    <line x1="105" y1="-86" x2="105" y2="10" stroke="#c9a84c" strokeWidth="6"/>
-                    <line x1="140" y1="-86" x2="140" y2="10" stroke="#c9a84c" strokeWidth="6"/>
-                    <path d="M-178,10 C-178,38 -166,56 -122,56 C-78,56 -66,38 -66,10" stroke="#c9a84c" strokeWidth="7" fill="none"/>
-                    <ellipse cx="-122" cy="10" rx="56" ry="6" stroke="#c9a84c" strokeWidth="7" fill="none"/>
-                    <path d="M66,10 C66,38 78,56 122,56 C166,56 178,38 178,10" stroke="#c9a84c" strokeWidth="7" fill="none"/>
-                    <ellipse cx="122" cy="10" rx="56" ry="6" stroke="#c9a84c" strokeWidth="7" fill="none"/>
-                  </g>
-                </svg>
-              </div>
-              <div>
-                <p className="text-base font-bold text-[var(--color-primary)] sm:text-lg">
-                  法律相談ナビ
-                </p>
-                <p className="text-[10px] tracking-wider text-gray-400 sm:text-xs">
-                  やさしい解説
-                </p>
-              </div>
+            <Link href="/" className="inline-block">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/images/logo.svg"
+                alt="法律相談ナビ やさしい解説"
+                className="h-10 w-auto sm:h-12"
+              />
             </Link>
             <p className="hidden text-xs text-gray-400 sm:block">
               暮らしに身近な法律の基礎知識をわかりやすく解説

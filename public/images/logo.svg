@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 80" fill="none">
+  <!-- Icon: Scales of Justice (refined) -->
+  <g transform="translate(40,40)">
+    <!-- Base -->
+    <rect x="-18" y="24" width="36" height="4" rx="2" fill="#c5983a"/>
+    <rect x="-4" y="20" width="8" height="6" rx="1.5" fill="#c5983a"/>
+    <!-- Pillar -->
+    <rect x="-2" y="-22" width="4" height="43" rx="2" fill="#c5983a"/>
+    <!-- Top ornament -->
+    <circle cx="0" cy="-24" r="5" fill="#c5983a"/>
+    <circle cx="0" cy="-24" r="2.8" fill="#2c4f7c"/>
+    <!-- Beam -->
+    <rect x="-30" y="-21" width="60" height="3" rx="1.5" fill="#c5983a"/>
+    <!-- Left chains -->
+    <line x1="-28" y1="-18" x2="-28" y2="2" stroke="#c5983a" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="-21" y1="-18" x2="-21" y2="2" stroke="#c5983a" stroke-width="1.5" stroke-linecap="round"/>
+    <!-- Right chains -->
+    <line x1="21" y1="-18" x2="21" y2="2" stroke="#c5983a" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="28" y1="-18" x2="28" y2="2" stroke="#c5983a" stroke-width="1.5" stroke-linecap="round"/>
+    <!-- Left dish -->
+    <path d="M-36,2 C-36,10 -32,14 -24.5,14 C-17,14 -13,10 -13,2" stroke="#c5983a" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+    <ellipse cx="-24.5" cy="2" rx="11.5" ry="1.8" stroke="#c5983a" stroke-width="1.8" fill="none"/>
+    <!-- Right dish -->
+    <path d="M13,2 C13,10 17,14 24.5,14 C32,14 36,10 36,2" stroke="#c5983a" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+    <ellipse cx="24.5" cy="2" rx="11.5" ry="1.8" stroke="#c5983a" stroke-width="1.8" fill="none"/>
+  </g>
+
+  <!-- Divider line -->
+  <line x1="78" y1="16" x2="78" y2="64" stroke="#c5983a" stroke-width="1.5" opacity="0.4"/>
+
+  <!-- Text: 法律相談ナビ -->
+  <text x="90" y="42" font-family="'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', sans-serif" font-size="28" font-weight="700" fill="#2c4f7c" letter-spacing="1">法律相談ナビ</text>
+
+  <!-- Subtitle: やさしい解説 -->
+  <text x="91" y="62" font-family="'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', sans-serif" font-size="11" fill="#8a9ab0" letter-spacing="3">やさしい解説</text>
+
+  <!-- Gold accent underline -->
+  <rect x="90" y="47" width="50" height="2" rx="1" fill="#c5983a" opacity="0.6"/>
+</svg>
