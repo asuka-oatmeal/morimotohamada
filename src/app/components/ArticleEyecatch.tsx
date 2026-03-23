@@ -1,63 +1,65 @@
-const CATEGORY_COLORS: Record<string, { bg: string; accent: string }> = {
-  divorce: { bg: "#2c4f7c", accent: "#c5983a" },
-  inheritance: { bg: "#3a6b4a", accent: "#c5983a" },
-  "traffic-accident": { bg: "#7c3a2c", accent: "#d4a84a" },
-  labor: { bg: "#4a3a6b", accent: "#c5983a" },
-  debt: { bg: "#2c6b7c", accent: "#c5983a" },
-  "real-estate": { bg: "#5a6b3a", accent: "#c5983a" },
-  criminal: { bg: "#5a3a3a", accent: "#c5983a" },
-};
-
-const CATEGORY_ICONS: Record<string, string> = {
-  divorce: "👨‍👩‍👧",
-  inheritance: "📜",
-  "traffic-accident": "🚗",
-  labor: "💼",
-  debt: "💳",
-  "real-estate": "🏠",
-  criminal: "⚖️",
+const CATEGORY_IMAGES: Record<string, string> = {
+  divorce: "/images/articles/bg-divorce.jpg",
+  inheritance: "/images/articles/bg-inheritance.jpg",
+  "traffic-accident": "/images/articles/bg-traffic.jpg",
+  labor: "/images/articles/bg-labor.jpg",
+  debt: "/images/articles/bg-debt.jpg",
+  "real-estate": "/images/articles/bg-realestate.jpg",
+  criminal: "/images/articles/bg-criminal.jpg",
 };
 
 export default function ArticleEyecatch({
   categorySlug,
   categoryLabel,
+  title,
   size = "large",
 }: {
   categorySlug: string;
   categoryLabel: string;
+  title?: string;
   size?: "large" | "small";
 }) {
-  const colors = CATEGORY_COLORS[categorySlug] || CATEGORY_COLORS.divorce;
-  const icon = CATEGORY_ICONS[categorySlug] || "⚖️";
+  const bgImage = CATEGORY_IMAGES[categorySlug] || CATEGORY_IMAGES.divorce;
 
   if (size === "small") {
     return (
       <div
-        className="flex h-20 w-28 shrink-0 items-center justify-center rounded-lg sm:h-24 sm:w-32"
+        className="relative h-20 w-28 shrink-0 overflow-hidden rounded-l-lg sm:h-24 sm:w-32"
         style={{
-          background: `linear-gradient(135deg, ${colors.bg}, ${colors.bg}cc)`,
+          backgroundImage: `url(${bgImage})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
         }}
       >
-        <span className="text-2xl sm:text-3xl">{icon}</span>
+        <div className="absolute inset-0 bg-black/40" />
+        <div className="relative flex h-full items-center justify-center">
+          <span className="rounded-full bg-white/20 px-2 py-0.5 text-[10px] font-bold text-white backdrop-blur-sm sm:text-xs">
+            {categoryLabel}
+          </span>
+        </div>
       </div>
     );
   }
 
   return (
     <div
-      className="flex h-40 items-center justify-center rounded-t-lg sm:h-52"
+      className="relative h-48 overflow-hidden rounded-t-lg sm:h-64"
       style={{
-        background: `linear-gradient(135deg, ${colors.bg}, ${colors.bg}cc)`,
+        backgroundImage: `url(${bgImage})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
       }}
     >
-      <div className="flex flex-col items-center gap-2">
-        <span className="text-4xl sm:text-5xl">{icon}</span>
-        <span
-          className="rounded-full px-3 py-0.5 text-xs font-bold text-white sm:text-sm"
-          style={{ background: colors.accent }}
-        >
+      <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-black/20" />
+      <div className="relative flex h-full flex-col justify-end p-5 sm:p-8">
+        <span className="mb-2 w-fit rounded-full bg-[var(--color-accent)] px-3 py-0.5 text-[11px] font-bold text-white sm:text-xs">
           {categoryLabel}
         </span>
+        {title && (
+          <h2 className="text-lg font-bold leading-snug text-white drop-shadow-md sm:text-2xl lg:text-3xl">
+            {title}
+          </h2>
+        )}
       </div>
     </div>
   );

@@ -58,6 +58,7 @@ export default async function ArticlePage({
             <ArticleEyecatch
               categorySlug={categoryInfo.slug}
               categoryLabel={article.category}
+              title={article.title}
               size="large"
             />
           )}
