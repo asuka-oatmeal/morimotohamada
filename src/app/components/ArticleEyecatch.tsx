@@ -24,7 +24,7 @@ export default function ArticleEyecatch({
   if (size === "small") {
     return (
       <div
-        className="relative h-28 w-36 shrink-0 overflow-hidden rounded-l-lg sm:h-32 sm:w-44"
+        className="relative w-32 shrink-0 self-stretch overflow-hidden rounded-l-lg sm:w-40"
         style={{
           backgroundImage: `url(${cat.src})`,
           backgroundSize: "cover",
