@@ -29,7 +29,7 @@ export default async function OGImage({
   if (!article) {
     return new ImageResponse(
       <div style={{ width: "100%", height: "100%", background: "#2c4f7c", display: "flex", alignItems: "center", justifyContent: "center", color: "white", fontSize: 48 }}>
-        法律相談ナビ
+        暮らしの法律ガイド
       </div>,
       { ...size }
     );
@@ -143,7 +143,7 @@ export default async function OGImage({
               ⚖
             </div>
             <div style={{ color: "#ffffffcc", fontSize: "24px", fontWeight: 700, display: "flex" }}>
-              法律相談ナビ
+              暮らしの法律ガイド
             </div>
             <div style={{ color: "#ffffff66", fontSize: "18px", display: "flex", marginLeft: "4px" }}>
               やさしい解説

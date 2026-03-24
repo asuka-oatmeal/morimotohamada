@@ -28,8 +28,8 @@
   <!-- Divider line -->
   <line x1="78" y1="16" x2="78" y2="64" stroke="#c5983a" stroke-width="1.5" opacity="0.4"/>
 
-  <!-- Text: 法律相談ナビ -->
-  <text x="90" y="42" font-family="'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', sans-serif" font-size="28" font-weight="700" fill="#2c4f7c" letter-spacing="1">法律相談ナビ</text>
+  <!-- Text: 暮らしの法律ガイド -->
+  <text x="90" y="42" font-family="'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', sans-serif" font-size="28" font-weight="700" fill="#2c4f7c" letter-spacing="1">暮らしの法律ガイド</text>
 
   <!-- Subtitle: やさしい解説 -->
   <text x="91" y="62" font-family="'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', sans-serif" font-size="11" fill="#8a9ab0" letter-spacing="3">やさしい解説</text>
