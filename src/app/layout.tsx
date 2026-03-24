@@ -37,8 +37,8 @@ export default function RootLayout({
     <html lang="ja">
       <body className="antialiased">
         {/* Header */}
-        <header className="border-b border-gray-200 bg-white">
-          <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 sm:py-4">
+        <header className="border-b border-[var(--color-sub)] bg-[var(--color-background)]">
+          <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 sm:py-5">
             <Link href="/" className="inline-flex items-baseline gap-0.5">
               <span
                 className={`${logoFont.className} text-[20px] tracking-tight text-[var(--color-primary)] sm:text-[26px]`}
@@ -51,19 +51,19 @@ export default function RootLayout({
                 法律ガイド
               </span>
             </Link>
-            <p className="hidden text-xs text-gray-400 sm:block">
+            <p className="hidden text-xs text-[var(--color-meta)] sm:block">
               暮らしに身近な法律の基礎知識をわかりやすく解説
             </p>
           </div>
 
           {/* Category Navigation */}
-          <nav className="bg-[var(--color-primary)]">
+          <nav className="border-t border-[var(--color-sub)] bg-white">
             <div className="mx-auto max-w-6xl overflow-x-auto px-2 sm:px-4">
               <ul className="flex items-center gap-0 py-0 text-xs sm:text-sm">
                 <li className="shrink-0">
                   <Link
                     href="/"
-                    className="inline-block border-r border-white/10 px-3 py-2.5 text-white/90 transition hover:bg-white/10 hover:text-white sm:px-4 sm:py-3"
+                    className="inline-block px-3 py-2.5 text-[var(--color-primary)] transition hover:bg-[var(--color-accent-bg)] hover:text-[var(--color-accent)] sm:px-4 sm:py-3"
                   >
                     ホーム
                   </Link>
@@ -72,7 +72,7 @@ export default function RootLayout({
                   <li key={cat.slug} className="shrink-0">
                     <Link
                       href={`/category/${cat.slug}`}
-                      className="inline-block border-r border-white/10 px-3 py-2.5 text-white/90 transition hover:bg-white/10 hover:text-white sm:px-4 sm:py-3"
+                      className="inline-block px-3 py-2.5 text-[var(--color-primary)] transition hover:bg-[var(--color-accent-bg)] hover:text-[var(--color-accent)] sm:px-4 sm:py-3"
                     >
                       {cat.label}
                     </Link>
@@ -89,18 +89,17 @@ export default function RootLayout({
         </main>
 
         {/* Footer */}
-        <footer className="border-t border-gray-300 bg-[var(--color-primary)] text-white/70">
+        <footer className="border-t border-[var(--color-sub)] bg-[var(--color-primary)]">
           <div className="mx-auto max-w-6xl px-4 py-8 sm:py-10">
-            {/* Footer nav */}
             <div className="grid grid-cols-2 gap-6 text-xs sm:grid-cols-4 sm:text-sm">
               <div>
-                <p className="mb-2 font-bold text-white/90">カテゴリ</p>
-                <ul className="space-y-1.5">
+                <p className="mb-2 font-bold text-[var(--color-accent-bg)]">カテゴリ</p>
+                <ul className="space-y-1.5 text-white/60">
                   {CATEGORIES.slice(0, 4).map((cat) => (
                     <li key={cat.slug}>
                       <Link
                         href={`/category/${cat.slug}`}
-                        className="transition hover:text-white"
+                        className="transition hover:text-white/90"
                       >
                         {cat.label}
                       </Link>
@@ -109,13 +108,13 @@ export default function RootLayout({
                 </ul>
               </div>
               <div>
-                <p className="mb-2 font-bold text-white/90">&nbsp;</p>
-                <ul className="space-y-1.5">
+                <p className="mb-2 font-bold text-[var(--color-accent-bg)]">&nbsp;</p>
+                <ul className="space-y-1.5 text-white/60">
                   {CATEGORIES.slice(4).map((cat) => (
                     <li key={cat.slug}>
                       <Link
                         href={`/category/${cat.slug}`}
-                        className="transition hover:text-white"
+                        className="transition hover:text-white/90"
                       >
                         {cat.label}
                       </Link>
@@ -124,16 +123,16 @@ export default function RootLayout({
                 </ul>
               </div>
               <div className="col-span-2 sm:col-span-2">
-                <p className="mb-2 font-bold text-white/90">
+                <p className="mb-2 font-bold text-[var(--color-accent-bg)]">
                   暮らしの法律ガイドについて
                 </p>
-                <p className="text-[11px] leading-relaxed text-white/50 sm:text-xs">
+                <p className="text-[11px] leading-relaxed text-white/40 sm:text-xs">
                   本サイトは法律に関する一般的な情報提供を目的としており、個別の法的助言を行うものではありません。具体的な問題については、弁護士等の専門家にご相談ください。
                 </p>
               </div>
             </div>
 
-            <div className="mt-6 border-t border-white/10 pt-4 text-center text-[11px] text-white/40 sm:text-xs">
+            <div className="mt-6 border-t border-white/10 pt-4 text-center text-[11px] text-white/30 sm:text-xs">
               &copy; {new Date().getFullYear()} 暮らしの法律ガイド All rights
               reserved.
             </div>

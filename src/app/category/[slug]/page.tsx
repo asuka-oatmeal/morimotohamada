@@ -44,12 +44,12 @@ export default async function CategoryPage({
       {/* Main Content */}
       <div className="min-w-0 flex-1">
         {/* Breadcrumb */}
-        <nav className="mb-4 text-xs text-gray-400 sm:mb-6 sm:text-sm">
-          <Link href="/" className="hover:text-gray-600">
+        <nav className="mb-4 text-xs text-[var(--color-meta)] sm:mb-6 sm:text-sm">
+          <Link href="/" className="hover:text-[var(--color-foreground)]">
             ホーム
           </Link>
           <span className="mx-1.5">&gt;</span>
-          <span className="text-gray-600">{category.label}</span>
+          <span className="text-[var(--color-foreground)]">{category.label}</span>
         </nav>
 
         <div className="mb-6 rounded-lg bg-white p-4 shadow-sm sm:p-6">
@@ -57,13 +57,13 @@ export default async function CategoryPage({
             <span className="inline-block h-6 w-1 rounded bg-[var(--color-primary)]" />
             {category.label}の記事一覧
           </h1>
-          <p className="mt-2 text-xs text-gray-500 sm:text-sm">
+          <p className="mt-2 text-xs text-[var(--color-meta)] sm:text-sm">
             {category.label}に関する法律の基礎知識をわかりやすく解説した記事の一覧です。
           </p>
         </div>
 
         {articles.length === 0 ? (
-          <p className="text-gray-500">この分野の記事はまだありません。</p>
+          <p className="text-[var(--color-meta)]">この分野の記事はまだありません。</p>
         ) : (
           <div className="space-y-4">
             {articles.map((article) => {
@@ -71,7 +71,7 @@ export default async function CategoryPage({
               return (
                 <article
                   key={article.slug}
-                  className="group overflow-hidden rounded-lg border border-gray-200 bg-white transition hover:shadow-md"
+                  className="group overflow-hidden rounded-lg border border-[var(--color-sub)] bg-white transition hover:shadow-md"
                 >
                   <div className="flex">
                     <ArticleEyecatch
@@ -84,16 +84,16 @@ export default async function CategoryPage({
                         <span className="rounded bg-[var(--color-primary)]/10 px-2 py-0.5 text-[11px] font-medium text-[var(--color-primary)] sm:text-xs">
                           {article.category}
                         </span>
-                        <time className="text-[11px] text-gray-400 sm:text-xs">
+                        <time className="text-[11px] text-[var(--color-meta)] sm:text-xs">
                           {article.date}
                         </time>
                       </div>
                       <Link href={`/blog/${article.slug}`}>
-                        <h4 className="text-sm font-bold leading-relaxed text-gray-800 transition group-hover:text-[var(--color-primary)] sm:text-base">
+                        <h4 className="text-sm font-bold leading-relaxed text-[var(--color-foreground)] transition group-hover:text-[var(--color-primary)] sm:text-base">
                           {article.title}
                         </h4>
                       </Link>
-                      <p className="mt-1 text-xs leading-relaxed text-gray-500 line-clamp-2 sm:mt-1.5 sm:text-sm">
+                      <p className="mt-1 text-xs leading-relaxed text-[var(--color-meta)] line-clamp-2 sm:mt-1.5 sm:text-sm">
                         {article.description}
                       </p>
                     </div>
@@ -121,14 +121,14 @@ export default async function CategoryPage({
                 <li key={cat.slug}>
                   <Link
                     href={`/category/${cat.slug}`}
-                    className={`flex items-center justify-between border-b border-gray-100 py-2 text-sm transition hover:text-[var(--color-primary)] ${
+                    className={`flex items-center justify-between border-b border-[var(--color-sub)]/50 py-2 text-sm transition hover:text-[var(--color-primary)] ${
                       cat.slug === slug
                         ? "font-bold text-[var(--color-primary)]"
-                        : "text-gray-700"
+                        : "text-[var(--color-foreground)]"
                     }`}
                   >
                     <span>{cat.label}</span>
-                    <span className="text-gray-300">&rsaquo;</span>
+                    <span className="text-[var(--color-sub)]">&rsaquo;</span>
                   </Link>
                 </li>
               ))}
@@ -145,7 +145,7 @@ export default async function CategoryPage({
                   <li key={a.slug}>
                     <Link
                       href={`/blog/${a.slug}`}
-                      className="flex gap-2 border-b border-gray-100 py-2.5 text-sm text-gray-700 transition hover:text-[var(--color-primary)]"
+                      className="flex gap-2 border-b border-[var(--color-sub)]/50 py-2.5 text-sm text-[var(--color-foreground)] transition hover:text-[var(--color-primary)]"
                     >
                       <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded bg-[var(--color-primary)] text-[10px] font-bold text-white">
                         {i + 1}

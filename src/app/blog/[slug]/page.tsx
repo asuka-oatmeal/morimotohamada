@@ -65,7 +65,7 @@ export default async function ArticlePage({
 
           {/* Category header bar */}
           <div className="bg-[var(--color-primary)] px-4 py-2.5 sm:px-6 sm:py-3">
-            <nav className="text-xs text-white/70 sm:text-sm">
+            <nav className="text-xs text-[var(--color-accent-bg)]/70 sm:text-sm">
               <Link href="/" className="hover:text-white">
                 ホーム
               </Link>
@@ -81,7 +81,7 @@ export default async function ArticlePage({
                 <span>{article.category}</span>
               )}
               <span className="mx-1.5">&gt;</span>
-              <span className="text-white/90">この記事</span>
+              <span className="text-[var(--color-accent-bg)]">この記事</span>
             </nav>
           </div>
 
@@ -94,21 +94,21 @@ export default async function ArticlePage({
               >
                 {article.category}
               </Link>
-              <time className="text-xs text-gray-400 sm:text-sm">
+              <time className="text-xs text-[var(--color-meta)] sm:text-sm">
                 {article.date}
               </time>
             </div>
 
             {/* Title */}
             <h1
-              className="mb-4 text-xl font-bold leading-snug text-gray-900 sm:mb-6 sm:text-2xl lg:text-3xl"
+              className="mb-4 text-xl font-bold leading-snug text-[var(--color-foreground)] sm:mb-6 sm:text-2xl lg:text-3xl"
 
             >
               {article.title}
             </h1>
 
             {/* Divider */}
-            <div className="mb-4 h-px bg-gray-200 sm:mb-6" />
+            <div className="mb-4 h-px bg-[var(--color-sub)] sm:mb-6" />
 
             {/* TOC */}
             <TableOfContents />
@@ -120,11 +120,11 @@ export default async function ArticlePage({
             />
 
             {/* CTA inline */}
-            <div className="mt-8 rounded-lg border-2 border-[var(--color-cta)]/30 bg-orange-50 p-4 text-center sm:mt-10 sm:p-6">
-              <p className="text-sm font-bold text-gray-800 sm:text-base">
+            <div className="mt-8 rounded-lg border-2 border-[var(--color-accent)]/30 bg-[var(--color-accent-bg)]/50 p-4 text-center sm:mt-10 sm:p-6">
+              <p className="text-sm font-bold text-[var(--color-foreground)] sm:text-base">
                 この記事の内容でお困りの方へ
               </p>
-              <p className="mt-1 text-xs text-gray-500 sm:text-sm">
+              <p className="mt-1 text-xs text-[var(--color-meta)] sm:text-sm">
                 弁護士への無料相談で、あなたのケースに合った解決策が見つかります。
               </p>
               <span className="cta-button mt-3 inline-block">
@@ -164,7 +164,7 @@ export default async function ArticlePage({
                   <li key={a.slug}>
                     <Link
                       href={`/blog/${a.slug}`}
-                      className="block border-b border-gray-100 py-2.5 text-xs leading-relaxed text-gray-700 transition hover:text-[var(--color-primary)] sm:text-sm"
+                      className="block border-b border-[var(--color-sub)]/50 py-2.5 text-xs leading-relaxed text-[var(--color-foreground)] transition hover:text-[var(--color-primary)] sm:text-sm"
                     >
                       {a.title}
                     </Link>
@@ -184,10 +184,10 @@ export default async function ArticlePage({
                 <li key={cat.slug}>
                   <Link
                     href={`/category/${cat.slug}`}
-                    className="flex items-center justify-between border-b border-gray-100 py-2 text-sm text-gray-700 transition hover:text-[var(--color-primary)]"
+                    className="flex items-center justify-between border-b border-[var(--color-sub)]/50 py-2 text-sm text-[var(--color-foreground)] transition hover:text-[var(--color-primary)]"
                   >
                     <span>{cat.label}</span>
-                    <span className="text-gray-300">&rsaquo;</span>
+                    <span className="text-[var(--color-sub)]">&rsaquo;</span>
                   </Link>
                 </li>
               ))}

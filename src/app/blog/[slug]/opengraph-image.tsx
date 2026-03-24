@@ -10,13 +10,13 @@ export function generateStaticParams() {
 }
 
 const CATEGORY_COLORS: Record<string, { bg: string; accent: string }> = {
-  divorce: { bg: "#2c4f7c", accent: "#c5983a" },
-  inheritance: { bg: "#3a6b4a", accent: "#c5983a" },
-  "traffic-accident": { bg: "#7c3a2c", accent: "#d4a84a" },
-  labor: { bg: "#4a3a6b", accent: "#c5983a" },
-  debt: { bg: "#2c6b7c", accent: "#c5983a" },
-  "real-estate": { bg: "#5a6b3a", accent: "#c5983a" },
-  criminal: { bg: "#5a3a3a", accent: "#c5983a" },
+  divorce: { bg: "#5c4a3a", accent: "#c0764a" },
+  inheritance: { bg: "#4a5c3a", accent: "#c0764a" },
+  "traffic-accident": { bg: "#5c3a3a", accent: "#c0764a" },
+  labor: { bg: "#3a4a5c", accent: "#c0764a" },
+  debt: { bg: "#3a5c5c", accent: "#c0764a" },
+  "real-estate": { bg: "#4a5c4a", accent: "#c0764a" },
+  criminal: { bg: "#4a3a3a", accent: "#c0764a" },
 };
 
 export default async function OGImage({
@@ -28,7 +28,7 @@ export default async function OGImage({
   const article = await getArticleBySlug(slug);
   if (!article) {
     return new ImageResponse(
-      <div style={{ width: "100%", height: "100%", background: "#2c4f7c", display: "flex", alignItems: "center", justifyContent: "center", color: "white", fontSize: 48 }}>
+      <div style={{ width: "100%", height: "100%", background: "#5c4a3a", display: "flex", alignItems: "center", justifyContent: "center", color: "white", fontSize: 48 }}>
         暮らしの法律ガイド
       </div>,
       { ...size }
@@ -142,10 +142,10 @@ export default async function OGImage({
             >
               ⚖
             </div>
-            <div style={{ color: "#ffffffcc", fontSize: "24px", fontWeight: 700, display: "flex" }}>
+            <div style={{ color: "#e8e0d4", fontSize: "24px", fontWeight: 700, display: "flex" }}>
               暮らしの法律ガイド
             </div>
-            <div style={{ color: "#ffffff66", fontSize: "18px", display: "flex", marginLeft: "4px" }}>
+            <div style={{ color: "#d9cfbf88", fontSize: "18px", display: "flex", marginLeft: "4px" }}>
               やさしい解説
             </div>
           </div>

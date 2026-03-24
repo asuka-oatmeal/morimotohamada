@@ -20,7 +20,7 @@ export default function Home() {
             <br className="sm:hidden" />
             わかりやすく解説
           </h2>
-          <p className="mt-2 text-sm leading-relaxed text-gray-500 sm:mt-3 sm:text-base">
+          <p className="mt-2 text-sm leading-relaxed text-[var(--color-meta)] sm:mt-3 sm:text-base">
             離婚・相続・交通事故・労働問題など、日常生活で直面しうる法律の疑問について、専門的な内容を一般の方にもわかりやすく解説しています。
           </p>
           {/* Category chips */}
@@ -44,7 +44,7 @@ export default function Home() {
             新着記事
           </h3>
           {articles.length === 0 ? (
-            <p className="text-gray-500">記事はまだありません。</p>
+            <p className="text-[var(--color-meta)]">記事はまだありません。</p>
           ) : (
             <div className="space-y-4">
               {articles.map((article) => {
@@ -52,7 +52,7 @@ export default function Home() {
                 return (
                   <article
                     key={article.slug}
-                    className="group overflow-hidden rounded-lg border border-gray-200 bg-white transition hover:shadow-md"
+                    className="group overflow-hidden rounded-lg border border-[var(--color-sub)] bg-white transition hover:shadow-md"
                   >
                     <div className="flex">
                       {/* Thumbnail */}
@@ -69,16 +69,16 @@ export default function Home() {
                           >
                             {article.category}
                           </Link>
-                          <time className="text-[11px] text-gray-400 sm:text-xs">
+                          <time className="text-[11px] text-[var(--color-meta)] sm:text-xs">
                             {article.date}
                           </time>
                         </div>
                         <Link href={`/blog/${article.slug}`}>
-                          <h4 className="text-sm font-bold leading-relaxed text-gray-800 transition group-hover:text-[var(--color-primary)] sm:text-base">
+                          <h4 className="text-sm font-bold leading-relaxed text-[var(--color-foreground)] transition group-hover:text-[var(--color-primary)] sm:text-base">
                             {article.title}
                           </h4>
                         </Link>
-                        <p className="mt-1 text-xs leading-relaxed text-gray-500 line-clamp-2 sm:mt-1.5 sm:text-sm">
+                        <p className="mt-1 text-xs leading-relaxed text-[var(--color-meta)] line-clamp-2 sm:mt-1.5 sm:text-sm">
                           {article.description}
                         </p>
                       </div>
@@ -111,10 +111,10 @@ export default function Home() {
                 <li key={cat.slug}>
                   <Link
                     href={`/category/${cat.slug}`}
-                    className="flex items-center justify-between border-b border-gray-100 py-2 text-sm text-gray-700 transition hover:text-[var(--color-primary)]"
+                    className="flex items-center justify-between border-b border-[var(--color-sub)]/50 py-2 text-sm text-[var(--color-foreground)] transition hover:text-[var(--color-primary)]"
                   >
                     <span>{cat.label}</span>
-                    <span className="text-gray-300">&rsaquo;</span>
+                    <span className="text-[var(--color-sub)]">&rsaquo;</span>
                   </Link>
                 </li>
               ))}
@@ -132,7 +132,7 @@ export default function Home() {
                   <li key={article.slug}>
                     <Link
                       href={`/blog/${article.slug}`}
-                      className="flex gap-2 border-b border-gray-100 py-2.5 text-sm text-gray-700 transition hover:text-[var(--color-primary)]"
+                      className="flex gap-2 border-b border-[var(--color-sub)]/50 py-2.5 text-sm text-[var(--color-foreground)] transition hover:text-[var(--color-primary)]"
                     >
                       <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded bg-[var(--color-primary)] text-[10px] font-bold text-white">
                         {i + 1}
