@@ -1,27 +1,13 @@
-import { NextRequest, NextResponse } from "next/server";
+import { NextResponse } from "next/server";
 
-export function middleware(request: NextRequest) {
-  const authHeader = request.headers.get("authorization");
-
-  if (authHeader) {
-    const [, encoded] = authHeader.split(" ");
-    const decoded = atob(encoded);
-    const [user, pass] = decoded.split(":");
-
-    if (
-      user === process.env.ADMIN_USER &&
-      pass === process.env.ADMIN_PASS
-    ) {
-      return NextResponse.next();
-    }
+export function middleware() {
+  // 本番環境では /admin を完全ブロック（404を返す）
+  if (process.env.NODE_ENV === "production") {
+    return new NextResponse(null, { status: 404 });
   }
 
-  return new NextResponse("Unauthorized", {
-    status: 401,
-    headers: {
-      "WWW-Authenticate": 'Basic realm="Admin"',
-    },
-  });
+  // ローカル開発環境ではそのまま通す
+  return NextResponse.next();
 }
 
 export const config = {
