@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Noto_Serif_JP } from "next/font/google";
+import { Zen_Maru_Gothic } from "next/font/google";
 import { CATEGORIES } from "@/lib/categories";
 import "./globals.css";
 
-const logoFont = Noto_Serif_JP({
-  weight: "900",
+const logoFont = Zen_Maru_Gothic({
+  weight: ["400", "700", "900"],
   subsets: ["latin"],
   display: "swap",
 });
@@ -39,16 +39,15 @@ export default function RootLayout({
         {/* Header */}
         <header className="border-b border-[var(--color-sub)] bg-[var(--color-background)]">
           <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 sm:py-5">
-            <Link href="/" className="inline-flex items-baseline gap-0.5">
-              <span
-                className={`${logoFont.className} text-[20px] tracking-tight text-[var(--color-primary)] sm:text-[26px]`}
-              >
-                暮らしの
+            <Link href="/" className={`${logoFont.className} inline-flex items-baseline`}>
+              <span className="text-[16px] font-normal tracking-wide text-[var(--color-foreground)] sm:text-[20px]">
+                くらしの
               </span>
-              <span
-                className={`${logoFont.className} text-[20px] tracking-tight text-[var(--color-accent)] sm:text-[26px]`}
-              >
-                法律ガイド
+              <span className="text-[26px] font-black tracking-tight text-[var(--color-foreground)] sm:text-[34px]">
+                法律
+              </span>
+              <span className="text-[16px] font-bold tracking-wide text-[var(--color-foreground)] sm:text-[20px]">
+                ガイド
               </span>
             </Link>
             <p className="hidden text-xs text-[var(--color-meta)] sm:block">
