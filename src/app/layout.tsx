@@ -40,13 +40,13 @@ export default function RootLayout({
         <header className="border-b border-[var(--color-sub)] bg-[var(--color-background)]">
           <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 sm:py-5">
             <Link href="/" className={`${logoFont.className} inline-flex items-baseline`}>
-              <span className="text-[16px] font-normal tracking-wide text-[var(--color-foreground)] sm:text-[20px]">
+              <span className="text-[16px] font-medium text-[var(--color-foreground)] sm:text-[20px]">
                 くらしの
               </span>
               <span className="text-[26px] font-black tracking-tight text-[var(--color-foreground)] sm:text-[34px]">
                 法律
               </span>
-              <span className="text-[16px] font-bold tracking-wide text-[var(--color-foreground)] sm:text-[20px]">
+              <span className="text-[16px] font-medium text-[var(--color-foreground)] sm:text-[20px]">
                 ガイド
               </span>
             </Link>
