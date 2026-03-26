@@ -74,6 +74,10 @@ body {
   color: var(--color-foreground);
 }
 
+.prose hr {
+  display: none;
+}
+
 .prose blockquote {
   border-left-color: var(--color-sub);
   color: var(--color-meta);
