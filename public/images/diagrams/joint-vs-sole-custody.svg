@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" font-family="'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', sans-serif">
+  <defs>
+    <filter id="shadow" x="-4%" y="-4%" width="108%" height="108%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#3a3530" flood-opacity="0.08"/>
+    </filter>
+    <linearGradient id="headerLeft" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#5c4a3a"/>
+      <stop offset="100%" style="stop-color:#6b5344"/>
+    </linearGradient>
+    <linearGradient id="headerRight" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#c0764a"/>
+      <stop offset="100%" style="stop-color:#b86b3e"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Title -->
+  <text x="400" y="30" text-anchor="middle" fill="#3a3530" font-size="18" font-weight="700">単独親権 と 共同親権 の比較</text>
+
+  <!-- Left column: 単独親権 -->
+  <rect x="30" y="50" width="360" height="340" rx="12" fill="#faf8f5" stroke="#d9cfbf" stroke-width="1.5" filter="url(#shadow)"/>
+  <rect x="30" y="50" width="360" height="44" rx="12" fill="url(#headerLeft)"/>
+  <rect x="30" y="82" width="360" height="12" fill="url(#headerLeft)"/>
+  <text x="210" y="78" text-anchor="middle" fill="#faf8f5" font-size="16" font-weight="700">単独親権（現行制度）</text>
+
+  <text x="55" y="122" fill="#5c4a3a" font-size="13" font-weight="700">● 親権者</text>
+  <text x="75" y="142" fill="#3a3530" font-size="13">父母のいずれか一方のみ</text>
+
+  <line x1="55" y1="155" x2="365" y2="155" stroke="#e8e0d4" stroke-width="1"/>
+
+  <text x="55" y="175" fill="#5c4a3a" font-size="13" font-weight="700">● 重要な決定</text>
+  <text x="75" y="195" fill="#3a3530" font-size="13">親権者が単独で決定</text>
+
+  <line x1="55" y1="208" x2="365" y2="208" stroke="#e8e0d4" stroke-width="1"/>
+
+  <text x="55" y="228" fill="#5c4a3a" font-size="13" font-weight="700">● 日常の行為</text>
+  <text x="75" y="248" fill="#3a3530" font-size="13">親権者が決定</text>
+
+  <line x1="55" y1="261" x2="365" y2="261" stroke="#e8e0d4" stroke-width="1"/>
+
+  <text x="55" y="281" fill="#5c4a3a" font-size="13" font-weight="700">● メリット</text>
+  <text x="75" y="301" fill="#3a3530" font-size="13">迅速な意思決定が可能</text>
+
+  <line x1="55" y1="314" x2="365" y2="314" stroke="#e8e0d4" stroke-width="1"/>
+
+  <text x="55" y="334" fill="#5c4a3a" font-size="13" font-weight="700">● デメリット</text>
+  <text x="75" y="354" fill="#3a3530" font-size="13">片方の親との関係が希薄化</text>
+  <text x="75" y="374" fill="#3a3530" font-size="13">養育費不払いが起きやすい</text>
+
+  <!-- Right column: 共同親権 -->
+  <rect x="410" y="50" width="360" height="340" rx="12" fill="#faf8f5" stroke="#c0764a" stroke-width="1.5" filter="url(#shadow)"/>
+  <rect x="410" y="50" width="360" height="44" rx="12" fill="url(#headerRight)"/>
+  <rect x="410" y="82" width="360" height="12" fill="url(#headerRight)"/>
+  <text x="590" y="78" text-anchor="middle" fill="#faf8f5" font-size="16" font-weight="700">共同親権（2026年4月〜）</text>
+
+  <text x="435" y="122" fill="#c0764a" font-size="13" font-weight="700">● 親権者</text>
+  <text x="455" y="142" fill="#3a3530" font-size="13">父母の双方（選択制）</text>
+
+  <line x1="435" y1="155" x2="745" y2="155" stroke="#e8e0d4" stroke-width="1"/>
+
+  <text x="435" y="175" fill="#c0764a" font-size="13" font-weight="700">● 重要な決定</text>
+  <text x="455" y="195" fill="#3a3530" font-size="13">父母が共同で決定</text>
+
+  <line x1="435" y1="208" x2="745" y2="208" stroke="#e8e0d4" stroke-width="1"/>
+
+  <text x="435" y="228" fill="#c0764a" font-size="13" font-weight="700">● 日常の行為</text>
+  <text x="455" y="248" fill="#3a3530" font-size="13">各親権者が単独で決定可能</text>
+
+  <line x1="435" y1="261" x2="745" y2="261" stroke="#e8e0d4" stroke-width="1"/>
+
+  <text x="435" y="281" fill="#c0764a" font-size="13" font-weight="700">● メリット</text>
+  <text x="455" y="301" fill="#3a3530" font-size="13">両親との関係維持</text>
+  <text x="455" y="319" fill="#3a3530" font-size="13">養育費の支払い促進</text>
+
+  <line x1="435" y1="332" x2="745" y2="332" stroke="#e8e0d4" stroke-width="1"/>
+
+  <text x="435" y="352" fill="#c0764a" font-size="13" font-weight="700">● デメリット</text>
+  <text x="455" y="372" fill="#3a3530" font-size="13">意思決定に時間がかかる場合あり</text>
+
+  <!-- VS badge -->
+  <circle cx="400" cy="220" r="22" fill="#5c4a3a" stroke="#faf8f5" stroke-width="3"/>
+  <text x="400" y="226" text-anchor="middle" fill="#faf8f5" font-size="14" font-weight="700">VS</text>
+</svg>

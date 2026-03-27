@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" font-family="'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', sans-serif">
+  <defs>
+    <filter id="shadow" x="-4%" y="-4%" width="108%" height="108%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#3a3530" flood-opacity="0.08"/>
+    </filter>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#5c4a3a"/>
+      <stop offset="100%" style="stop-color:#6b5344"/>
+    </linearGradient>
+    <linearGradient id="arrowGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#c0764a"/>
+      <stop offset="100%" style="stop-color:#b86b3e"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Title -->
+  <rect x="200" y="10" width="400" height="44" rx="22" fill="url(#headerGrad)"/>
+  <text x="400" y="38" text-anchor="middle" fill="#faf8f5" font-size="17" font-weight="700">債権回収の流れ — 6つのステップ</text>
+
+  <!-- Step 1 -->
+  <rect x="250" y="74" width="300" height="50" rx="10" fill="#faf8f5" stroke="#d9cfbf" stroke-width="1.5" filter="url(#shadow)"/>
+  <circle cx="290" cy="99" r="14" fill="#c0764a"/>
+  <text x="290" y="104" text-anchor="middle" fill="#fff" font-size="13" font-weight="700">1</text>
+  <text x="320" y="95" fill="#3a3530" font-size="14" font-weight="700">交渉（任意の話し合い）</text>
+  <text x="320" y="112" fill="#9a8e80" font-size="11">費用：無料 ｜ 期間：数日〜数週間</text>
+
+  <!-- Arrow 1 -->
+  <polygon points="400,124 394,138 406,138" fill="url(#arrowGrad)"/>
+
+  <!-- Step 2 -->
+  <rect x="250" y="144" width="300" height="50" rx="10" fill="#faf8f5" stroke="#d9cfbf" stroke-width="1.5" filter="url(#shadow)"/>
+  <circle cx="290" cy="169" r="14" fill="#c0764a"/>
+  <text x="290" y="174" text-anchor="middle" fill="#fff" font-size="13" font-weight="700">2</text>
+  <text x="320" y="165" fill="#3a3530" font-size="14" font-weight="700">内容証明郵便の送付</text>
+  <text x="320" y="182" fill="#9a8e80" font-size="11">費用：約2,000円〜 ｜ 期間：1〜2週間</text>
+
+  <!-- Arrow 2 -->
+  <polygon points="400,194 394,208 406,208" fill="url(#arrowGrad)"/>
+
+  <!-- Step 3 -->
+  <rect x="250" y="214" width="300" height="50" rx="10" fill="#faf8f5" stroke="#d9cfbf" stroke-width="1.5" filter="url(#shadow)"/>
+  <circle cx="290" cy="239" r="14" fill="#c0764a"/>
+  <text x="290" y="244" text-anchor="middle" fill="#fff" font-size="13" font-weight="700">3</text>
+  <text x="320" y="235" fill="#3a3530" font-size="14" font-weight="700">支払督促の申立て</text>
+  <text x="320" y="252" fill="#9a8e80" font-size="11">費用：約5,000円〜 ｜ 期間：1〜2ヶ月</text>
+
+  <!-- Arrow 3 -->
+  <polygon points="400,264 394,278 406,278" fill="url(#arrowGrad)"/>
+
+  <!-- Step 4 -->
+  <rect x="250" y="284" width="300" height="50" rx="10" fill="#faf8f5" stroke="#d9cfbf" stroke-width="1.5" filter="url(#shadow)"/>
+  <circle cx="290" cy="309" r="14" fill="#c0764a"/>
+  <text x="290" y="314" text-anchor="middle" fill="#fff" font-size="13" font-weight="700">4</text>
+  <text x="320" y="305" fill="#3a3530" font-size="14" font-weight="700">民事調停</text>
+  <text x="320" y="322" fill="#9a8e80" font-size="11">費用：約5,000円〜 ｜ 期間：2〜4ヶ月</text>
+
+  <!-- Arrow 4 -->
+  <polygon points="400,334 394,348 406,348" fill="url(#arrowGrad)"/>
+
+  <!-- Step 5 -->
+  <rect x="250" y="354" width="300" height="50" rx="10" fill="#faf8f5" stroke="#d9cfbf" stroke-width="1.5" filter="url(#shadow)"/>
+  <circle cx="290" cy="379" r="14" fill="#c0764a"/>
+  <text x="290" y="384" text-anchor="middle" fill="#fff" font-size="13" font-weight="700">5</text>
+  <text x="320" y="375" fill="#3a3530" font-size="14" font-weight="700">訴訟（裁判）</text>
+  <text x="320" y="392" fill="#9a8e80" font-size="11">費用：約1万円〜 ｜ 期間：6ヶ月〜2年</text>
+
+  <!-- Arrow 5 -->
+  <polygon points="400,404 394,418 406,418" fill="url(#arrowGrad)"/>
+
+  <!-- Step 6 -->
+  <rect x="250" y="424" width="300" height="50" rx="10" fill="#e8e0d4" stroke="#c0764a" stroke-width="2" filter="url(#shadow)"/>
+  <circle cx="290" cy="449" r="14" fill="#5c4a3a"/>
+  <text x="290" y="454" text-anchor="middle" fill="#fff" font-size="13" font-weight="700">6</text>
+  <text x="320" y="445" fill="#3a3530" font-size="14" font-weight="700">強制執行（差し押さえ）</text>
+  <text x="320" y="462" fill="#9a8e80" font-size="11">費用：約3万円〜 ｜ 期間：1〜3ヶ月</text>
+
+  <!-- Side note -->
+  <rect x="590" y="144" width="190" height="120" rx="8" fill="#faf8f5" stroke="#d9cfbf" stroke-width="1"/>
+  <text x="685" y="168" text-anchor="middle" fill="#5c4a3a" font-size="12" font-weight="700">💡 ポイント</text>
+  <text x="600" y="188" fill="#3a3530" font-size="11">多くのケースは</text>
+  <text x="600" y="205" fill="#c0764a" font-size="12" font-weight="700">①〜②の段階で解決</text>
+  <text x="600" y="225" fill="#3a3530" font-size="11">します。早めの対応が</text>
+  <text x="600" y="242" fill="#3a3530" font-size="11">回収成功のカギです。</text>
+
+  <!-- Time note -->
+  <rect x="20" y="214" width="200" height="50" rx="8" fill="#faf8f5" stroke="#d9cfbf" stroke-width="1"/>
+  <text x="120" y="236" text-anchor="middle" fill="#5c4a3a" font-size="12" font-weight="700">⚠ 消滅時効に注意</text>
+  <text x="120" y="254" text-anchor="middle" fill="#c0764a" font-size="12" font-weight="700">原則5年で権利消滅</text>
+</svg>

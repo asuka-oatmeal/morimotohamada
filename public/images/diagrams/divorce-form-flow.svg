@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 360" font-family="'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', sans-serif">
+  <defs>
+    <filter id="shadow" x="-4%" y="-4%" width="108%" height="108%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#3a3530" flood-opacity="0.08"/>
+    </filter>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#5c4a3a"/>
+      <stop offset="100%" style="stop-color:#6b5344"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Title -->
+  <rect x="200" y="10" width="400" height="44" rx="22" fill="url(#headerGrad)"/>
+  <text x="400" y="38" text-anchor="middle" fill="#faf8f5" font-size="17" font-weight="700">離婚届の提出フロー</text>
+
+  <!-- Step boxes - horizontal layout -->
+  <!-- Step 1 -->
+  <rect x="30" y="80" width="160" height="100" rx="10" fill="#faf8f5" stroke="#d9cfbf" stroke-width="1.5" filter="url(#shadow)"/>
+  <circle cx="110" cy="105" r="16" fill="#c0764a"/>
+  <text x="110" y="110" text-anchor="middle" fill="#fff" font-size="14" font-weight="700">1</text>
+  <text x="110" y="135" text-anchor="middle" fill="#3a3530" font-size="13" font-weight="700">離婚届を入手</text>
+  <text x="110" y="155" text-anchor="middle" fill="#9a8e80" font-size="10">役場窓口</text>
+  <text x="110" y="170" text-anchor="middle" fill="#9a8e80" font-size="10">またはダウンロード</text>
+
+  <!-- Arrow -->
+  <polygon points="195,130 210,124 210,136" fill="#c0764a"/>
+
+  <!-- Step 2 -->
+  <rect x="215" y="80" width="160" height="100" rx="10" fill="#faf8f5" stroke="#d9cfbf" stroke-width="1.5" filter="url(#shadow)"/>
+  <circle cx="295" cy="105" r="16" fill="#c0764a"/>
+  <text x="295" y="110" text-anchor="middle" fill="#fff" font-size="14" font-weight="700">2</text>
+  <text x="295" y="135" text-anchor="middle" fill="#3a3530" font-size="13" font-weight="700">記入項目を記入</text>
+  <text x="295" y="155" text-anchor="middle" fill="#9a8e80" font-size="10">氏名・本籍・住所</text>
+  <text x="295" y="170" text-anchor="middle" fill="#9a8e80" font-size="10">親権者の指定</text>
+
+  <!-- Arrow -->
+  <polygon points="380,130 395,124 395,136" fill="#c0764a"/>
+
+  <!-- Step 3 -->
+  <rect x="400" y="80" width="160" height="100" rx="10" fill="#faf8f5" stroke="#d9cfbf" stroke-width="1.5" filter="url(#shadow)"/>
+  <circle cx="480" cy="105" r="16" fill="#c0764a"/>
+  <text x="480" y="110" text-anchor="middle" fill="#fff" font-size="14" font-weight="700">3</text>
+  <text x="480" y="135" text-anchor="middle" fill="#3a3530" font-size="13" font-weight="700">証人2名の署名</text>
+  <text x="480" y="155" text-anchor="middle" fill="#9a8e80" font-size="10">成年者であれば</text>
+  <text x="480" y="170" text-anchor="middle" fill="#9a8e80" font-size="10">誰でもOK</text>
+
+  <!-- Arrow -->
+  <polygon points="565,130 580,124 580,136" fill="#c0764a"/>
+
+  <!-- Step 4 -->
+  <rect x="585" y="80" width="180" height="100" rx="10" fill="#e8e0d4" stroke="#c0764a" stroke-width="2" filter="url(#shadow)"/>
+  <circle cx="675" cy="105" r="16" fill="#5c4a3a"/>
+  <text x="675" y="110" text-anchor="middle" fill="#fff" font-size="14" font-weight="700">4</text>
+  <text x="675" y="135" text-anchor="middle" fill="#3a3530" font-size="13" font-weight="700">役所へ提出・受理</text>
+  <text x="675" y="155" text-anchor="middle" fill="#9a8e80" font-size="10">本人確認書類を持参</text>
+  <text x="675" y="170" text-anchor="middle" fill="#9a8e80" font-size="10">開庁時間内がおすすめ</text>
+
+  <!-- After submission section -->
+  <text x="400" y="220" text-anchor="middle" fill="#5c4a3a" font-size="15" font-weight="700">▼ 提出後にやるべき手続き</text>
+
+  <!-- Post-submission items -->
+  <rect x="30" y="245" width="170" height="55" rx="8" fill="#faf8f5" stroke="#d9cfbf" stroke-width="1" filter="url(#shadow)"/>
+  <text x="115" y="268" text-anchor="middle" fill="#3a3530" font-size="12" font-weight="700">住民票の異動</text>
+  <text x="115" y="286" text-anchor="middle" fill="#9a8e80" font-size="10">14日以内</text>
+
+  <rect x="215" y="245" width="170" height="55" rx="8" fill="#faf8f5" stroke="#d9cfbf" stroke-width="1" filter="url(#shadow)"/>
+  <text x="300" y="268" text-anchor="middle" fill="#3a3530" font-size="12" font-weight="700">健康保険の変更</text>
+  <text x="300" y="286" text-anchor="middle" fill="#9a8e80" font-size="10">14日以内</text>
+
+  <rect x="400" y="245" width="170" height="55" rx="8" fill="#faf8f5" stroke="#d9cfbf" stroke-width="1" filter="url(#shadow)"/>
+  <text x="485" y="268" text-anchor="middle" fill="#3a3530" font-size="12" font-weight="700">年金の変更</text>
+  <text x="485" y="286" text-anchor="middle" fill="#9a8e80" font-size="10">14日以内</text>
+
+  <rect x="585" y="245" width="185" height="55" rx="8" fill="#faf8f5" stroke="#d9cfbf" stroke-width="1" filter="url(#shadow)"/>
+  <text x="677" y="268" text-anchor="middle" fill="#3a3530" font-size="12" font-weight="700">子の氏の変更</text>
+  <text x="677" y="286" text-anchor="middle" fill="#9a8e80" font-size="10">家庭裁判所へ申立て</text>
+
+  <!-- Note -->
+  <rect x="150" y="320" width="500" height="35" rx="8" fill="#e8e0d4" stroke="#c0764a" stroke-width="1"/>
+  <text x="400" y="343" text-anchor="middle" fill="#5c4a3a" font-size="12" font-weight="700">⚠ 婚氏続称届は離婚後3ヶ月以内に提出が必要です</text>
+</svg>
