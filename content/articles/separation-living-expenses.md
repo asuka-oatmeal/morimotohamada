@@ -149,6 +149,8 @@ category: 離婚・家事
 
 ## 婚姻費用を請求する具体的な手順
 
+![婚姻費用請求の流れ](/images/diagrams/separation-living-expenses-flow.svg)
+
 婚姻費用を請求する一般的な流れは、以下の3つのステップです。
 
 ### ステップ1：まずは夫婦間の話し合い（協議）

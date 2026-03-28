@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" font-family="'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', sans-serif">
+  <defs>
+    <filter id="shadow" x="-4%" y="-4%" width="108%" height="112%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#5c4a3a" flood-opacity="0.12"/>
+    </filter>
+    <filter id="shadow-sm" x="-4%" y="-4%" width="108%" height="112%">
+      <feDropShadow dx="0" dy="1" stdDeviation="2" flood-color="#5c4a3a" flood-opacity="0.10"/>
+    </filter>
+  </defs>
+
+  <!-- Title -->
+  <text x="400" y="32" text-anchor="middle" font-size="20" font-weight="bold" fill="#5c4a3a">相続放棄のタイムラインと手続きフロー</text>
+
+  <!-- ===== Timeline Section ===== -->
+  <text x="50" y="66" font-size="14" font-weight="bold" fill="#c0764a">熟慮期間（3ヶ月）のタイムライン</text>
+
+  <!-- Timeline bar -->
+  <rect x="50" y="80" width="700" height="8" rx="4" fill="#e8e0d4"/>
+  <!-- Filled portion (3 months) -->
+  <rect x="50" y="80" width="500" height="8" rx="4" fill="#c0764a"/>
+  <!-- Extension portion -->
+  <rect x="550" y="80" width="200" height="8" rx="4" fill="#c0764a" opacity="0.35" stroke="#c0764a" stroke-width="1" stroke-dasharray="4,3"/>
+
+  <!-- Timeline markers -->
+  <circle cx="50" cy="84" r="6" fill="#5c4a3a"/>
+  <text x="50" y="110" text-anchor="middle" font-size="11" font-weight="bold" fill="#5c4a3a">起算日</text>
+  <text x="50" y="124" text-anchor="middle" font-size="10" fill="#9a8e80">相続開始を</text>
+  <text x="50" y="136" text-anchor="middle" font-size="10" fill="#9a8e80">知った日</text>
+
+  <line x1="217" y1="76" x2="217" y2="96" stroke="#9a8e80" stroke-width="1" stroke-dasharray="3,2"/>
+  <text x="217" y="110" text-anchor="middle" font-size="10" fill="#9a8e80">1ヶ月</text>
+
+  <line x1="383" y1="76" x2="383" y2="96" stroke="#9a8e80" stroke-width="1" stroke-dasharray="3,2"/>
+  <text x="383" y="110" text-anchor="middle" font-size="10" fill="#9a8e80">2ヶ月</text>
+
+  <circle cx="550" cy="84" r="6" fill="#c0764a"/>
+  <text x="550" y="110" text-anchor="middle" font-size="11" font-weight="bold" fill="#c0764a">原則期限</text>
+  <text x="550" y="124" text-anchor="middle" font-size="10" fill="#9a8e80">3ヶ月</text>
+
+  <circle cx="750" cy="84" r="6" fill="#9a8e80"/>
+  <text x="750" y="110" text-anchor="middle" font-size="11" font-weight="bold" fill="#9a8e80">延長後期限</text>
+  <text x="750" y="124" text-anchor="middle" font-size="10" fill="#9a8e80">裁判所が</text>
+  <text x="750" y="136" text-anchor="middle" font-size="10" fill="#9a8e80">認めた期間</text>
+
+  <!-- Extension note -->
+  <rect x="560" y="140" width="190" height="38" rx="6" fill="#faf8f5" stroke="#c0764a" stroke-width="1" filter="url(#shadow-sm)"/>
+  <text x="655" y="156" text-anchor="middle" font-size="11" font-weight="bold" fill="#c0764a">! 熟慮期間伸長の申立て</text>
+  <text x="655" y="170" text-anchor="middle" font-size="10" fill="#9a8e80">期限前に家庭裁判所へ申立て</text>
+
+  <!-- ===== Procedure Flow Section ===== -->
+  <text x="50" y="210" font-size="14" font-weight="bold" fill="#c0764a">相続放棄の手続きフロー</text>
+
+  <!-- Step 1 -->
+  <rect x="50" y="224" width="340" height="60" rx="10" fill="#faf8f5" stroke="#d9cfbf" stroke-width="1.5" filter="url(#shadow)"/>
+  <circle cx="82" cy="254" r="16" fill="#c0764a"/>
+  <text x="82" y="259" text-anchor="middle" font-size="13" font-weight="bold" fill="#fff">1</text>
+  <text x="108" y="247" font-size="13" font-weight="bold" fill="#5c4a3a">必要書類の収集</text>
+  <text x="108" y="264" font-size="11" fill="#9a8e80">戸籍謄本・住民票除票等を役所で取得</text>
+  <text x="108" y="278" font-size="10" fill="#9a8e80">（数週間かかることがある）</text>
+
+  <!-- Arrow -->
+  <line x1="394" y1="254" x2="406" y2="254" stroke="#d9cfbf" stroke-width="2"/>
+  <polygon points="406,248 416,254 406,260" fill="#d9cfbf"/>
+
+  <!-- Step 2 -->
+  <rect x="420" y="224" width="340" height="60" rx="10" fill="#faf8f5" stroke="#d9cfbf" stroke-width="1.5" filter="url(#shadow)"/>
+  <circle cx="452" cy="254" r="16" fill="#c0764a"/>
+  <text x="452" y="259" text-anchor="middle" font-size="13" font-weight="bold" fill="#fff">2</text>
+  <text x="478" y="247" font-size="13" font-weight="bold" fill="#5c4a3a">相続放棄申述書の作成・提出</text>
+  <text x="478" y="264" font-size="11" fill="#9a8e80">家庭裁判所（被相続人の最後の</text>
+  <text x="478" y="278" font-size="10" fill="#9a8e80">住所地管轄）に書類一式を提出</text>
+
+  <!-- Arrow down from Step 2 -->
+  <polygon points="590,288 583,288 590,302 597,288" fill="#d9cfbf"/>
+
+  <!-- Step 3 -->
+  <rect x="420" y="308" width="340" height="60" rx="10" fill="#faf8f5" stroke="#d9cfbf" stroke-width="1.5" filter="url(#shadow)"/>
+  <circle cx="452" cy="338" r="16" fill="#c0764a"/>
+  <text x="452" y="343" text-anchor="middle" font-size="13" font-weight="bold" fill="#fff">3</text>
+  <text x="478" y="331" font-size="13" font-weight="bold" fill="#5c4a3a">照会書への回答</text>
+  <text x="478" y="348" font-size="11" fill="#9a8e80">裁判所から届く照会書（意思確認）に</text>
+  <text x="478" y="362" font-size="10" fill="#9a8e80">正確に記入して返送（約1〜2週間後）</text>
+
+  <!-- Arrow down from Step 3 -->
+  <polygon points="590,372 583,372 590,386 597,372" fill="#d9cfbf"/>
+
+  <!-- Step 4 (Completion) -->
+  <rect x="420" y="392" width="340" height="56" rx="10" fill="#e8e0d4" stroke="#5c4a3a" stroke-width="1.5" filter="url(#shadow)"/>
+  <circle cx="452" cy="420" r="16" fill="#5c4a3a"/>
+  <text x="452" y="425" text-anchor="middle" font-size="13" font-weight="bold" fill="#fff">4</text>
+  <text x="478" y="413" font-size="13" font-weight="bold" fill="#5c4a3a">受理通知書の受領</text>
+  <text x="478" y="430" font-size="11" fill="#9a8e80">相続放棄申述受理通知書が届けば完了</text>
+  <text x="478" y="444" font-size="10" fill="#9a8e80">（債権者への証明書として大切に保管）</text>
+
+  <!-- Caution cards -->
+  <rect x="50" y="310" width="340" height="60" rx="10" fill="#fff" stroke="#c0764a" stroke-width="1.5" filter="url(#shadow-sm)"/>
+  <text x="68" y="332" font-size="12" font-weight="bold" fill="#c0764a">! 法定単純承認に注意</text>
+  <text x="68" y="348" font-size="11" fill="#9a8e80">財産の処分・消費をすると相続を承認した</text>
+  <text x="68" y="362" font-size="11" fill="#9a8e80">とみなされ、放棄できなくなる</text>
+
+  <rect x="50" y="392" width="340" height="56" rx="10" fill="#fff" stroke="#5c4a3a" stroke-width="1.5" filter="url(#shadow-sm)"/>
+  <text x="68" y="414" font-size="12" font-weight="bold" fill="#5c4a3a">次の順位の相続人へ連絡を</text>
+  <text x="68" y="430" font-size="11" fill="#9a8e80">あなたの放棄後、相続権は次順位の親族に</text>
+  <text x="68" y="444" font-size="11" fill="#9a8e80">移るため、事前に伝えておくことが重要</text>
+
+  <!-- Footer note -->
+  <text x="400" y="488" text-anchor="middle" font-size="11" fill="#9a8e80">※ 3ヶ月経過後でも「負債の存在を後から知った」等の正当な理由があれば認められる可能性あり（最高裁昭和59年判決）</text>
+</svg>

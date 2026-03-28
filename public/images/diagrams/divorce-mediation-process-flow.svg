@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" font-family="'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', sans-serif">
+  <defs>
+    <filter id="shadow3" x="-4%" y="-4%" width="108%" height="116%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#5c4a3a" flood-opacity="0.12"/>
+    </filter>
+    <filter id="shadow3s" x="-8%" y="-8%" width="116%" height="132%">
+      <feDropShadow dx="0" dy="1" stdDeviation="2" flood-color="#5c4a3a" flood-opacity="0.15"/>
+    </filter>
+    <marker id="arrowhead3" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#c0764a"/>
+    </marker>
+    <marker id="arrowdown3" markerWidth="7" markerHeight="10" refX="3.5" refY="10" orient="auto">
+      <polygon points="0 0, 7 0, 3.5 10" fill="#c0764a"/>
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="400" y="38" text-anchor="middle" font-size="20" font-weight="bold" fill="#5c4a3a">離婚調停の全体フロー</text>
+
+  <!-- Step 1: 申立て -->
+  <rect x="30" y="60" width="160" height="135" rx="12" fill="#faf8f5" stroke="#d9cfbf" stroke-width="1.5" filter="url(#shadow3)"/>
+  <circle cx="110" cy="88" r="18" fill="#c0764a" filter="url(#shadow3s)"/>
+  <text x="110" y="94" text-anchor="middle" font-size="14" font-weight="bold" fill="#fff">1</text>
+  <text x="110" y="122" text-anchor="middle" font-size="14" font-weight="bold" fill="#5c4a3a">申立て</text>
+  <text x="110" y="143" text-anchor="middle" font-size="11" fill="#9a8e80">必要書類を準備</text>
+  <text x="110" y="159" text-anchor="middle" font-size="11" fill="#9a8e80">家庭裁判所に提出</text>
+  <text x="110" y="175" text-anchor="middle" font-size="11" fill="#9a8e80">費用: 約2,000円</text>
+
+  <!-- Arrow -->
+  <path d="M195 127 L215 127" stroke="#c0764a" stroke-width="2" fill="none" marker-end="url(#arrowhead3)"/>
+
+  <!-- Step 2: 第1回期日 -->
+  <rect x="220" y="60" width="160" height="135" rx="12" fill="#faf8f5" stroke="#d9cfbf" stroke-width="1.5" filter="url(#shadow3)"/>
+  <circle cx="300" cy="88" r="18" fill="#c0764a" filter="url(#shadow3s)"/>
+  <text x="300" y="94" text-anchor="middle" font-size="14" font-weight="bold" fill="#fff">2</text>
+  <text x="300" y="122" text-anchor="middle" font-size="14" font-weight="bold" fill="#5c4a3a">第1回期日</text>
+  <text x="300" y="143" text-anchor="middle" font-size="11" fill="#9a8e80">申立から1～1.5ヶ月後</text>
+  <text x="300" y="159" text-anchor="middle" font-size="11" fill="#9a8e80">呼出状が届く</text>
+  <text x="300" y="175" text-anchor="middle" font-size="11" fill="#9a8e80">主張の整理・準備</text>
+
+  <!-- Arrow -->
+  <path d="M385 127 L405 127" stroke="#c0764a" stroke-width="2" fill="none" marker-end="url(#arrowhead3)"/>
+
+  <!-- Step 3: 調停期日 -->
+  <rect x="410" y="60" width="160" height="135" rx="12" fill="#faf8f5" stroke="#d9cfbf" stroke-width="1.5" filter="url(#shadow3)"/>
+  <circle cx="490" cy="88" r="18" fill="#c0764a" filter="url(#shadow3s)"/>
+  <text x="490" y="94" text-anchor="middle" font-size="14" font-weight="bold" fill="#fff">3</text>
+  <text x="490" y="122" text-anchor="middle" font-size="14" font-weight="bold" fill="#5c4a3a">調停期日</text>
+  <text x="490" y="143" text-anchor="middle" font-size="11" fill="#9a8e80">調停委員と交互に面談</text>
+  <text x="490" y="159" text-anchor="middle" font-size="11" fill="#9a8e80">平均3～5回実施</text>
+  <text x="490" y="175" text-anchor="middle" font-size="11" fill="#9a8e80">月1回・各2～3時間</text>
+
+  <!-- Arrow down from Step 3 -->
+  <path d="M490 200 L490 225" stroke="#c0764a" stroke-width="2" fill="none" marker-end="url(#arrowdown3)"/>
+
+  <!-- Decision diamond -->
+  <polygon points="490,232 560,270 490,308 420,270" fill="#faf8f5" stroke="#c0764a" stroke-width="2" filter="url(#shadow3)"/>
+  <text x="490" y="267" text-anchor="middle" font-size="13" font-weight="bold" fill="#5c4a3a">合意</text>
+  <text x="490" y="283" text-anchor="middle" font-size="13" font-weight="bold" fill="#5c4a3a">成立？</text>
+
+  <!-- YES arrow (left) -->
+  <path d="M420 270 L200 270" stroke="#c0764a" stroke-width="2" fill="none" marker-end="url(#arrowhead3)" transform="scale(-1,1) translate(-620,0)"/>
+  <text x="330" y="260" text-anchor="middle" font-size="12" font-weight="bold" fill="#c0764a">YES</text>
+
+  <!-- Step 4: 調停成立 -->
+  <rect x="30" y="235" width="180" height="130" rx="12" fill="#e8e0d4" stroke="#c0764a" stroke-width="2" filter="url(#shadow3)"/>
+  <circle cx="120" cy="262" r="18" fill="#5c4a3a" filter="url(#shadow3s)"/>
+  <text x="120" y="268" text-anchor="middle" font-size="14" font-weight="bold" fill="#fff">4a</text>
+  <text x="120" y="295" text-anchor="middle" font-size="14" font-weight="bold" fill="#5c4a3a">調停成立</text>
+  <text x="120" y="315" text-anchor="middle" font-size="11" fill="#9a8e80">調停調書を作成</text>
+  <text x="120" y="331" text-anchor="middle" font-size="11" fill="#9a8e80">判決と同等の効力</text>
+  <text x="120" y="347" text-anchor="middle" font-size="11" fill="#9a8e80">離婚届を提出</text>
+
+  <!-- NO arrow (right) -->
+  <path d="M560 270 L615 270" stroke="#c0764a" stroke-width="2" fill="none" marker-end="url(#arrowhead3)"/>
+  <text x="585" y="260" text-anchor="middle" font-size="12" font-weight="bold" fill="#9a8e80">NO</text>
+
+  <!-- Step 4b: 不成立 -->
+  <rect x="620" y="235" width="160" height="130" rx="12" fill="#faf8f5" stroke="#d9cfbf" stroke-width="1.5" filter="url(#shadow3)"/>
+  <circle cx="700" cy="262" r="18" fill="#9a8e80" filter="url(#shadow3s)"/>
+  <text x="700" y="268" text-anchor="middle" font-size="14" font-weight="bold" fill="#fff">4b</text>
+  <text x="700" y="295" text-anchor="middle" font-size="14" font-weight="bold" fill="#5c4a3a">調停不成立</text>
+  <text x="700" y="315" text-anchor="middle" font-size="11" fill="#9a8e80">合意に至らず終了</text>
+  <text x="700" y="331" text-anchor="middle" font-size="11" fill="#9a8e80">次のステップを</text>
+  <text x="700" y="347" text-anchor="middle" font-size="11" fill="#9a8e80">検討する</text>
+
+  <!-- Arrow down from 不成立 -->
+  <path d="M700 370 L700 395" stroke="#c0764a" stroke-width="2" fill="none" marker-end="url(#arrowdown3)"/>
+
+  <!-- Step 5: 離婚裁判 -->
+  <rect x="600" y="400" width="180" height="105" rx="12" fill="#e8e0d4" stroke="#c0764a" stroke-width="2" filter="url(#shadow3)"/>
+  <circle cx="690" cy="427" r="18" fill="#5c4a3a" filter="url(#shadow3s)"/>
+  <text x="690" y="433" text-anchor="middle" font-size="14" font-weight="bold" fill="#fff">5</text>
+  <text x="690" y="458" text-anchor="middle" font-size="14" font-weight="bold" fill="#5c4a3a">離婚裁判</text>
+  <text x="690" y="478" text-anchor="middle" font-size="11" fill="#9a8e80">裁判官が判決を下す</text>
+  <text x="690" y="494" text-anchor="middle" font-size="11" fill="#9a8e80">1年～数年かかる場合も</text>
+
+  <!-- Info boxes at bottom -->
+  <rect x="30" y="400" width="250" height="105" rx="10" fill="#faf8f5" stroke="#d9cfbf" stroke-width="1.5" filter="url(#shadow3)"/>
+  <text x="155" y="425" text-anchor="middle" font-size="13" font-weight="bold" fill="#c0764a">主な話し合い事項</text>
+  <text x="50" y="448" font-size="11" fill="#9a8e80">親権 / 養育費 / 財産分与</text>
+  <text x="50" y="466" font-size="11" fill="#9a8e80">慰謝料 / 面会交流 / 年金分割</text>
+  <text x="50" y="484" font-size="11" fill="#9a8e80">原則2分の1ずつの財産分与</text>
+
+  <rect x="300" y="400" width="275" height="105" rx="10" fill="#faf8f5" stroke="#d9cfbf" stroke-width="1.5" filter="url(#shadow3)"/>
+  <text x="437" y="425" text-anchor="middle" font-size="13" font-weight="bold" fill="#c0764a">期間・費用の目安</text>
+  <text x="320" y="448" font-size="11" fill="#9a8e80">期間: 6ヶ月～1年程度</text>
+  <text x="320" y="466" font-size="11" fill="#9a8e80">実費: 約2,000円（印紙+切手）</text>
+  <text x="320" y="484" font-size="11" fill="#9a8e80">弁護士: 着手金20～50万円+報酬金</text>
+</svg>

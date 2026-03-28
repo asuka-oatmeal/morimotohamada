@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" font-family="'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', sans-serif">
+  <defs>
+    <filter id="shadow1" x="-4%" y="-4%" width="108%" height="116%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#5c4a3a" flood-opacity="0.12"/>
+    </filter>
+    <filter id="shadow1s" x="-8%" y="-8%" width="116%" height="132%">
+      <feDropShadow dx="0" dy="1" stdDeviation="2" flood-color="#5c4a3a" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <!-- Title -->
+  <text x="400" y="38" text-anchor="middle" font-size="20" font-weight="bold" fill="#5c4a3a">モラハラ離婚の準備～成立までの流れ</text>
+
+  <!-- Step 1 -->
+  <rect x="20" y="65" width="145" height="160" rx="12" fill="#faf8f5" stroke="#d9cfbf" stroke-width="1.5" filter="url(#shadow1)"/>
+  <circle cx="92" cy="95" r="18" fill="#c0764a" filter="url(#shadow1s)"/>
+  <text x="92" y="101" text-anchor="middle" font-size="15" font-weight="bold" fill="#fff">1</text>
+  <text x="92" y="130" text-anchor="middle" font-size="14" font-weight="bold" fill="#5c4a3a">証拠収集</text>
+  <text x="92" y="152" text-anchor="middle" font-size="11" fill="#9a8e80">日記・録音</text>
+  <text x="92" y="168" text-anchor="middle" font-size="11" fill="#9a8e80">LINE・メール</text>
+  <text x="92" y="184" text-anchor="middle" font-size="11" fill="#9a8e80">診断書の取得</text>
+  <text x="92" y="200" text-anchor="middle" font-size="11" fill="#9a8e80">写真・動画</text>
+
+  <!-- Arrow 1-2 -->
+  <path d="M170 145 L182 145" stroke="#c0764a" stroke-width="2" fill="none" marker-end="url(#arrowhead1)"/>
+  <defs><marker id="arrowhead1" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto"><polygon points="0 0, 8 3, 0 6" fill="#c0764a"/></marker></defs>
+
+  <!-- Step 2 -->
+  <rect x="185" y="65" width="145" height="160" rx="12" fill="#faf8f5" stroke="#d9cfbf" stroke-width="1.5" filter="url(#shadow1)"/>
+  <circle cx="257" cy="95" r="18" fill="#c0764a" filter="url(#shadow1s)"/>
+  <text x="257" y="101" text-anchor="middle" font-size="15" font-weight="bold" fill="#fff">2</text>
+  <text x="257" y="130" text-anchor="middle" font-size="14" font-weight="bold" fill="#5c4a3a">専門家に相談</text>
+  <text x="257" y="152" text-anchor="middle" font-size="11" fill="#9a8e80">弁護士への相談</text>
+  <text x="257" y="168" text-anchor="middle" font-size="11" fill="#9a8e80">DV相談窓口</text>
+  <text x="257" y="184" text-anchor="middle" font-size="11" fill="#9a8e80">法テラス活用</text>
+  <text x="257" y="200" text-anchor="middle" font-size="11" fill="#9a8e80">方針の決定</text>
+
+  <!-- Arrow 2-3 -->
+  <path d="M335 145 L347 145" stroke="#c0764a" stroke-width="2" fill="none" marker-end="url(#arrowhead1)"/>
+
+  <!-- Step 3 -->
+  <rect x="350" y="65" width="145" height="160" rx="12" fill="#faf8f5" stroke="#d9cfbf" stroke-width="1.5" filter="url(#shadow1)"/>
+  <circle cx="422" cy="95" r="18" fill="#c0764a" filter="url(#shadow1s)"/>
+  <text x="422" y="101" text-anchor="middle" font-size="15" font-weight="bold" fill="#fff">3</text>
+  <text x="422" y="130" text-anchor="middle" font-size="14" font-weight="bold" fill="#5c4a3a">別居の準備</text>
+  <text x="422" y="152" text-anchor="middle" font-size="11" fill="#9a8e80">住居の確保</text>
+  <text x="422" y="168" text-anchor="middle" font-size="11" fill="#9a8e80">生活費の確保</text>
+  <text x="422" y="184" text-anchor="middle" font-size="11" fill="#9a8e80">婚姻費用請求</text>
+  <text x="422" y="200" text-anchor="middle" font-size="11" fill="#9a8e80">安全な別居開始</text>
+
+  <!-- Arrow 3-4 -->
+  <path d="M500 145 L512 145" stroke="#c0764a" stroke-width="2" fill="none" marker-end="url(#arrowhead1)"/>
+
+  <!-- Step 4 -->
+  <rect x="515" y="65" width="145" height="160" rx="12" fill="#faf8f5" stroke="#d9cfbf" stroke-width="1.5" filter="url(#shadow1)"/>
+  <circle cx="587" cy="95" r="18" fill="#c0764a" filter="url(#shadow1s)"/>
+  <text x="587" y="101" text-anchor="middle" font-size="15" font-weight="bold" fill="#fff">4</text>
+  <text x="587" y="130" text-anchor="middle" font-size="14" font-weight="bold" fill="#5c4a3a">離婚調停</text>
+  <text x="587" y="152" text-anchor="middle" font-size="11" fill="#9a8e80">家庭裁判所に申立</text>
+  <text x="587" y="168" text-anchor="middle" font-size="11" fill="#9a8e80">調停委員が仲介</text>
+  <text x="587" y="184" text-anchor="middle" font-size="11" fill="#9a8e80">条件の交渉</text>
+  <text x="587" y="200" text-anchor="middle" font-size="11" fill="#9a8e80">月1回ペース</text>
+
+  <!-- Arrow 4-5 -->
+  <path d="M665 145 L677 145" stroke="#c0764a" stroke-width="2" fill="none" marker-end="url(#arrowhead1)"/>
+
+  <!-- Step 5 -->
+  <rect x="680" y="65" width="100" height="160" rx="12" fill="#e8e0d4" stroke="#c0764a" stroke-width="2" filter="url(#shadow1)"/>
+  <circle cx="730" cy="95" r="18" fill="#5c4a3a" filter="url(#shadow1s)"/>
+  <text x="730" y="101" text-anchor="middle" font-size="15" font-weight="bold" fill="#fff">5</text>
+  <text x="730" y="130" text-anchor="middle" font-size="14" font-weight="bold" fill="#5c4a3a">離婚成立</text>
+  <text x="730" y="155" text-anchor="middle" font-size="11" fill="#9a8e80">調停成立</text>
+  <text x="730" y="171" text-anchor="middle" font-size="11" fill="#9a8e80">または裁判</text>
+  <text x="730" y="187" text-anchor="middle" font-size="11" fill="#9a8e80">離婚届提出</text>
+  <text x="730" y="203" text-anchor="middle" font-size="11" fill="#9a8e80">新生活へ</text>
+
+  <!-- Bottom tips section -->
+  <rect x="20" y="260" width="760" height="200" rx="12" fill="#faf8f5" stroke="#d9cfbf" stroke-width="1.5" filter="url(#shadow1)"/>
+  <text x="400" y="290" text-anchor="middle" font-size="15" font-weight="bold" fill="#5c4a3a">各段階でのポイント</text>
+
+  <!-- Tip cards -->
+  <rect x="40" y="310" width="230" height="60" rx="8" fill="#e8e0d4"/>
+  <text x="55" y="335" font-size="12" font-weight="bold" fill="#c0764a">証拠は「早めに・継続的に」</text>
+  <text x="55" y="355" font-size="11" fill="#9a8e80">安全確保を最優先に収集する</text>
+
+  <rect x="285" y="310" width="230" height="60" rx="8" fill="#e8e0d4"/>
+  <text x="300" y="335" font-size="12" font-weight="bold" fill="#c0764a">弁護士は必ず味方につける</text>
+  <text x="300" y="355" font-size="11" fill="#9a8e80">直接交渉は避け、代理人を立てる</text>
+
+  <rect x="530" y="310" width="230" height="60" rx="8" fill="#e8e0d4"/>
+  <text x="545" y="335" font-size="12" font-weight="bold" fill="#c0764a">協議離婚は避ける</text>
+  <text x="545" y="355" font-size="11" fill="#9a8e80">調停から始めるのが安全</text>
+
+  <rect x="40" y="385" width="355" height="55" rx="8" fill="#e8e0d4"/>
+  <text x="55" y="408" font-size="12" font-weight="bold" fill="#c0764a">慰謝料の相場: 50万～300万円</text>
+  <text x="55" y="426" font-size="11" fill="#9a8e80">期間・程度・証拠の充実度で変動する</text>
+
+  <rect x="410" y="385" width="350" height="55" rx="8" fill="#e8e0d4"/>
+  <text x="425" y="408" font-size="12" font-weight="bold" fill="#c0764a">サポート機関を活用</text>
+  <text x="425" y="426" font-size="11" fill="#9a8e80">DV相談プラス: 0120-279-889（24時間）</text>
+</svg>

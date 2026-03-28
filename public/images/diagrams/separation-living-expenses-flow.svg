@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" font-family="'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', sans-serif">
+  <defs>
+    <filter id="shadow2" x="-4%" y="-4%" width="108%" height="116%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#5c4a3a" flood-opacity="0.12"/>
+    </filter>
+    <filter id="shadow2s" x="-8%" y="-8%" width="116%" height="132%">
+      <feDropShadow dx="0" dy="1" stdDeviation="2" flood-color="#5c4a3a" flood-opacity="0.15"/>
+    </filter>
+    <marker id="arrowhead2" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#c0764a"/>
+    </marker>
+    <marker id="arrowdown2" markerWidth="7" markerHeight="10" refX="3.5" refY="10" orient="auto">
+      <polygon points="0 0, 7 0, 3.5 10" fill="#c0764a"/>
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="400" y="38" text-anchor="middle" font-size="20" font-weight="bold" fill="#5c4a3a">婚姻費用請求の流れ</text>
+
+  <!-- Main flow: 3 steps horizontally -->
+  <!-- Step 1 -->
+  <rect x="30" y="60" width="220" height="180" rx="12" fill="#faf8f5" stroke="#d9cfbf" stroke-width="1.5" filter="url(#shadow2)"/>
+  <circle cx="140" cy="90" r="20" fill="#c0764a" filter="url(#shadow2s)"/>
+  <text x="140" y="97" text-anchor="middle" font-size="16" font-weight="bold" fill="#fff">1</text>
+  <text x="140" y="125" text-anchor="middle" font-size="15" font-weight="bold" fill="#5c4a3a">夫婦間の協議</text>
+  <line x1="70" y1="138" x2="210" y2="138" stroke="#d9cfbf" stroke-width="1"/>
+  <text x="140" y="160" text-anchor="middle" font-size="12" fill="#9a8e80">婚姻費用の支払いを請求</text>
+  <text x="140" y="178" text-anchor="middle" font-size="12" fill="#9a8e80">算定表を参考に金額提示</text>
+  <text x="140" y="196" text-anchor="middle" font-size="12" fill="#9a8e80">合意内容を公正証書に</text>
+  <text x="140" y="218" text-anchor="middle" font-size="11" font-weight="bold" fill="#c0764a">合意できれば解決</text>
+
+  <!-- Arrow 1-2 -->
+  <path d="M255 150 L285 150" stroke="#c0764a" stroke-width="2" fill="none" marker-end="url(#arrowhead2)"/>
+  <text x="270" y="140" text-anchor="middle" font-size="10" fill="#9a8e80">不成立</text>
+
+  <!-- Step 2 -->
+  <rect x="290" y="60" width="220" height="180" rx="12" fill="#faf8f5" stroke="#d9cfbf" stroke-width="1.5" filter="url(#shadow2)"/>
+  <circle cx="400" cy="90" r="20" fill="#c0764a" filter="url(#shadow2s)"/>
+  <text x="400" y="97" text-anchor="middle" font-size="16" font-weight="bold" fill="#fff">2</text>
+  <text x="400" y="125" text-anchor="middle" font-size="15" font-weight="bold" fill="#5c4a3a">婚姻費用分担調停</text>
+  <line x1="330" y1="138" x2="470" y2="138" stroke="#d9cfbf" stroke-width="1"/>
+  <text x="400" y="160" text-anchor="middle" font-size="12" fill="#9a8e80">家庭裁判所に申立て</text>
+  <text x="400" y="178" text-anchor="middle" font-size="12" fill="#9a8e80">調停委員が仲介</text>
+  <text x="400" y="196" text-anchor="middle" font-size="12" fill="#9a8e80">調停調書 = 判決と同等</text>
+  <text x="400" y="218" text-anchor="middle" font-size="11" font-weight="bold" fill="#c0764a">合意できれば調停成立</text>
+
+  <!-- Arrow 2-3 -->
+  <path d="M515 150 L545 150" stroke="#c0764a" stroke-width="2" fill="none" marker-end="url(#arrowhead2)"/>
+  <text x="530" y="140" text-anchor="middle" font-size="10" fill="#9a8e80">不成立</text>
+
+  <!-- Step 3 -->
+  <rect x="550" y="60" width="220" height="180" rx="12" fill="#e8e0d4" stroke="#c0764a" stroke-width="2" filter="url(#shadow2)"/>
+  <circle cx="660" cy="90" r="20" fill="#5c4a3a" filter="url(#shadow2s)"/>
+  <text x="660" y="97" text-anchor="middle" font-size="16" font-weight="bold" fill="#fff">3</text>
+  <text x="660" y="125" text-anchor="middle" font-size="15" font-weight="bold" fill="#5c4a3a">審判</text>
+  <line x1="590" y1="138" x2="730" y2="138" stroke="#c0764a" stroke-width="1"/>
+  <text x="660" y="160" text-anchor="middle" font-size="12" fill="#9a8e80">裁判官が金額を決定</text>
+  <text x="660" y="178" text-anchor="middle" font-size="12" fill="#9a8e80">審判書に法的効力あり</text>
+  <text x="660" y="196" text-anchor="middle" font-size="12" fill="#9a8e80">強制執行が可能に</text>
+  <text x="660" y="218" text-anchor="middle" font-size="11" font-weight="bold" fill="#c0764a">最終的な決定</text>
+
+  <!-- Lower section: 支払われない場合 -->
+  <text x="400" y="280" text-anchor="middle" font-size="16" font-weight="bold" fill="#5c4a3a">相手が支払わない場合の対処法</text>
+
+  <!-- 3 remedy cards -->
+  <rect x="30" y="300" width="230" height="105" rx="10" fill="#faf8f5" stroke="#d9cfbf" stroke-width="1.5" filter="url(#shadow2)"/>
+  <rect x="30" y="300" width="230" height="32" rx="10" fill="#c0764a"/>
+  <rect x="30" y="320" width="230" height="12" fill="#c0764a"/>
+  <text x="145" y="320" text-anchor="middle" font-size="13" font-weight="bold" fill="#fff">履行勧告</text>
+  <text x="145" y="355" text-anchor="middle" font-size="11" fill="#9a8e80">裁判所が支払いを促す通知</text>
+  <text x="145" y="373" text-anchor="middle" font-size="11" fill="#9a8e80">強制力はないが心理的効果大</text>
+  <text x="145" y="391" text-anchor="middle" font-size="11" fill="#9a8e80">費用: 無料</text>
+
+  <rect x="285" y="300" width="230" height="105" rx="10" fill="#faf8f5" stroke="#d9cfbf" stroke-width="1.5" filter="url(#shadow2)"/>
+  <rect x="285" y="300" width="230" height="32" rx="10" fill="#c0764a"/>
+  <rect x="285" y="320" width="230" height="12" fill="#c0764a"/>
+  <text x="400" y="320" text-anchor="middle" font-size="13" font-weight="bold" fill="#fff">履行命令</text>
+  <text x="400" y="355" text-anchor="middle" font-size="11" fill="#9a8e80">裁判所が支払いを命令</text>
+  <text x="400" y="373" text-anchor="middle" font-size="11" fill="#9a8e80">違反時は10万円以下の過料</text>
+  <text x="400" y="391" text-anchor="middle" font-size="11" fill="#9a8e80">心理的プレッシャー大</text>
+
+  <rect x="540" y="300" width="230" height="105" rx="10" fill="#e8e0d4" stroke="#c0764a" stroke-width="2" filter="url(#shadow2)"/>
+  <rect x="540" y="300" width="230" height="32" rx="10" fill="#5c4a3a"/>
+  <rect x="540" y="320" width="230" height="12" fill="#5c4a3a"/>
+  <text x="655" y="320" text-anchor="middle" font-size="13" font-weight="bold" fill="#fff">強制執行（差押え）</text>
+  <text x="655" y="355" text-anchor="middle" font-size="11" fill="#9a8e80">給与・預貯金等を差押え</text>
+  <text x="655" y="373" text-anchor="middle" font-size="11" fill="#9a8e80">婚姻費用は手取りの1/2まで</text>
+  <text x="655" y="391" text-anchor="middle" font-size="11" fill="#9a8e80">最も強力な手段</text>
+
+  <!-- Arrows between remedy cards -->
+  <path d="M265 352 L280 352" stroke="#9a8e80" stroke-width="1.5" fill="none" marker-end="url(#arrowhead2)"/>
+  <path d="M520 352 L535 352" stroke="#9a8e80" stroke-width="1.5" fill="none" marker-end="url(#arrowhead2)"/>
+
+  <!-- Bottom note -->
+  <rect x="100" y="430" width="600" height="50" rx="8" fill="#faf8f5" stroke="#c0764a" stroke-width="1.5" stroke-dasharray="6 3"/>
+  <text x="400" y="452" text-anchor="middle" font-size="12" font-weight="bold" fill="#c0764a">重要: 婚姻費用は「請求した時点」から発生します。早めのアクションが大切です。</text>
+  <text x="400" y="470" text-anchor="middle" font-size="11" fill="#9a8e80">内容証明郵便の送付や調停申立てが、請求時点の証拠になります</text>
+</svg>

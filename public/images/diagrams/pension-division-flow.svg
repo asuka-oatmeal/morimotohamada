@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" font-family="'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', sans-serif">
+  <defs>
+    <filter id="shadow" x="-4%" y="-4%" width="108%" height="112%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#5c4a3a" flood-opacity="0.12"/>
+    </filter>
+    <filter id="shadow-sm" x="-4%" y="-4%" width="108%" height="112%">
+      <feDropShadow dx="0" dy="1" stdDeviation="2" flood-color="#5c4a3a" flood-opacity="0.10"/>
+    </filter>
+  </defs>
+
+  <!-- Title -->
+  <text x="400" y="36" text-anchor="middle" font-size="20" font-weight="bold" fill="#5c4a3a">年金分割の手続きフロー</text>
+
+  <!-- Column Headers -->
+  <rect x="30" y="52" width="360" height="36" rx="8" fill="#c0764a"/>
+  <text x="210" y="76" text-anchor="middle" font-size="15" font-weight="bold" fill="#fff">合意分割</text>
+
+  <rect x="410" y="52" width="360" height="36" rx="8" fill="#5c4a3a"/>
+  <text x="590" y="76" text-anchor="middle" font-size="15" font-weight="bold" fill="#fff">3号分割</text>
+
+  <!-- Shared Step 1 -->
+  <rect x="200" y="104" width="400" height="56" rx="10" fill="#faf8f5" stroke="#d9cfbf" stroke-width="1.5" filter="url(#shadow)"/>
+  <circle cx="240" cy="132" r="16" fill="#c0764a"/>
+  <text x="240" y="137" text-anchor="middle" font-size="13" font-weight="bold" fill="#fff">1</text>
+  <text x="270" y="126" font-size="13" font-weight="bold" fill="#5c4a3a">情報通知書の請求</text>
+  <text x="270" y="143" font-size="11" fill="#9a8e80">年金事務所で婚姻期間中の年金記録を取得</text>
+
+  <!-- Arrow down -->
+  <polygon points="400,164 393,164 400,178 407,164" fill="#d9cfbf"/>
+
+  <!-- Left: Step 2 -->
+  <rect x="30" y="184" width="360" height="70" rx="10" fill="#faf8f5" stroke="#c0764a" stroke-width="1.5" filter="url(#shadow)"/>
+  <circle cx="62" cy="208" r="16" fill="#c0764a"/>
+  <text x="62" y="213" text-anchor="middle" font-size="13" font-weight="bold" fill="#fff">2</text>
+  <text x="90" y="204" font-size="13" font-weight="bold" fill="#5c4a3a">夫婦間で分割割合を協議</text>
+  <text x="90" y="221" font-size="11" fill="#9a8e80">合意できれば公正証書を作成</text>
+  <text x="90" y="238" font-size="11" fill="#9a8e80">合意できなければ家庭裁判所へ調停申立て</text>
+
+  <!-- Right: Step 2 -->
+  <rect x="410" y="184" width="360" height="70" rx="10" fill="#faf8f5" stroke="#5c4a3a" stroke-width="1.5" filter="url(#shadow)"/>
+  <circle cx="442" cy="208" r="16" fill="#5c4a3a"/>
+  <text x="442" y="213" text-anchor="middle" font-size="13" font-weight="bold" fill="#fff">2</text>
+  <text x="470" y="204" font-size="13" font-weight="bold" fill="#5c4a3a">相手の同意は不要</text>
+  <text x="470" y="221" font-size="11" fill="#9a8e80">2008年4月以降の第3号被保険者期間が</text>
+  <text x="470" y="238" font-size="11" fill="#9a8e80">自動的に1/2に分割される</text>
+
+  <!-- Arrow down left -->
+  <polygon points="210,258 203,258 210,272 217,258" fill="#d9cfbf"/>
+  <!-- Arrow down right -->
+  <polygon points="590,258 583,258 590,272 597,258" fill="#d9cfbf"/>
+
+  <!-- Left: Step 3 -->
+  <rect x="30" y="278" width="360" height="56" rx="10" fill="#faf8f5" stroke="#c0764a" stroke-width="1.5" filter="url(#shadow)"/>
+  <circle cx="62" cy="306" r="16" fill="#c0764a"/>
+  <text x="62" y="311" text-anchor="middle" font-size="13" font-weight="bold" fill="#fff">3</text>
+  <text x="90" y="300" font-size="13" font-weight="bold" fill="#5c4a3a">必要書類の準備</text>
+  <text x="90" y="317" font-size="11" fill="#9a8e80">公正証書・戸籍謄本・年金手帳・印鑑 等</text>
+
+  <!-- Right: Step 3 -->
+  <rect x="410" y="278" width="360" height="56" rx="10" fill="#faf8f5" stroke="#5c4a3a" stroke-width="1.5" filter="url(#shadow)"/>
+  <circle cx="442" cy="306" r="16" fill="#5c4a3a"/>
+  <text x="442" y="311" text-anchor="middle" font-size="13" font-weight="bold" fill="#fff">3</text>
+  <text x="470" y="300" font-size="13" font-weight="bold" fill="#5c4a3a">必要書類の準備</text>
+  <text x="470" y="317" font-size="11" fill="#9a8e80">戸籍謄本・年金手帳・印鑑 等（少ない）</text>
+
+  <!-- Arrow down -->
+  <polygon points="210,338 203,338 210,352 217,338" fill="#d9cfbf"/>
+  <polygon points="590,338 583,338 590,352 597,338" fill="#d9cfbf"/>
+
+  <!-- Shared Step 4 -->
+  <rect x="200" y="358" width="400" height="56" rx="10" fill="#faf8f5" stroke="#d9cfbf" stroke-width="1.5" filter="url(#shadow)"/>
+  <circle cx="240" cy="386" r="16" fill="#c0764a"/>
+  <text x="240" y="391" text-anchor="middle" font-size="13" font-weight="bold" fill="#fff">4</text>
+  <text x="270" y="380" font-size="13" font-weight="bold" fill="#5c4a3a">年金事務所へ請求手続き</text>
+  <text x="270" y="397" font-size="11" fill="#9a8e80">標準報酬改定請求書を提出</text>
+
+  <!-- Arrow down -->
+  <polygon points="400,418 393,418 400,432 407,418" fill="#d9cfbf"/>
+
+  <!-- Completion -->
+  <rect x="250" y="438" width="300" height="46" rx="10" fill="#e8e0d4" stroke="#c0764a" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="400" y="458" text-anchor="middle" font-size="14" font-weight="bold" fill="#5c4a3a">年金分割 完了</text>
+  <text x="400" y="475" text-anchor="middle" font-size="11" fill="#9a8e80">離婚後2年以内に手続きが必要</text>
+
+  <!-- Caution badge -->
+  <rect x="30" y="466" width="200" height="40" rx="8" fill="#fff" stroke="#c0764a" stroke-width="1.5" filter="url(#shadow-sm)"/>
+  <text x="44" y="484" font-size="13" fill="#c0764a" font-weight="bold">! 請求期限：離婚後2年</text>
+  <text x="44" y="498" font-size="10" fill="#9a8e80">期限を過ぎると請求不可</text>
+</svg>
