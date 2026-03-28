@@ -110,7 +110,7 @@ export default async function CategoryPage({
         <div className="cta-banner">
           <h3>暮らしの法律ガイドをLINEでお届け</h3>
           <p>最新の法改正情報や知っておくべき法律知識を、LINEで定期的にお届けします。友だち追加で今すぐ受け取れます。</p>
-          <a href="#" className="cta-button">LINEで友だち追加する</a>
+          <a href="https://lin.ee/6cJgVjJ" target="_blank" rel="noopener noreferrer" className="cta-button">LINEで友だち追加する</a>
         </div>
 
         <div className="sidebar-section">
