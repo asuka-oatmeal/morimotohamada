@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Script from "next/script";
 import { Zen_Maru_Gothic } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
@@ -141,6 +142,11 @@ export default function RootLayout({
         </footer>
         <Analytics />
         <SpeedInsights />
+        <Script
+          defer
+          src="https://umami-murex-one-27.vercel.app/script.js"
+          data-website-id="747f5d4b-b469-4d5b-b853-18fa28ec0566"
+        />
       </body>
     </html>
   );
