@@ -8069,5 +8069,243 @@
     "keyword": "資金決済法 改正 暗号資産 規制強化",
     "category": "債権回収・詐欺被害",
     "status": "pending"
+  },
+
+  {
+    "slug": "restaurant-no-show-cancellation-fee",
+    "keyword": "飲食店 無断キャンセル 請求",
+    "category": "債権回収・キャンセル料",
+    "status": "pending"
+  },
+  {
+    "slug": "hotel-no-show-fee",
+    "keyword": "ホテル 無断キャンセル 料金 請求",
+    "category": "債権回収・キャンセル料",
+    "status": "pending"
+  },
+  {
+    "slug": "salon-no-show-cancellation",
+    "keyword": "美容院 キャンセル料 請求 方法",
+    "category": "債権回収・キャンセル料",
+    "status": "pending"
+  },
+  {
+    "slug": "cancellation-fee-legal-validity",
+    "keyword": "キャンセル料 法的効力 上限",
+    "category": "債権回収・キャンセル料",
+    "status": "pending"
+  },
+  {
+    "slug": "no-show-damages-claim",
+    "keyword": "ノーショー 損害賠償 請求",
+    "category": "債権回収・キャンセル料",
+    "status": "pending"
+  },
+  {
+    "slug": "cancellation-policy-template",
+    "keyword": "キャンセルポリシー 書き方 テンプレート",
+    "category": "債権回収・キャンセル料",
+    "status": "pending"
+  },
+  {
+    "slug": "wedding-cancellation-fee",
+    "keyword": "結婚式 キャンセル料 高額 交渉",
+    "category": "債権回収・キャンセル料",
+    "status": "pending"
+  },
+  {
+    "slug": "reservation-cancellation-consumer-law",
+    "keyword": "予約 キャンセル料 消費者契約法",
+    "category": "債権回収・キャンセル料",
+    "status": "pending"
+  },
+
+  {
+    "slug": "rent-arrears-1month-response",
+    "keyword": "家賃滞納 1ヶ月 対応",
+    "category": "債権回収・家賃滞納",
+    "status": "pending"
+  },
+  {
+    "slug": "rent-arrears-sms-reminder",
+    "keyword": "家賃滞納 督促 SMS 方法",
+    "category": "債権回収・家賃滞納",
+    "status": "pending"
+  },
+  {
+    "slug": "rent-reminder-letter-template",
+    "keyword": "家賃 督促状 テンプレート 文例",
+    "category": "債権回収・家賃滞納",
+    "status": "pending"
+  },
+
+  {
+    "slug": "clinic-unpaid-medical-fee",
+    "keyword": "クリニック 医療費 未払い 回収",
+    "category": "債権回収・売掛金",
+    "status": "pending"
+  },
+  {
+    "slug": "dental-self-pay-unpaid",
+    "keyword": "歯科 自費診療 未払い 請求",
+    "category": "債権回収・売掛金",
+    "status": "pending"
+  },
+  {
+    "slug": "medical-fee-reminder-method",
+    "keyword": "医療費 督促 方法 注意点",
+    "category": "債権回収・売掛金",
+    "status": "pending"
+  },
+  {
+    "slug": "veterinary-unpaid-fee",
+    "keyword": "動物病院 治療費 未払い 請求",
+    "category": "債権回収・売掛金",
+    "status": "pending"
+  },
+
+  {
+    "slug": "school-lesson-unpaid-fee",
+    "keyword": "習い事 月謝 未払い 請求",
+    "category": "債権回収・売掛金",
+    "status": "pending"
+  },
+  {
+    "slug": "school-withdrawal-penalty",
+    "keyword": "スクール 退会 違約金 請求",
+    "category": "債権回収・売掛金",
+    "status": "pending"
+  },
+  {
+    "slug": "cram-school-unpaid-tuition",
+    "keyword": "塾 授業料 未払い 回収",
+    "category": "債権回収・売掛金",
+    "status": "pending"
+  },
+
+  {
+    "slug": "restoration-cost-dispute-landlord",
+    "keyword": "原状回復費 請求 払ってくれない",
+    "category": "債権回収・家賃滞納",
+    "status": "pending"
+  },
+  {
+    "slug": "move-out-repair-cost-recovery",
+    "keyword": "退去 修繕費 回収 方法",
+    "category": "債権回収・家賃滞納",
+    "status": "pending"
+  },
+
+  {
+    "slug": "freelance-payment-delay-client",
+    "keyword": "フリーランス 報酬 未払い クライアント",
+    "category": "債権回収・売掛金",
+    "status": "pending"
+  },
+  {
+    "slug": "outsourcing-fee-unpaid-small",
+    "keyword": "業務委託 少額 未払い 回収",
+    "category": "債権回収・売掛金",
+    "status": "pending"
+  },
+  {
+    "slug": "freelance-invoice-ignored",
+    "keyword": "請求書 無視 される 対処法",
+    "category": "債権回収・売掛金",
+    "status": "pending"
+  },
+
+  {
+    "slug": "rental-car-repair-fee-dispute",
+    "keyword": "レンタカー 修理代 請求 トラブル",
+    "category": "債権回収・売掛金",
+    "status": "pending"
+  },
+  {
+    "slug": "rental-late-return-fee",
+    "keyword": "レンタル 返却遅延 延滞料 請求",
+    "category": "債権回収・売掛金",
+    "status": "pending"
+  },
+  {
+    "slug": "lease-equipment-unpaid",
+    "keyword": "リース料 未払い 回収方法",
+    "category": "債権回収・売掛金",
+    "status": "pending"
+  },
+
+  {
+    "slug": "gym-membership-unpaid",
+    "keyword": "ジム 会費 未払い 請求",
+    "category": "債権回収・後払い滞納",
+    "status": "pending"
+  },
+  {
+    "slug": "subscription-unpaid-cancellation",
+    "keyword": "サブスク 解約 未払い 請求",
+    "category": "債権回収・後払い滞納",
+    "status": "pending"
+  },
+  {
+    "slug": "online-service-unpaid-recovery",
+    "keyword": "オンラインサービス 未払い 回収",
+    "category": "債権回収・後払い滞納",
+    "status": "pending"
+  },
+  {
+    "slug": "membership-fee-arrears-legal",
+    "keyword": "会費 滞納 法的手段",
+    "category": "債権回収・後払い滞納",
+    "status": "pending"
+  },
+
+  {
+    "slug": "unauthorized-parking-penalty",
+    "keyword": "無断駐車 違約金 請求 方法",
+    "category": "債権回収・売掛金",
+    "status": "pending"
+  },
+  {
+    "slug": "parking-lot-trespassing-damages",
+    "keyword": "無断駐車 損害賠償 相場",
+    "category": "債権回収・売掛金",
+    "status": "pending"
+  },
+  {
+    "slug": "parking-warning-notice-template",
+    "keyword": "無断駐車 警告文 テンプレート",
+    "category": "債権回収・売掛金",
+    "status": "pending"
+  },
+
+  {
+    "slug": "small-btob-payment-delay",
+    "keyword": "BtoB 小口取引 支払い遅延 対応",
+    "category": "債権回収・売掛金",
+    "status": "pending"
+  },
+  {
+    "slug": "small-debt-collection-cost-effective",
+    "keyword": "少額債権 回収 費用対効果",
+    "category": "債権回収・総論",
+    "status": "pending"
+  },
+  {
+    "slug": "sms-debt-reminder-method",
+    "keyword": "SMS 督促 やり方 法的注意点",
+    "category": "債権回収・総論",
+    "status": "pending"
+  },
+  {
+    "slug": "automated-debt-collection-small",
+    "keyword": "少額 債権回収 自動化 方法",
+    "category": "債権回収・総論",
+    "status": "pending"
+  },
+  {
+    "slug": "debt-collection-cost-not-worth",
+    "keyword": "債権回収 費用倒れ 防ぐ方法",
+    "category": "債権回収・総論",
+    "status": "pending"
   }
 ]
