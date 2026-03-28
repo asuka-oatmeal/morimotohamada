@@ -8307,5 +8307,306 @@
     "keyword": "債権回収 費用倒れ 防ぐ方法",
     "category": "債権回収・総論",
     "status": "pending"
+  },
+
+  {
+    "slug": "freelance-protection-law-overview",
+    "keyword": "フリーランス新法 わかりやすく解説",
+    "category": "債権回収・フリーランス",
+    "status": "pending"
+  },
+  {
+    "slug": "freelance-law-payment-60days",
+    "keyword": "フリーランス新法 支払い 60日ルール",
+    "category": "債権回収・フリーランス",
+    "status": "pending"
+  },
+  {
+    "slug": "freelance-law-prohibited-actions",
+    "keyword": "フリーランス保護法 禁止行為 一覧",
+    "category": "債権回収・フリーランス",
+    "status": "pending"
+  },
+  {
+    "slug": "freelance-law-contract-disclosure",
+    "keyword": "フリーランス新法 取引条件 明示義務",
+    "category": "債権回収・フリーランス",
+    "status": "pending"
+  },
+  {
+    "slug": "freelance-law-penalty",
+    "keyword": "フリーランス新法 違反 罰則 50万円",
+    "category": "債権回収・フリーランス",
+    "status": "pending"
+  },
+  {
+    "slug": "freelance-law-vs-subcontract-law",
+    "keyword": "フリーランス新法 下請法 違い",
+    "category": "債権回収・フリーランス",
+    "status": "pending"
+  },
+  {
+    "slug": "freelance-unpaid-110ban",
+    "keyword": "フリーランス トラブル110番 相談",
+    "category": "債権回収・フリーランス",
+    "status": "pending"
+  },
+  {
+    "slug": "freelance-payment-delay-legal",
+    "keyword": "フリーランス 報酬 支払い遅延 対処法",
+    "category": "債権回収・フリーランス",
+    "status": "pending"
+  },
+  {
+    "slug": "freelance-unilateral-reduction",
+    "keyword": "フリーランス 報酬 一方的 減額 違法",
+    "category": "債権回収・フリーランス",
+    "status": "pending"
+  },
+  {
+    "slug": "freelance-no-contract-trouble",
+    "keyword": "フリーランス 契約書なし トラブル 対処",
+    "category": "債権回収・フリーランス",
+    "status": "pending"
+  },
+  {
+    "slug": "freelance-harassment-protection",
+    "keyword": "フリーランス ハラスメント 保護 新法",
+    "category": "債権回収・フリーランス",
+    "status": "pending"
+  },
+  {
+    "slug": "freelance-law-who-applies",
+    "keyword": "フリーランス保護法 対象者 適用範囲",
+    "category": "債権回収・フリーランス",
+    "status": "pending"
+  },
+  {
+    "slug": "freelance-contract-template",
+    "keyword": "フリーランス 業務委託契約書 テンプレート",
+    "category": "債権回収・フリーランス",
+    "status": "pending"
+  },
+  {
+    "slug": "freelance-worker-or-employee",
+    "keyword": "フリーランス 労働者性 偽装請負 判断基準",
+    "category": "債権回収・フリーランス",
+    "status": "pending"
+  },
+  {
+    "slug": "freelance-refusal-to-receive",
+    "keyword": "フリーランス 成果物 受領拒否 対処",
+    "category": "債権回収・フリーランス",
+    "status": "pending"
+  },
+  {
+    "slug": "freelance-late-payment-interest",
+    "keyword": "フリーランス 遅延損害金 利率 請求",
+    "category": "債権回収・フリーランス",
+    "status": "pending"
+  },
+  {
+    "slug": "tekitekihou-2026-overview",
+    "keyword": "取適法 2026年 改正 わかりやすく",
+    "category": "債権回収・フリーランス",
+    "status": "pending"
+  },
+  {
+    "slug": "tekitekihou-bill-prohibition",
+    "keyword": "取適法 手形払い 禁止 2026年",
+    "category": "債権回収・フリーランス",
+    "status": "pending"
+  },
+  {
+    "slug": "tekitekihou-price-negotiation",
+    "keyword": "取適法 価格交渉 協議義務 発注者",
+    "category": "債権回収・フリーランス",
+    "status": "pending"
+  },
+  {
+    "slug": "freelance-content-certificate",
+    "keyword": "フリーランス 内容証明 未払い 書き方",
+    "category": "債権回収・フリーランス",
+    "status": "pending"
+  },
+
+  {
+    "slug": "e-content-certificate-guide",
+    "keyword": "e内容証明 電子内容証明 やり方",
+    "category": "債権回収・総論",
+    "status": "pending"
+  },
+  {
+    "slug": "online-payment-demand-procedure",
+    "keyword": "支払督促 オンライン申請 手順",
+    "category": "債権回収・支払督促",
+    "status": "pending"
+  },
+  {
+    "slug": "debt-management-system-comparison",
+    "keyword": "債権管理システム おすすめ 比較",
+    "category": "債権回収・総論",
+    "status": "pending"
+  },
+  {
+    "slug": "electronic-record-claim",
+    "keyword": "電子記録債権 でんさい 仕組み",
+    "category": "債権回収・総論",
+    "status": "pending"
+  },
+  {
+    "slug": "paper-bill-abolition-2026",
+    "keyword": "手形 廃止 2026年 電子化",
+    "category": "債権回収・総論",
+    "status": "pending"
+  },
+
+  {
+    "slug": "debt-collection-demand-letter-ai",
+    "keyword": "催告書 自動作成 テンプレート",
+    "category": "債権回収・総論",
+    "status": "pending"
+  },
+  {
+    "slug": "payment-reminder-email-template",
+    "keyword": "支払い催促 メール 文例 ビジネス",
+    "category": "債権回収・総論",
+    "status": "pending"
+  },
+  {
+    "slug": "debt-collection-phone-script",
+    "keyword": "債権回収 電話 かけ方 注意点",
+    "category": "債権回収・総論",
+    "status": "pending"
+  },
+  {
+    "slug": "debt-collection-recording-legal",
+    "keyword": "債権回収 電話録音 証拠 合法性",
+    "category": "債権回収・総論",
+    "status": "pending"
+  },
+  {
+    "slug": "debt-collection-line-message",
+    "keyword": "LINE 未払い 督促 やり方 証拠",
+    "category": "債権回収・総論",
+    "status": "pending"
+  },
+
+  {
+    "slug": "personal-loan-without-iou-statute",
+    "keyword": "個人間 お金 貸した 時効 何年",
+    "category": "債権回収・総論",
+    "status": "pending"
+  },
+  {
+    "slug": "ex-partner-money-not-returned",
+    "keyword": "元彼 元カノ お金 返してくれない",
+    "category": "債権回収・総論",
+    "status": "pending"
+  },
+  {
+    "slug": "relative-money-lent-recovery",
+    "keyword": "親族 親戚 貸したお金 返ってこない",
+    "category": "債権回収・総論",
+    "status": "pending"
+  },
+  {
+    "slug": "coworker-money-lent-trouble",
+    "keyword": "同僚 お金 貸した 返してくれない",
+    "category": "債権回収・総論",
+    "status": "pending"
+  },
+
+  {
+    "slug": "unpaid-contractor-renovation",
+    "keyword": "リフォーム代 未払い 請求方法",
+    "category": "債権回収・売掛金",
+    "status": "pending"
+  },
+  {
+    "slug": "unpaid-web-development-fee",
+    "keyword": "Web制作 代金 未払い 回収",
+    "category": "債権回収・売掛金",
+    "status": "pending"
+  },
+  {
+    "slug": "unpaid-design-fee-freelance",
+    "keyword": "デザイン費 未払い フリーランス 請求",
+    "category": "債権回収・売掛金",
+    "status": "pending"
+  },
+  {
+    "slug": "unpaid-consulting-fee",
+    "keyword": "コンサル費 未払い 回収方法",
+    "category": "債権回収・売掛金",
+    "status": "pending"
+  },
+  {
+    "slug": "unpaid-tutoring-fee",
+    "keyword": "家庭教師 授業料 未払い 請求",
+    "category": "債権回収・売掛金",
+    "status": "pending"
+  },
+  {
+    "slug": "unpaid-photography-fee",
+    "keyword": "カメラマン 撮影代 未払い 対処",
+    "category": "債権回収・売掛金",
+    "status": "pending"
+  },
+  {
+    "slug": "unpaid-event-fee",
+    "keyword": "イベント 出演料 未払い 請求",
+    "category": "債権回収・売掛金",
+    "status": "pending"
+  },
+
+  {
+    "slug": "provisional-seizure-bank-account",
+    "keyword": "仮差押え 銀行口座 手続き 費用",
+    "category": "債権回収・差押え",
+    "status": "pending"
+  },
+  {
+    "slug": "seizure-cryptocurrency",
+    "keyword": "仮想通貨 差し押さえ 方法 可能か",
+    "category": "債権回収・差押え",
+    "status": "pending"
+  },
+  {
+    "slug": "seizure-debtor-investigation",
+    "keyword": "債務者 財産調査 方法 弁護士会照会",
+    "category": "債権回収・差押え",
+    "status": "pending"
+  },
+
+  {
+    "slug": "debt-collection-cross-border",
+    "keyword": "海外 債権回収 方法 国際取引",
+    "category": "債権回収・総論",
+    "status": "pending"
+  },
+  {
+    "slug": "debtor-death-heir-collection",
+    "keyword": "債務者 死亡 相続人 債権回収",
+    "category": "債権回収・総論",
+    "status": "pending"
+  },
+  {
+    "slug": "corporate-dissolution-collection",
+    "keyword": "法人 解散 清算 債権回収",
+    "category": "債権回収・総論",
+    "status": "pending"
+  },
+  {
+    "slug": "debtor-hiding-assets",
+    "keyword": "債務者 財産隠し 対策 詐害行為",
+    "category": "債権回収・総論",
+    "status": "pending"
+  },
+  {
+    "slug": "debt-collection-before-lawsuit",
+    "keyword": "訴訟前 仮差押え 保全処分 やり方",
+    "category": "債権回収・差押え",
+    "status": "pending"
   }
 ]
