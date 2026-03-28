@@ -1,0 +1,148 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" font-family="'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', sans-serif">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2c1f14"/>
+      <stop offset="50%" style="stop-color:#3d2e1f"/>
+      <stop offset="100%" style="stop-color:#4a3828"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:rgba(255,255,255,0.12)"/>
+      <stop offset="100%" style="stop-color:rgba(255,255,255,0.04)"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e8a065"/>
+      <stop offset="100%" style="stop-color:#c0764a"/>
+    </linearGradient>
+    <linearGradient id="greenGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6db886"/>
+      <stop offset="100%" style="stop-color:#4a9e68"/>
+    </linearGradient>
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6b9fd6"/>
+      <stop offset="100%" style="stop-color:#4a7eb8"/>
+    </linearGradient>
+    <linearGradient id="redGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#d67b6b"/>
+      <stop offset="100%" style="stop-color:#c05a4a"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="cardShadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="675" fill="url(#bgGrad)"/>
+
+  <!-- Decorative circles -->
+  <circle cx="1100" cy="80" r="120" fill="rgba(192,118,74,0.08)"/>
+  <circle cx="100" cy="600" r="80" fill="rgba(192,118,74,0.06)"/>
+  <circle cx="600" cy="650" r="200" fill="rgba(192,118,74,0.04)"/>
+
+  <!-- Title section -->
+  <text x="600" y="55" text-anchor="middle" fill="rgba(255,255,255,0.4)" font-size="13" font-weight="500" letter-spacing="6">DEBT COLLECTION GUIDE</text>
+  <text x="600" y="95" text-anchor="middle" fill="#fff" font-size="32" font-weight="800">債権回収の方法 完全ガイド</text>
+  <rect x="530" y="110" width="140" height="3" rx="1.5" fill="url(#accentGrad)"/>
+  <text x="600" y="140" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-size="14">6つの回収手段を費用・期間・成功率で比較</text>
+
+  <!-- Cards Row 1 -->
+  <!-- Card 1: 交渉 -->
+  <rect x="40" y="170" width="350" height="145" rx="16" fill="url(#cardGrad)" stroke="rgba(255,255,255,0.1)" stroke-width="1" filter="url(#cardShadow)"/>
+  <circle cx="80" cy="210" r="22" fill="url(#greenGrad)"/>
+  <text x="80" y="216" text-anchor="middle" fill="#fff" font-size="16" font-weight="800">01</text>
+  <text x="115" y="205" fill="#fff" font-size="17" font-weight="700">交渉（任意の話し合い）</text>
+  <text x="115" y="228" fill="rgba(255,255,255,0.5)" font-size="12">最初に取るべきステップ</text>
+  <line x1="60" y1="245" x2="370" y2="245" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="70" y="270" fill="rgba(255,255,255,0.7)" font-size="12">💰 費用</text>
+  <text x="70" y="290" fill="#6db886" font-size="15" font-weight="700">無料</text>
+  <text x="190" y="270" fill="rgba(255,255,255,0.7)" font-size="12">⏱ 期間</text>
+  <text x="190" y="290" fill="#fff" font-size="15" font-weight="700">数日〜数週間</text>
+
+  <!-- Card 2: 内容証明 -->
+  <rect x="425" y="170" width="350" height="145" rx="16" fill="url(#cardGrad)" stroke="rgba(255,255,255,0.1)" stroke-width="1" filter="url(#cardShadow)"/>
+  <circle cx="465" cy="210" r="22" fill="url(#greenGrad)"/>
+  <text x="465" y="216" text-anchor="middle" fill="#fff" font-size="16" font-weight="800">02</text>
+  <text x="500" y="205" fill="#fff" font-size="17" font-weight="700">内容証明郵便の送付</text>
+  <text x="500" y="228" fill="rgba(255,255,255,0.5)" font-size="12">法的な証拠を残す</text>
+  <line x1="445" y1="245" x2="755" y2="245" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="455" y="270" fill="rgba(255,255,255,0.7)" font-size="12">💰 費用</text>
+  <text x="455" y="290" fill="#6db886" font-size="15" font-weight="700">約2,000円〜</text>
+  <text x="595" y="270" fill="rgba(255,255,255,0.7)" font-size="12">⏱ 期間</text>
+  <text x="595" y="290" fill="#fff" font-size="15" font-weight="700">1〜2週間</text>
+
+  <!-- Card 3: 支払督促 -->
+  <rect x="810" y="170" width="350" height="145" rx="16" fill="url(#cardGrad)" stroke="rgba(255,255,255,0.1)" stroke-width="1" filter="url(#cardShadow)"/>
+  <circle cx="850" cy="210" r="22" fill="url(#blueGrad)"/>
+  <text x="850" y="216" text-anchor="middle" fill="#fff" font-size="16" font-weight="800">03</text>
+  <text x="885" y="205" fill="#fff" font-size="17" font-weight="700">支払督促の申立て</text>
+  <text x="885" y="228" fill="rgba(255,255,255,0.5)" font-size="12">裁判所書記官による命令</text>
+  <line x1="830" y1="245" x2="1140" y2="245" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="840" y="270" fill="rgba(255,255,255,0.7)" font-size="12">💰 費用</text>
+  <text x="840" y="290" fill="#6b9fd6" font-size="15" font-weight="700">約5,000円〜</text>
+  <text x="980" y="270" fill="rgba(255,255,255,0.7)" font-size="12">⏱ 期間</text>
+  <text x="980" y="290" fill="#fff" font-size="15" font-weight="700">1〜2ヶ月</text>
+
+  <!-- Cards Row 2 -->
+  <!-- Card 4: 民事調停 -->
+  <rect x="40" y="340" width="350" height="145" rx="16" fill="url(#cardGrad)" stroke="rgba(255,255,255,0.1)" stroke-width="1" filter="url(#cardShadow)"/>
+  <circle cx="80" cy="380" r="22" fill="url(#blueGrad)"/>
+  <text x="80" y="386" text-anchor="middle" fill="#fff" font-size="16" font-weight="800">04</text>
+  <text x="115" y="375" fill="#fff" font-size="17" font-weight="700">民事調停</text>
+  <text x="115" y="398" fill="rgba(255,255,255,0.5)" font-size="12">裁判所での話し合い</text>
+  <line x1="60" y1="415" x2="370" y2="415" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="70" y="440" fill="rgba(255,255,255,0.7)" font-size="12">💰 費用</text>
+  <text x="70" y="460" fill="#6b9fd6" font-size="15" font-weight="700">約5,000円〜</text>
+  <text x="190" y="440" fill="rgba(255,255,255,0.7)" font-size="12">⏱ 期間</text>
+  <text x="190" y="460" fill="#fff" font-size="15" font-weight="700">2〜4ヶ月</text>
+
+  <!-- Card 5: 訴訟 -->
+  <rect x="425" y="340" width="350" height="145" rx="16" fill="url(#cardGrad)" stroke="rgba(255,255,255,0.1)" stroke-width="1" filter="url(#cardShadow)"/>
+  <circle cx="465" cy="380" r="22" fill="url(#redGrad)"/>
+  <text x="465" y="386" text-anchor="middle" fill="#fff" font-size="16" font-weight="800">05</text>
+  <text x="500" y="375" fill="#fff" font-size="17" font-weight="700">訴訟（裁判）</text>
+  <text x="500" y="398" fill="rgba(255,255,255,0.5)" font-size="12">裁判所の判決による解決</text>
+  <line x1="445" y1="415" x2="755" y2="415" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="455" y="440" fill="rgba(255,255,255,0.7)" font-size="12">💰 費用</text>
+  <text x="455" y="460" fill="#d67b6b" font-size="15" font-weight="700">約1万円〜</text>
+  <text x="595" y="440" fill="rgba(255,255,255,0.7)" font-size="12">⏱ 期間</text>
+  <text x="595" y="460" fill="#fff" font-size="15" font-weight="700">6ヶ月〜2年</text>
+
+  <!-- Card 6: 強制執行 -->
+  <rect x="810" y="340" width="350" height="145" rx="16" fill="url(#cardGrad)" stroke="rgba(232,160,101,0.3)" stroke-width="1.5" filter="url(#cardShadow)"/>
+  <circle cx="850" cy="380" r="22" fill="url(#accentGrad)"/>
+  <text x="850" y="386" text-anchor="middle" fill="#fff" font-size="16" font-weight="800">06</text>
+  <text x="885" y="375" fill="#fff" font-size="17" font-weight="700">強制執行（差し押さえ）</text>
+  <text x="885" y="398" fill="rgba(255,255,255,0.5)" font-size="12">最終手段・確実な回収</text>
+  <line x1="830" y1="415" x2="1140" y2="415" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="840" y="440" fill="rgba(255,255,255,0.7)" font-size="12">💰 費用</text>
+  <text x="840" y="460" fill="#e8a065" font-size="15" font-weight="700">約3万円〜</text>
+  <text x="980" y="440" fill="rgba(255,255,255,0.7)" font-size="12">⏱ 期間</text>
+  <text x="980" y="460" fill="#fff" font-size="15" font-weight="700">1〜3ヶ月</text>
+
+  <!-- Bottom stat bar -->
+  <rect x="40" y="510" width="1120" height="80" rx="16" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+
+  <text x="175" y="540" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-size="11" font-weight="500">消滅時効</text>
+  <text x="175" y="572" text-anchor="middle" fill="#e8a065" font-size="28" font-weight="800">5年</text>
+
+  <line x1="330" y1="525" x2="330" y2="580" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+
+  <text x="485" y="540" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-size="11" font-weight="500">多くのケースが解決する段階</text>
+  <text x="485" y="572" text-anchor="middle" fill="#6db886" font-size="28" font-weight="800">STEP 1〜2</text>
+
+  <line x1="640" y1="525" x2="640" y2="580" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+
+  <text x="830" y="540" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-size="11" font-weight="500">弁護士依頼で回収率UP</text>
+  <text x="830" y="572" text-anchor="middle" fill="#6b9fd6" font-size="28" font-weight="800">早期相談がカギ</text>
+
+  <line x1="1000" y1="525" x2="1000" y2="580" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+
+  <text x="1100" y="540" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-size="11" font-weight="500">養育費の受取率</text>
+  <text x="1100" y="572" text-anchor="middle" fill="#d67b6b" font-size="28" font-weight="800">28.1%</text>
+
+  <!-- Footer -->
+  <text x="600" y="640" text-anchor="middle" fill="rgba(255,255,255,0.25)" font-size="11">morimotohamada.com ｜ 森本濱田法律事務所</text>
+</svg>

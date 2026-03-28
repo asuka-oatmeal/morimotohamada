@@ -6,6 +6,8 @@ description: >-
 category: 債権回収・総論
 ---
 
+![債権回収の方法 完全ガイド](/images/diagrams/debt-collection-infographic.svg)
+
 ## 債権回収とは？まず押さえておくべき基礎知識
 
 「貸したお金が返ってこない」「取引先が売掛金を支払ってくれない」「[養育費](/blog/child-support-calculation)が支払われない」——このような金銭トラブルに直面したとき、法的に正当な手段で相手から支払いを受けることを「債権回収」と呼びます。
