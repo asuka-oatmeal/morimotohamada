@@ -1,18 +1,18 @@
 import { MetadataRoute } from "next";
-import { getAllArticles } from "@/lib/articles";
+import { getAllArticles, getArticleCategorySlug } from "@/lib/articles";
 import { CATEGORIES } from "@/lib/categories";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const articles = getAllArticles();
   const articleEntries = articles.map((article) => ({
-    url: `https://morimotohamada.com/blog/${article.slug}`,
+    url: `https://morimotohamada.com/${getArticleCategorySlug(article.category)}/${article.slug}`,
     lastModified: new Date(article.date),
     changeFrequency: "monthly" as const,
     priority: 0.7,
   }));
 
   const categoryEntries = CATEGORIES.map((cat) => ({
-    url: `https://morimotohamada.com/category/${cat.slug}`,
+    url: `https://morimotohamada.com/${cat.slug}`,
     lastModified: new Date(),
     changeFrequency: "weekly" as const,
     priority: 0.8,

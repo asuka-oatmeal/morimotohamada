@@ -1,6 +1,12 @@
 import { NextRequest, NextResponse } from "next/server";
 import fs from "fs";
 import path from "path";
+import { getCategoryByArticleCategory } from "@/lib/categories";
+
+function getCategorySlugForArticle(articleCategory: string): string {
+  const cat = getCategoryByArticleCategory(articleCategory);
+  return cat?.slug || "other";
+}
 
 const LINE_API_URL = "https://api.line.me/v2/bot/message/broadcast";
 const SENT_LOG_PATH = path.join(process.cwd(), "content", ".line-sent.json");
@@ -144,7 +150,7 @@ export async function GET(request: NextRequest) {
               action: {
                 type: "uri",
                 label: "記事を読む",
-                uri: `https://morimotohamada.com/blog/${article.slug}`,
+                uri: `https://morimotohamada.com/${getCategorySlugForArticle(article.category)}/${article.slug}`,
               },
               style: "primary",
               color: "#c0764a",

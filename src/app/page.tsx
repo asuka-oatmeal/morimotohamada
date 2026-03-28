@@ -1,6 +1,6 @@
 import Link from "next/link";
-import { getAllArticles } from "@/lib/articles";
-import { CATEGORIES, getCategoryByLabel } from "@/lib/categories";
+import { getAllArticles, getArticleCategorySlug } from "@/lib/articles";
+import { CATEGORIES } from "@/lib/categories";
 import ArticleEyecatch from "@/app/components/ArticleEyecatch";
 
 export default function Home() {
@@ -28,7 +28,7 @@ export default function Home() {
             {CATEGORIES.map((cat) => (
               <Link
                 key={cat.slug}
-                href={`/category/${cat.slug}`}
+                href={`/${cat.slug}`}
                 className="rounded-full border border-[var(--color-primary)]/20 bg-[var(--color-primary)]/5 px-3 py-1 text-xs font-medium text-[var(--color-primary)] transition hover:bg-[var(--color-primary)] hover:text-white sm:text-sm"
               >
                 {cat.label}
@@ -48,7 +48,7 @@ export default function Home() {
           ) : (
             <div className="space-y-4">
               {articles.map((article) => {
-                const catInfo = getCategoryByLabel(article.category);
+                const catSlug = getArticleCategorySlug(article.category);
                 return (
                   <article
                     key={article.slug}
@@ -57,14 +57,14 @@ export default function Home() {
                     <div className="flex">
                       {/* Thumbnail */}
                       <ArticleEyecatch
-                        categorySlug={catInfo?.slug || "divorce"}
+                        categorySlug={catSlug}
                         categoryLabel={article.category}
                         size="small"
                       />
                       <div className="flex-1 p-3 sm:p-5">
                         <div className="mb-1.5 flex items-center gap-2 sm:mb-2">
                           <Link
-                            href={`/category/${catInfo?.slug || ""}`}
+                            href={`/${catSlug}`}
                             className="rounded bg-[var(--color-primary)]/10 px-2 py-0.5 text-[11px] font-medium text-[var(--color-primary)] hover:bg-[var(--color-primary)]/20 sm:text-xs"
                           >
                             {article.category}
@@ -73,7 +73,7 @@ export default function Home() {
                             {article.date}
                           </time>
                         </div>
-                        <Link href={`/blog/${article.slug}`}>
+                        <Link href={`/${catSlug}/${article.slug}`}>
                           <h4 className="text-sm font-bold leading-relaxed text-[var(--color-foreground)] transition group-hover:text-[var(--color-primary)] sm:text-base">
                             {article.title}
                           </h4>
@@ -110,7 +110,7 @@ export default function Home() {
               {CATEGORIES.map((cat) => (
                 <li key={cat.slug}>
                   <Link
-                    href={`/category/${cat.slug}`}
+                    href={`/${cat.slug}`}
                     className="flex items-center justify-between border-b border-[var(--color-sub)]/50 py-2 text-sm text-[var(--color-foreground)] transition hover:text-[var(--color-primary)]"
                   >
                     <span>{cat.label}</span>
@@ -128,21 +128,24 @@ export default function Home() {
             <div className="sidebar-section-title">人気の記事</div>
             <div className="sidebar-section-body">
               <ul className="space-y-0">
-                {articles.slice(0, 5).map((article, i) => (
-                  <li key={article.slug}>
-                    <Link
-                      href={`/blog/${article.slug}`}
-                      className="flex gap-2 border-b border-[var(--color-sub)]/50 py-2.5 text-sm text-[var(--color-foreground)] transition hover:text-[var(--color-primary)]"
-                    >
-                      <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded bg-[var(--color-primary)] text-[10px] font-bold text-white">
-                        {i + 1}
-                      </span>
-                      <span className="line-clamp-2 text-xs leading-relaxed sm:text-sm">
-                        {article.title}
-                      </span>
-                    </Link>
-                  </li>
-                ))}
+                {articles.slice(0, 5).map((article, i) => {
+                  const aCatSlug = getArticleCategorySlug(article.category);
+                  return (
+                    <li key={article.slug}>
+                      <Link
+                        href={`/${aCatSlug}/${article.slug}`}
+                        className="flex gap-2 border-b border-[var(--color-sub)]/50 py-2.5 text-sm text-[var(--color-foreground)] transition hover:text-[var(--color-primary)]"
+                      >
+                        <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded bg-[var(--color-primary)] text-[10px] font-bold text-white">
+                          {i + 1}
+                        </span>
+                        <span className="line-clamp-2 text-xs leading-relaxed sm:text-sm">
+                          {article.title}
+                        </span>
+                      </Link>
+                    </li>
+                  );
+                })}
               </ul>
             </div>
           </div>

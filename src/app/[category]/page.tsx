@@ -1,14 +1,14 @@
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { getAllArticles } from "@/lib/articles";
-import { CATEGORIES, getCategoryBySlug, getCategoryByLabel } from "@/lib/categories";
+import { getAllArticles, getArticleCategorySlug } from "@/lib/articles";
+import { CATEGORIES, getCategoryBySlug, getCategoryByArticleCategory } from "@/lib/categories";
 import ArticleEyecatch from "@/app/components/ArticleEyecatch";
 
-type Params = { slug: string };
+type Params = { category: string };
 
 export function generateStaticParams() {
-  return CATEGORIES.map((c) => ({ slug: c.slug }));
+  return CATEGORIES.map((c) => ({ category: c.slug }));
 }
 
 export async function generateMetadata({
@@ -16,12 +16,12 @@ export async function generateMetadata({
 }: {
   params: Promise<Params>;
 }): Promise<Metadata> {
-  const { slug } = await params;
-  const category = getCategoryBySlug(slug);
-  if (!category) return {};
+  const { category } = await params;
+  const cat = getCategoryBySlug(category);
+  if (!cat) return {};
   return {
-    title: `${category.label}の記事一覧`,
-    description: `${category.label}に関する法律コラムの記事一覧です。`,
+    title: `${cat.label}の記事一覧`,
+    description: `${cat.label}に関する法律コラムの記事一覧です。`,
   };
 }
 
@@ -30,13 +30,14 @@ export default async function CategoryPage({
 }: {
   params: Promise<Params>;
 }) {
-  const { slug } = await params;
-  const category = getCategoryBySlug(slug);
-  if (!category) notFound();
+  const { category } = await params;
+  const cat = getCategoryBySlug(category);
+  if (!cat) notFound();
 
-  const articles = getAllArticles().filter(
-    (a) => a.category === category.label
-  );
+  const articles = getAllArticles().filter((a) => {
+    const mapped = getCategoryByArticleCategory(a.category);
+    return mapped?.slug === cat.slug;
+  });
   const allArticles = getAllArticles();
 
   return (
@@ -49,16 +50,16 @@ export default async function CategoryPage({
             ホーム
           </Link>
           <span className="mx-1.5">&gt;</span>
-          <span className="text-[var(--color-foreground)]">{category.label}</span>
+          <span className="text-[var(--color-foreground)]">{cat.label}</span>
         </nav>
 
         <div className="mb-6 rounded-lg bg-white p-4 shadow-sm sm:p-6">
           <h1 className="flex items-center gap-2 text-lg font-bold text-[var(--color-primary)] sm:text-2xl">
             <span className="inline-block h-6 w-1 rounded bg-[var(--color-primary)]" />
-            {category.label}の記事一覧
+            {cat.label}の記事一覧
           </h1>
           <p className="mt-2 text-xs text-[var(--color-meta)] sm:text-sm">
-            {category.label}に関する法律の基礎知識をわかりやすく解説した記事の一覧です。
+            {cat.label}に関する法律の基礎知識をわかりやすく解説した記事の一覧です。
           </p>
         </div>
 
@@ -67,7 +68,7 @@ export default async function CategoryPage({
         ) : (
           <div className="space-y-4">
             {articles.map((article) => {
-              const catInfo = getCategoryByLabel(article.category);
+              const catSlug = getArticleCategorySlug(article.category);
               return (
                 <article
                   key={article.slug}
@@ -75,7 +76,7 @@ export default async function CategoryPage({
                 >
                   <div className="flex">
                     <ArticleEyecatch
-                      categorySlug={catInfo?.slug || slug}
+                      categorySlug={catSlug}
                       categoryLabel={article.category}
                       size="small"
                     />
@@ -88,7 +89,7 @@ export default async function CategoryPage({
                           {article.date}
                         </time>
                       </div>
-                      <Link href={`/blog/${article.slug}`}>
+                      <Link href={`/${catSlug}/${article.slug}`}>
                         <h4 className="text-sm font-bold leading-relaxed text-[var(--color-foreground)] transition group-hover:text-[var(--color-primary)] sm:text-base">
                           {article.title}
                         </h4>
@@ -117,17 +118,17 @@ export default async function CategoryPage({
           <div className="sidebar-section-title">お悩み別カテゴリ</div>
           <div className="sidebar-section-body">
             <ul className="space-y-0">
-              {CATEGORIES.map((cat) => (
-                <li key={cat.slug}>
+              {CATEGORIES.map((c) => (
+                <li key={c.slug}>
                   <Link
-                    href={`/category/${cat.slug}`}
+                    href={`/${c.slug}`}
                     className={`flex items-center justify-between border-b border-[var(--color-sub)]/50 py-2 text-sm transition hover:text-[var(--color-primary)] ${
-                      cat.slug === slug
+                      c.slug === category
                         ? "font-bold text-[var(--color-primary)]"
                         : "text-[var(--color-foreground)]"
                     }`}
                   >
-                    <span>{cat.label}</span>
+                    <span>{c.label}</span>
                     <span className="text-[var(--color-sub)]">&rsaquo;</span>
                   </Link>
                 </li>
@@ -141,21 +142,24 @@ export default async function CategoryPage({
             <div className="sidebar-section-title">人気の記事</div>
             <div className="sidebar-section-body">
               <ul className="space-y-0">
-                {allArticles.slice(0, 5).map((a, i) => (
-                  <li key={a.slug}>
-                    <Link
-                      href={`/blog/${a.slug}`}
-                      className="flex gap-2 border-b border-[var(--color-sub)]/50 py-2.5 text-sm text-[var(--color-foreground)] transition hover:text-[var(--color-primary)]"
-                    >
-                      <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded bg-[var(--color-primary)] text-[10px] font-bold text-white">
-                        {i + 1}
-                      </span>
-                      <span className="line-clamp-2 text-xs leading-relaxed sm:text-sm">
-                        {a.title}
-                      </span>
-                    </Link>
-                  </li>
-                ))}
+                {allArticles.slice(0, 5).map((a, i) => {
+                  const aCatSlug = getArticleCategorySlug(a.category);
+                  return (
+                    <li key={a.slug}>
+                      <Link
+                        href={`/${aCatSlug}/${a.slug}`}
+                        className="flex gap-2 border-b border-[var(--color-sub)]/50 py-2.5 text-sm text-[var(--color-foreground)] transition hover:text-[var(--color-primary)]"
+                      >
+                        <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded bg-[var(--color-primary)] text-[10px] font-bold text-white">
+                          {i + 1}
+                        </span>
+                        <span className="line-clamp-2 text-xs leading-relaxed sm:text-sm">
+                          {a.title}
+                        </span>
+                      </Link>
+                    </li>
+                  );
+                })}
               </ul>
             </div>
           </div>

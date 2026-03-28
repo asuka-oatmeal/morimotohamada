@@ -27,6 +27,6 @@ category: 離婚・家事
 
 ## 関連記事
 
-- [離婚慰謝料の相場はいくら？請求できる条件と増額・減額ポイントを徹底解説](/blog/divorce-consolation-money)
-- [【2024年最新】養育費の計算方法を徹底解説！相場・シミュレーションから注意点まで](/blog/child-support-calculation)
-- [もう迷わない！離婚調停の流れを徹底解説【手続きから解決まで】](/blog/divorce-mediation-process)
+- [離婚慰謝料の相場はいくら？請求できる条件と増額・減額ポイントを徹底解説](/divorce/divorce-consolation-money)
+- [【2024年最新】養育費の計算方法を徹底解説！相場・シミュレーションから注意点まで](/divorce/child-support-calculation)
+- [もう迷わない！離婚調停の流れを徹底解説【手続きから解決まで】](/divorce/divorce-mediation-process)

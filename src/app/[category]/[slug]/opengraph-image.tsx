@@ -1,12 +1,16 @@
 import { ImageResponse } from "next/og";
-import { getArticleBySlug, getAllSlugs } from "@/lib/articles";
-import { getCategoryByLabel } from "@/lib/categories";
+import { getArticleBySlug, getAllArticles, getArticleCategorySlug } from "@/lib/articles";
+import { getCategoryByArticleCategory } from "@/lib/categories";
 
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
 export function generateStaticParams() {
-  return getAllSlugs().map((slug) => ({ slug }));
+  const articles = getAllArticles();
+  return articles.map((article) => ({
+    category: getArticleCategorySlug(article.category),
+    slug: article.slug,
+  }));
 }
 
 const CATEGORY_COLORS: Record<string, { bg: string; accent: string }> = {
@@ -15,14 +19,16 @@ const CATEGORY_COLORS: Record<string, { bg: string; accent: string }> = {
   "traffic-accident": { bg: "#5c3a3a", accent: "#c0764a" },
   labor: { bg: "#3a4a5c", accent: "#c0764a" },
   debt: { bg: "#3a5c5c", accent: "#c0764a" },
+  "debt-collection": { bg: "#3a5c4a", accent: "#c0764a" },
   "real-estate": { bg: "#4a5c4a", accent: "#c0764a" },
+  "net-trouble": { bg: "#5c5c3a", accent: "#c0764a" },
   criminal: { bg: "#4a3a3a", accent: "#c0764a" },
 };
 
 export default async function OGImage({
   params,
 }: {
-  params: Promise<{ slug: string }>;
+  params: Promise<{ category: string; slug: string }>;
 }) {
   const { slug } = await params;
   const article = await getArticleBySlug(slug);
@@ -35,7 +41,7 @@ export default async function OGImage({
     );
   }
 
-  const catInfo = getCategoryByLabel(article.category);
+  const catInfo = getCategoryByArticleCategory(article.category);
   const colors = CATEGORY_COLORS[catInfo?.slug || "divorce"] || CATEGORY_COLORS.divorce;
 
   return new ImageResponse(

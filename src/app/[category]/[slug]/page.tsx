@@ -1,15 +1,19 @@
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { getArticleBySlug, getAllSlugs, getAllArticles } from "@/lib/articles";
-import { CATEGORIES, getCategoryByLabel } from "@/lib/categories";
+import { getArticleBySlug, getAllArticles, getArticleCategorySlug } from "@/lib/articles";
+import { CATEGORIES, getCategoryByArticleCategory } from "@/lib/categories";
 import TableOfContents from "@/app/components/TableOfContents";
 import ArticleEyecatch from "@/app/components/ArticleEyecatch";
 
-type Params = { slug: string };
+type Params = { category: string; slug: string };
 
 export async function generateStaticParams() {
-  return getAllSlugs().map((slug) => ({ slug }));
+  const articles = getAllArticles();
+  return articles.map((article) => ({
+    category: getArticleCategorySlug(article.category),
+    slug: article.slug,
+  }));
 }
 
 export async function generateMetadata({
@@ -37,15 +41,24 @@ export default async function ArticlePage({
 }: {
   params: Promise<Params>;
 }) {
-  const { slug } = await params;
+  const { category, slug } = await params;
   const article = await getArticleBySlug(slug);
   if (!article) notFound();
-  const categoryInfo = getCategoryByLabel(article.category);
 
-  // Related articles (same category, exclude self)
+  const categoryInfo = getCategoryByArticleCategory(article.category);
+
+  // Verify the category in URL matches the article's actual category
+  if (categoryInfo && categoryInfo.slug !== category) {
+    notFound();
+  }
+
+  // Related articles (same parent category, exclude self)
   const allArticles = getAllArticles();
   const relatedArticles = allArticles
-    .filter((a) => a.category === article.category && a.slug !== slug)
+    .filter((a) => {
+      const aCat = getCategoryByArticleCategory(a.category);
+      return aCat?.slug === categoryInfo?.slug && a.slug !== slug;
+    })
     .slice(0, 5);
 
   return (
@@ -72,7 +85,7 @@ export default async function ArticlePage({
               <span className="mx-1.5">&gt;</span>
               {categoryInfo ? (
                 <Link
-                  href={`/category/${categoryInfo.slug}`}
+                  href={`/${categoryInfo.slug}`}
                   className="hover:text-white"
                 >
                   {article.category}
@@ -89,7 +102,7 @@ export default async function ArticlePage({
             {/* Meta */}
             <div className="mb-3 flex items-center gap-2 sm:mb-4">
               <Link
-                href={categoryInfo ? `/category/${categoryInfo.slug}` : "/"}
+                href={categoryInfo ? `/${categoryInfo.slug}` : "/"}
                 className="rounded-full bg-[var(--color-primary)]/10 px-3 py-0.5 text-[11px] font-medium text-[var(--color-primary)] hover:bg-[var(--color-primary)]/20 sm:text-xs"
               >
                 {article.category}
@@ -160,16 +173,19 @@ export default async function ArticlePage({
             <div className="sidebar-section-title">関連記事</div>
             <div className="sidebar-section-body">
               <ul className="space-y-0">
-                {relatedArticles.map((a) => (
-                  <li key={a.slug}>
-                    <Link
-                      href={`/blog/${a.slug}`}
-                      className="block border-b border-[var(--color-sub)]/50 py-2.5 text-xs leading-relaxed text-[var(--color-foreground)] transition hover:text-[var(--color-primary)] sm:text-sm"
-                    >
-                      {a.title}
-                    </Link>
-                  </li>
-                ))}
+                {relatedArticles.map((a) => {
+                  const aCatSlug = getArticleCategorySlug(a.category);
+                  return (
+                    <li key={a.slug}>
+                      <Link
+                        href={`/${aCatSlug}/${a.slug}`}
+                        className="block border-b border-[var(--color-sub)]/50 py-2.5 text-xs leading-relaxed text-[var(--color-foreground)] transition hover:text-[var(--color-primary)] sm:text-sm"
+                      >
+                        {a.title}
+                      </Link>
+                    </li>
+                  );
+                })}
               </ul>
             </div>
           </div>
@@ -183,7 +199,7 @@ export default async function ArticlePage({
               {CATEGORIES.map((cat) => (
                 <li key={cat.slug}>
                   <Link
-                    href={`/category/${cat.slug}`}
+                    href={`/${cat.slug}`}
                     className="flex items-center justify-between border-b border-[var(--color-sub)]/50 py-2 text-sm text-[var(--color-foreground)] transition hover:text-[var(--color-primary)]"
                   >
                     <span>{cat.label}</span>

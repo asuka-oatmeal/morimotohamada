@@ -32,7 +32,7 @@ category: 離婚・家事
 
 ## 離婚届の記入項目を一つずつ詳しく解説
 
-離婚届にはさまざまな記入項目があり、正確に記入しないと受理されない可能性があります。ここでは、各項目の[書き方](/blog/inheritance-division-agreement)を順番に解説します。
+離婚届にはさまざまな記入項目があり、正確に記入しないと受理されない可能性があります。ここでは、各項目の[書き方](/inheritance/inheritance-division-agreement)を順番に解説します。
 
 ### 届出日
 
@@ -198,13 +198,13 @@ category: 離婚・家事
 
 ### 弁護士に相談すべきタイミング
 
-離婚届の記入自体は難しくありませんが、離婚に伴う[財産分与](/blog/property-division-mortgage)、[養育費](/blog/child-support-calculation)、[慰謝料](/blog/divorce-consolation-money)の取り決めは、離婚届の提出前に行うのが鉄則です。これらの取り決めを公正証書にしておくことで、万が一の不払いの際に強制執行が可能になります。
+離婚届の記入自体は難しくありませんが、離婚に伴う[財産分与](/divorce/property-division-mortgage)、[養育費](/divorce/child-support-calculation)、[慰謝料](/divorce/divorce-consolation-money)の取り決めは、離婚届の提出前に行うのが鉄則です。これらの取り決めを公正証書にしておくことで、万が一の不払いの際に強制執行が可能になります。
 
 離婚届を出す前に、一度弁護士に相談して、ご自身の権利を確認しておくことを強くお勧めします。
 
 
 ## 関連記事
 
-- [離婚慰謝料の相場はいくら？請求できる条件と増額・減額ポイントを徹底解説](/blog/divorce-consolation-money)
-- [【2024年最新】養育費の計算方法を徹底解説！相場・シミュレーションから注意点まで](/blog/child-support-calculation)
-- [もう迷わない！離婚調停の流れを徹底解説【手続きから解決まで】](/blog/divorce-mediation-process)
+- [離婚慰謝料の相場はいくら？請求できる条件と増額・減額ポイントを徹底解説](/divorce/divorce-consolation-money)
+- [【2024年最新】養育費の計算方法を徹底解説！相場・シミュレーションから注意点まで](/divorce/child-support-calculation)
+- [もう迷わない！離婚調停の流れを徹底解説【手続きから解決まで】](/divorce/divorce-mediation-process)

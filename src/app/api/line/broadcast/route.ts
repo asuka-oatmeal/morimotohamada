@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { getAllArticles } from "@/lib/articles";
+import { getAllArticles, getArticleCategorySlug } from "@/lib/articles";
 
 const LINE_API_URL = "https://api.line.me/v2/bot/message/broadcast";
 
@@ -82,7 +82,7 @@ function buildArticleMessage(article: {
             action: {
               type: "uri",
               label: "記事を読む",
-              uri: `https://morimotohamada.com/blog/${article.slug}`,
+              uri: `https://morimotohamada.com/${getArticleCategorySlug(article.category)}/${article.slug}`,
             },
             style: "primary",
             color: "#c0764a",

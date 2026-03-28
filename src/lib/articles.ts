@@ -4,6 +4,7 @@ import matter from "gray-matter";
 import { remark } from "remark";
 import remarkGfm from "remark-gfm";
 import html from "remark-html";
+import { getCategoryByArticleCategory } from "@/lib/categories";
 
 const articlesDirectory = path.join(process.cwd(), "content/articles");
 
@@ -57,4 +58,9 @@ export function getAllSlugs(): string[] {
     .readdirSync(articlesDirectory)
     .filter((f) => f.endsWith(".md"))
     .map((f) => f.replace(/\.md$/, ""));
+}
+
+export function getArticleCategorySlug(articleCategory: string): string {
+  const cat = getCategoryByArticleCategory(articleCategory);
+  return cat?.slug || "other";
 }
