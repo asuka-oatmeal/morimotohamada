@@ -203,6 +203,6 @@ CさんはDさんに何度も改善を求めましたが応じられず、弁護
 
 ## 関連記事
 
-- [離婚慰謝料の相場はいくら？請求できる条件と増額・減額ポイントを弁護士が解説](/blog/divorce-consolation-money)
+- [離婚慰謝料の相場はいくら？請求できる条件と増額・減額ポイントを徹底解説](/blog/divorce-consolation-money)
 - [【2024年最新】養育費の計算方法を徹底解説！相場・シミュレーションから注意点まで](/blog/child-support-calculation)
 - [もう迷わない！離婚調停の流れを徹底解説【手続きから解決まで】](/blog/divorce-mediation-process)

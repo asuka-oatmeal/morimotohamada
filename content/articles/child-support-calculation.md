@@ -253,6 +253,6 @@ category: 離婚・家事
 
 ## 関連記事
 
-- [離婚慰謝料の相場はいくら？請求できる条件と増額・減額ポイントを弁護士が解説](/blog/divorce-consolation-money)
+- [離婚慰謝料の相場はいくら？請求できる条件と増額・減額ポイントを徹底解説](/blog/divorce-consolation-money)
 - [もう迷わない！離婚調停の流れを徹底解説【手続きから解決まで】](/blog/divorce-mediation-process)
 - [離婚時の財産分与の基本知識](/blog/property-division-mortgage)

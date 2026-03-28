@@ -95,11 +95,11 @@ export default function Home() {
       <aside className="w-full shrink-0 space-y-5 lg:w-72">
         {/* CTA */}
         <div className="cta-banner">
-          <h3>法律の悩みを解決したい方へ</h3>
+          <h3>暮らしの法律ガイドをLINEでお届け</h3>
           <p>
-            お近くの弁護士に無料で相談できる窓口をご案内しています。
+            最新の法改正情報や知っておくべき法律知識を、LINEで定期的にお届けします。友だち追加で今すぐ受け取れます。
           </p>
-          <span className="cta-button">弁護士に相談する</span>
+          <a href="#" className="cta-button">LINEで友だち追加する</a>
         </div>
 
         {/* Categories */}

@@ -122,14 +122,14 @@ export default async function ArticlePage({
             {/* CTA inline */}
             <div className="mt-8 rounded-lg border-2 border-[var(--color-accent)]/30 bg-[var(--color-accent-bg)]/50 p-4 text-center sm:mt-10 sm:p-6">
               <p className="text-sm font-bold text-[var(--color-foreground)] sm:text-base">
-                この記事の内容でお困りの方へ
+                暮らしの法律ガイドをLINEでお届け
               </p>
               <p className="mt-1 text-xs text-[var(--color-meta)] sm:text-sm">
-                弁護士への無料相談で、あなたのケースに合った解決策が見つかります。
+                最新の法改正情報や知っておくべき法律知識を、LINEで定期的にお届けします。友だち追加で今すぐ受け取れます。
               </p>
-              <span className="cta-button mt-3 inline-block">
-                弁護士に無料相談する
-              </span>
+              <a href="#" className="cta-button mt-3 inline-block">
+                LINEで友だち追加する
+              </a>
             </div>
           </div>
         </article>
@@ -149,9 +149,9 @@ export default async function ArticlePage({
       <aside className="w-full shrink-0 space-y-5 lg:w-72">
         {/* CTA */}
         <div className="cta-banner">
-          <h3>法律の悩みを解決したい方へ</h3>
-          <p>お近くの弁護士に無料で相談できる窓口をご案内しています。</p>
-          <span className="cta-button">弁護士に相談する</span>
+          <h3>暮らしの法律ガイドをLINEでお届け</h3>
+          <p>最新の法改正情報や知っておくべき法律知識を、LINEで定期的にお届けします。友だち追加で今すぐ受け取れます。</p>
+          <a href="#" className="cta-button">LINEで友だち追加する</a>
         </div>
 
         {/* Related articles */}
