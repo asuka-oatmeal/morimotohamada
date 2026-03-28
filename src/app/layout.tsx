@@ -60,8 +60,8 @@ export default function RootLayout({
 
           {/* Category Navigation */}
           <nav className="border-t border-[var(--color-sub)] bg-white">
-            <div className="mx-auto max-w-6xl overflow-x-auto px-2 sm:px-4">
-              <ul className="flex items-center gap-0 py-0 text-xs sm:text-sm">
+            <div className="relative mx-auto max-w-6xl px-2 sm:px-4">
+              <ul className="nav-scroll flex items-center gap-0 overflow-x-auto py-0 text-xs sm:text-sm">
                 <li className="shrink-0">
                   <Link
                     href="/"
@@ -73,7 +73,7 @@ export default function RootLayout({
                 {CATEGORIES.map((cat) => (
                   <li key={cat.slug} className="shrink-0">
                     <Link
-                      href={`/category/${cat.slug}`}
+                      href={`/${cat.slug}`}
                       className="inline-block px-3 py-2.5 text-[var(--color-primary)] transition hover:bg-[var(--color-accent-bg)] hover:text-[var(--color-accent)] sm:px-4 sm:py-3"
                     >
                       {cat.label}
@@ -81,6 +81,7 @@ export default function RootLayout({
                   </li>
                 ))}
               </ul>
+              <div className="pointer-events-none absolute right-2 top-0 h-full w-8 bg-gradient-to-l from-white to-transparent sm:hidden" />
             </div>
           </nav>
         </header>
@@ -100,7 +101,7 @@ export default function RootLayout({
                   {CATEGORIES.slice(0, 4).map((cat) => (
                     <li key={cat.slug}>
                       <Link
-                        href={`/category/${cat.slug}`}
+                        href={`/${cat.slug}`}
                         className="transition hover:text-white/90"
                       >
                         {cat.label}
@@ -115,7 +116,7 @@ export default function RootLayout({
                   {CATEGORIES.slice(4).map((cat) => (
                     <li key={cat.slug}>
                       <Link
-                        href={`/category/${cat.slug}`}
+                        href={`/${cat.slug}`}
                         className="transition hover:text-white/90"
                       >
                         {cat.label}

@@ -24,7 +24,7 @@ export default function Home() {
             離婚・相続・交通事故・労働問題など、日常生活で直面しうる法律の疑問について、専門的な内容を一般の方にもわかりやすく解説しています。
           </p>
           {/* Category chips */}
-          <div className="mt-4 flex flex-wrap gap-2">
+          <div className="mt-4 grid grid-cols-2 gap-2 sm:flex sm:flex-wrap">
             {CATEGORIES.map((cat) => (
               <Link
                 key={cat.slug}
@@ -54,7 +54,7 @@ export default function Home() {
                     key={article.slug}
                     className="group overflow-hidden rounded-lg border border-[var(--color-sub)] bg-white transition hover:shadow-md"
                   >
-                    <div className="flex">
+                    <div className="flex flex-col sm:flex-row">
                       {/* Thumbnail */}
                       <ArticleEyecatch
                         categorySlug={catSlug}
