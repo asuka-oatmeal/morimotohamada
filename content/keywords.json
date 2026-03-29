@@ -86,7 +86,8 @@
     "slug": "legally-reserved-portion-claim",
     "keyword": "遺留分 請求",
     "category": "相続・遺言",
-    "status": "pending"
+    "status": "published",
+    "publishedDate": "2026-03-29"
   },
   {
     "slug": "notarized-will-cost",
@@ -8070,7 +8071,6 @@
     "category": "債権回収・詐欺被害",
     "status": "pending"
   },
-
   {
     "slug": "restaurant-no-show-cancellation-fee",
     "keyword": "飲食店 無断キャンセル 請求",
@@ -8119,7 +8119,6 @@
     "category": "債権回収・キャンセル料",
     "status": "pending"
   },
-
   {
     "slug": "rent-arrears-1month-response",
     "keyword": "家賃滞納 1ヶ月 対応",
@@ -8138,7 +8137,6 @@
     "category": "債権回収・家賃滞納",
     "status": "pending"
   },
-
   {
     "slug": "clinic-unpaid-medical-fee",
     "keyword": "クリニック 医療費 未払い 回収",
@@ -8163,7 +8161,6 @@
     "category": "債権回収・売掛金",
     "status": "pending"
   },
-
   {
     "slug": "school-lesson-unpaid-fee",
     "keyword": "習い事 月謝 未払い 請求",
@@ -8182,7 +8179,6 @@
     "category": "債権回収・売掛金",
     "status": "pending"
   },
-
   {
     "slug": "restoration-cost-dispute-landlord",
     "keyword": "原状回復費 請求 払ってくれない",
@@ -8195,7 +8191,6 @@
     "category": "債権回収・家賃滞納",
     "status": "pending"
   },
-
   {
     "slug": "freelance-payment-delay-client",
     "keyword": "フリーランス 報酬 未払い クライアント",
@@ -8214,7 +8209,6 @@
     "category": "債権回収・売掛金",
     "status": "pending"
   },
-
   {
     "slug": "rental-car-repair-fee-dispute",
     "keyword": "レンタカー 修理代 請求 トラブル",
@@ -8233,7 +8227,6 @@
     "category": "債権回収・売掛金",
     "status": "pending"
   },
-
   {
     "slug": "gym-membership-unpaid",
     "keyword": "ジム 会費 未払い 請求",
@@ -8258,7 +8251,6 @@
     "category": "債権回収・後払い滞納",
     "status": "pending"
   },
-
   {
     "slug": "unauthorized-parking-penalty",
     "keyword": "無断駐車 違約金 請求 方法",
@@ -8277,7 +8269,6 @@
     "category": "債権回収・売掛金",
     "status": "pending"
   },
-
   {
     "slug": "small-btob-payment-delay",
     "keyword": "BtoB 小口取引 支払い遅延 対応",
@@ -8308,7 +8299,6 @@
     "category": "債権回収・総論",
     "status": "pending"
   },
-
   {
     "slug": "freelance-protection-law-overview",
     "keyword": "フリーランス新法 わかりやすく解説",
@@ -8429,7 +8419,6 @@
     "category": "債権回収・フリーランス",
     "status": "pending"
   },
-
   {
     "slug": "e-content-certificate-guide",
     "keyword": "e内容証明 電子内容証明 やり方",
@@ -8460,7 +8449,6 @@
     "category": "債権回収・総論",
     "status": "pending"
   },
-
   {
     "slug": "debt-collection-demand-letter-ai",
     "keyword": "催告書 自動作成 テンプレート",
@@ -8491,7 +8479,6 @@
     "category": "債権回収・総論",
     "status": "pending"
   },
-
   {
     "slug": "personal-loan-without-iou-statute",
     "keyword": "個人間 お金 貸した 時効 何年",
@@ -8516,7 +8503,6 @@
     "category": "債権回収・総論",
     "status": "pending"
   },
-
   {
     "slug": "unpaid-contractor-renovation",
     "keyword": "リフォーム代 未払い 請求方法",
@@ -8559,7 +8545,6 @@
     "category": "債権回収・売掛金",
     "status": "pending"
   },
-
   {
     "slug": "provisional-seizure-bank-account",
     "keyword": "仮差押え 銀行口座 手続き 費用",
@@ -8578,7 +8563,6 @@
     "category": "債権回収・差押え",
     "status": "pending"
   },
-
   {
     "slug": "debt-collection-cross-border",
     "keyword": "海外 債権回収 方法 国際取引",
