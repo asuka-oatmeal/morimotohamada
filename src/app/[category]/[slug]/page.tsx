@@ -133,14 +133,15 @@ export default async function ArticlePage({
             />
 
             {/* CTA inline */}
-            <div className="mt-8 rounded-lg border-2 border-[var(--color-accent)]/30 bg-[var(--color-accent-bg)]/50 p-4 text-center sm:mt-10 sm:p-6">
-              <p className="text-sm font-bold text-[var(--color-foreground)] sm:text-base">
-                暮らしの法律ガイドをLINEでお届け
-              </p>
-              <p className="mt-1 text-xs text-[var(--color-meta)] sm:text-sm">
-                最新の法改正情報や知っておくべき法律知識を、LINEで定期的にお届けします。友だち追加で今すぐ受け取れます。
-              </p>
-              <a href="https://lin.ee/6cJgVjJ" target="_blank" rel="noopener noreferrer" className="cta-button mt-3 inline-block">
+            <div className="cta-banner mt-8 sm:mt-10">
+              <div className="cta-banner-icon">💬</div>
+              <h3>この記事が役に立ったら、LINEで最新情報を受け取りませんか？</h3>
+              <div className="cta-banner-features">
+                <span>✓ 最新の法改正ニュース</span>
+                <span>✓ 知っておくべき法律知識</span>
+                <span>✓ 無料で登録・いつでも解除OK</span>
+              </div>
+              <a href="https://lin.ee/6cJgVjJ" target="_blank" rel="noopener noreferrer" className="cta-button">
                 LINEで友だち追加する
               </a>
             </div>
@@ -162,8 +163,13 @@ export default async function ArticlePage({
       <aside className="w-full shrink-0 space-y-5 lg:w-72">
         {/* CTA */}
         <div className="cta-banner">
-          <h3>暮らしの法律ガイドをLINEでお届け</h3>
-          <p>最新の法改正情報や知っておくべき法律知識を、LINEで定期的にお届けします。友だち追加で今すぐ受け取れます。</p>
+          <div className="cta-banner-icon">💬</div>
+          <h3>法律の最新情報をLINEでお届け</h3>
+          <div className="cta-banner-features">
+            <span>✓ 最新の法改正ニュース</span>
+            <span>✓ 知っておくべき法律知識</span>
+            <span>✓ 無料で登録・いつでも解除OK</span>
+          </div>
           <a href="https://lin.ee/6cJgVjJ" target="_blank" rel="noopener noreferrer" className="cta-button">LINEで友だち追加する</a>
         </div>
 
