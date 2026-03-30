@@ -93,7 +93,8 @@
     "slug": "notarized-will-cost",
     "keyword": "公正証書遺言 費用",
     "category": "相続・遺言",
-    "status": "pending"
+    "status": "published",
+    "publishedDate": "2026-03-30"
   },
   {
     "slug": "inheritance-tax-deduction",
