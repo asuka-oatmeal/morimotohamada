@@ -100,7 +100,8 @@
     "slug": "inheritance-tax-deduction",
     "keyword": "相続税 基礎控除",
     "category": "相続・遺言",
-    "status": "pending"
+    "status": "published",
+    "publishedDate": "2026-03-31"
   },
   {
     "slug": "legal-heirs-scope",
