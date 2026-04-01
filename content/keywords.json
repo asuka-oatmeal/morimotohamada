@@ -107,7 +107,8 @@
     "slug": "legal-heirs-scope",
     "keyword": "法定相続人 範囲",
     "category": "相続・遺言",
-    "status": "pending"
+    "status": "published",
+    "publishedDate": "2026-04-01"
   },
   {
     "slug": "inheriting-debt",
