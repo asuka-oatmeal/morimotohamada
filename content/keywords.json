@@ -121,7 +121,8 @@
     "slug": "will-probate-verification",
     "keyword": "遺言書 検認",
     "category": "相続・遺言",
-    "status": "pending"
+    "status": "published",
+    "publishedDate": "2026-04-03"
   },
   {
     "slug": "inheritance-registration-mandatory",
