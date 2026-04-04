@@ -128,7 +128,8 @@
     "slug": "inheritance-registration-mandatory",
     "keyword": "相続登記 義務化",
     "category": "相続・遺言",
-    "status": "pending"
+    "status": "published",
+    "publishedDate": "2026-04-04"
   },
   {
     "slug": "lifetime-gift-inheritance",
