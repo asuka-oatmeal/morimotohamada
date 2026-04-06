@@ -142,7 +142,8 @@
     "slug": "traffic-accident-compensation",
     "keyword": "交通事故 慰謝料 計算",
     "category": "交通事故",
-    "status": "pending"
+    "status": "published",
+    "publishedDate": "2026-04-06"
   },
   {
     "slug": "disability-grade-certification",
