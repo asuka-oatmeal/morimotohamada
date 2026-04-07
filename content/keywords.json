@@ -149,7 +149,8 @@
     "slug": "disability-grade-certification",
     "keyword": "後遺障害 等級認定",
     "category": "交通事故",
-    "status": "pending"
+    "status": "published",
+    "publishedDate": "2026-04-07"
   },
   {
     "slug": "fault-ratio-dispute",
