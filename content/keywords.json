@@ -156,7 +156,8 @@
     "slug": "fault-ratio-dispute",
     "keyword": "過失割合 納得いかない",
     "category": "交通事故",
-    "status": "pending"
+    "status": "published",
+    "publishedDate": "2026-04-08"
   },
   {
     "slug": "traffic-accident-settlement",
