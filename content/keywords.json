@@ -177,7 +177,8 @@
     "slug": "lawyer-cost-special-clause",
     "keyword": "交通事故 弁護士費用特約",
     "category": "交通事故",
-    "status": "pending"
+    "status": "published",
+    "publishedDate": "2026-04-11"
   },
   {
     "slug": "lost-income-calculation",
