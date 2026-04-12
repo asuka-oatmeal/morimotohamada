@@ -184,7 +184,8 @@
     "slug": "lost-income-calculation",
     "keyword": "休業損害 計算",
     "category": "交通事故",
-    "status": "pending"
+    "status": "published",
+    "publishedDate": "2026-04-12"
   },
   {
     "slug": "fatal-accident-damages",
