@@ -191,7 +191,8 @@
     "slug": "fatal-accident-damages",
     "keyword": "死亡事故 賠償金",
     "category": "交通事故",
-    "status": "pending"
+    "status": "published",
+    "publishedDate": "2026-04-13"
   },
   {
     "slug": "bicycle-accident-liability",
