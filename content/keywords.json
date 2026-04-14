@@ -198,7 +198,8 @@
     "slug": "bicycle-accident-liability",
     "keyword": "自転車事故 賠償",
     "category": "交通事故",
-    "status": "pending"
+    "status": "published",
+    "publishedDate": "2026-04-14"
   },
   {
     "slug": "traffic-accident-statute-of-limitations",
