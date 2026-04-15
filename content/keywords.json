@@ -205,7 +205,8 @@
     "slug": "traffic-accident-statute-of-limitations",
     "keyword": "交通事故 時効",
     "category": "交通事故",
-    "status": "pending"
+    "status": "published",
+    "publishedDate": "2026-04-15"
   },
   {
     "slug": "unfair-dismissal-remedies",
