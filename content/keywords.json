@@ -219,7 +219,8 @@
     "slug": "overtime-pay-claim",
     "keyword": "残業代 請求",
     "category": "労働問題",
-    "status": "pending"
+    "status": "published",
+    "publishedDate": "2026-04-17"
   },
   {
     "slug": "power-harassment-consultation",
