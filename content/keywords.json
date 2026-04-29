@@ -303,7 +303,8 @@
     "slug": "overpayment-refund-claim",
     "keyword": "過払い金 請求",
     "category": "債務整理",
-    "status": "pending"
+    "status": "published",
+    "publishedDate": "2026-04-29"
   },
   {
     "slug": "debt-statute-of-limitations",
