@@ -344,7 +344,8 @@
     "slug": "asset-seizure-avoidance",
     "keyword": "差し押さえ 回避",
     "category": "債務整理",
-    "status": "pending"
+    "status": "published",
+    "publishedDate": "2026-05-04"
   },
   {
     "slug": "eviction-refusal",
